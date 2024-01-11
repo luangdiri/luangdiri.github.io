@@ -5,5 +5,7 @@ Langkah 3: Mula menulis
 Langkah 4: Terbitkan
 
 TODO:
-- analytics?
+- analytics
 - dark mode
+- favicon
+- seo
