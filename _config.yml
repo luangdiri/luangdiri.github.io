@@ -18,7 +18,8 @@ instagram_username: "mab.muham"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+# theme: "minima"
+remote_theme: jekyll/minima
 
 rss: rss
 
