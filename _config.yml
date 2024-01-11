@@ -21,6 +21,9 @@ instagram_username: "mab.muham"
 # theme: "minima"
 remote_theme: jekyll/minima
 
+minima:
+  skin: dark
+
 rss: rss
 
 kramdown:
