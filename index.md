@@ -5,7 +5,7 @@ Langkah 3: Mula menulis
 Langkah 4: Terbitkan
 
 TODO:
-- analytics
+- analytics ✅ (goatcounter)
 - dark mode
 - favicon
-- seo
+- seo ✅ (built in)
