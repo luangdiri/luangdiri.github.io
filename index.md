@@ -1,5 +1,1 @@
-TODO:
-- analytics ✅ (goatcounter)
-- dark mode ✅ (darkreader)
-- favicon
-- seo ✅ (built in)
+Seorang boomer yang masih mem-blog.
