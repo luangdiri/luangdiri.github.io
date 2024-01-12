@@ -1,5 +1,5 @@
 TODO:
 - analytics ✅ (goatcounter)
-- dark mode
+- dark mode ✅ (darkreader)
 - favicon
 - seo ✅ (built in)
