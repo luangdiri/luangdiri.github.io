@@ -23,7 +23,7 @@ _**UPDATE:**_ Disebabkan satu topik je dah panjang lebar, aku pecah pecah kan la
 4. Namecoin
 5. New Economy Movement
 6. Ripple
-7. [[Appendix I] Terminology](http://blog.aimanbaharum.com/2016/09/24/appendix-i-terminology/)
+7. [[Appendix I] Terminology](http://blog.xxx.com/2016/09/24/appendix-i-terminology/)
 8. [[Appendix II] Consensus algorithm][99]
 
 ---
@@ -278,8 +278,8 @@ Kredit kepada **coinfabrik.com** for making this [chart][23].
 [2]: https://en.bitcoin.it/wiki/Scalability_FAQ#What_is_the_short_history_of_the_block_size_limit.3F
 [3]: https://bitcointalk.org/index.php?topic=608561.msg6723793#msg6723793
 [4]: https://en.bitcoin.it/wiki/Scalability
-[5]: http://blog.aimanbaharum.com/2015/01/29/bermula-dengan-bitcoin/
-[6]: http://blog.aimanbaharum.com/2015/01/28/cryptocurrency-bitcoin/
+[5]: http://blog.xxx.com/2015/01/29/bermula-dengan-bitcoin/
+[6]: http://blog.xxx.com/2015/01/28/cryptocurrency-bitcoin/
 [7]: https://bitcointalk.org/index.php?topic=88208.0
 [8]: http://cryptonite.info/files/mbc-scheme-rev2.pdf
 [9]: https://lightning.network/lightning-network-paper.pdf
@@ -319,4 +319,4 @@ Kredit kepada **coinfabrik.com** for making this [chart][23].
 [45]: https://ipfs.pics/ipfs/QmTG1ZXGfnLMBf9LnoReryhug2KA732gLXKBCUFvdDT6vT
 [46]: https://www.reddit.com/r/ethereum/comments/4t9mzg/quick_hf_safety_tips_for_users/
 [47]: https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures
-[99]: http://blog.aimanbaharum.com/2017/02/04/consensus-algorithm/
+[99]: http://blog.xxx.com/2017/02/04/consensus-algorithm/
