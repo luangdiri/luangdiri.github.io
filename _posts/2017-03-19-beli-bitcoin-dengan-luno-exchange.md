@@ -11,48 +11,62 @@ lastmod: 2021-03-01 15:36:29
 <details>
 <summary><i>Changelog:</i></summary>
 
+<ul>
 Update 12 - 15/1/2024:
-- Repost to Juno Blog
-- Added list of telegram groups/channels in [Sertai komuniti](#9.-sertai-komuniti)
+<li>Repost to Juno Blog</li>
+<li>Added list of telegram groups/channels in [Sertai komuniti](#9.-sertai-komuniti)</li>
+</ul>
 
-Update 11 - 1/3/2021:
-- Luno ada circuit breaker [About Luno](#0.-about-luno)
+<ul>Update 11 - 1/3/2021:
+<li>- Luno ada circuit breaker [About Luno](#0.-about-luno)</li>
+</ul>
 
-Update 10 - 29/12/2020:
-- Fixed: How referral works in [Beli Bitcoin](#3.-beli-bitcoin)
-- Some more wording fixes
+<ul>Update 10 - 29/12/2020:
+<li>- Fixed: How referral works in [Beli Bitcoin](#3.-beli-bitcoin)</li>
+<li>- Some more wording fixes</li>
+</ul>
 
-Update 9 - 1/12/2020:
-- Updated Luno level table in [Daftar](#2.-daftar)
-- Beberapa lagi update dalam post
+<ul>Update 9 - 1/12/2020:
+<li>- Updated Luno level table in [Daftar](#2.-daftar)</li>
+<li>- Beberapa lagi update dalam post</li>
+</ul>
 
-Update 8 - 24/11/2020:
-- removed Luno notice at the top of the page
-- [About Luno](#0.-about-luno) includes link to SC registered DAX
+<ul>Update 8 - 24/11/2020:
+<li>- removed Luno notice at the top of the page</li>
+<li>- [About Luno](#0.-about-luno) includes link to SC registered DAX</li>
+</ul>
 
-Update 7 - 7/6/2020:
-- removed 2FA app recommendation, added a new one in [Securing your Bitcoins](#8.-securing-your-bitcoins)
-- removed recommended wallets, added some new ones in [Securing your Bitcoins](#8.-securing-your-bitcoins)
+<ul>Update 7 - 7/6/2020:
+<li>- removed 2FA app recommendation, added a new one in [Securing your Bitcoins](#8.-securing-your-bitcoins)</li>
+<li>- removed recommended wallets, added some new ones in [Securing your Bitcoins](#8.-securing-your-bitcoins)</li>
+</ul>
 
-Update 6 - 15/5/2020:
-- moved to new domain (aemxn.xyz/arkib)
+<ul>Update 6 - 15/5/2020:
+<li>- moved to new domain (aemxn.xyz/arkib)</li>
+</ul>
     
-Update 5 - 28/3/2020:
-- updated [community](#9jointhecommunity) section
+<ul>Update 5 - 28/3/2020:
+</ul>
+<li>- updated [community](#9jointhecommunity) section</li>
+</ul>
     
-Update 4 - 14/5/2019:
-- added a personal note at the top of the post.
+<ul>Update 4 - 14/5/2019:
+<li>- added a personal note at the top of the post.</li>
+</ul>
 
-Update 3 - 8/5/2018:
-- added more Telegram [group](#9jointhecommunity) community in Malaysia
+<ul>Update 3 - 8/5/2018:
+<li>- added more Telegram [group](#9jointhecommunity) community in Malaysia</li>
+</ul>
 
-Update 2 - 3/12/2017:
-- added [Nota Penulis](#notapenulis) section
+<ul>Update 2 - 3/12/2017:
+<li>- added [Nota Penulis](#notapenulis) section</li>
+</ul>
 
-Update 1 - 22/11/2017:
-- added information about [Luno Fees](#7lunofees)  
-- an update note about Luno interface changes in [About Luno](#0aboutluno)  
-- added recommended wallet and 2FA app in [Securing your Bitcoins](#8securingyourbitcoins)
+<ul>Update 1 - 22/11/2017:
+<li> added information about [Luno Fees](#7lunofees)  </li>
+<li> an update note about Luno interface changes in [About Luno](#0aboutluno)  </li>
+<li> added recommended wallet and 2FA app in [Securing your Bitcoins](#8securingyourbitcoins)</li>
+</ul>
 </details>
 
 ## Kandungan:
