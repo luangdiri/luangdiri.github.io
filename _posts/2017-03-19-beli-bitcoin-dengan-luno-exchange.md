@@ -515,18 +515,22 @@ _Arkib berita_
 <summary><strong>UPDATE: (23 October 2019) &mdash; <i>Deposit has been re-enabled</i></strong></summary>
 "The Securities Commission (SC) of Malaysia has given full approval to Luno’s application to operate as a Recognized Market Operator (Digital Asset Exchange). Luno is the first cryptocurrency exchange in Malaysia to receive this approval." &mdash; <a target="_blank" href="https://www.sc.com.my/regulation/guidelines/recognizedmarkets/list-of-registered-digital-asset-exchanges">Source</a> | <a target="_blank" href="https://www.luno.com/wallet/profile/notifications">Luno</a> | <a target="_blank" href="https://i.imgur.com/iHRSrAM.png">Screenshot</a>
 </details>
+<br/>
 <details>
 <summary><strong>UPDATE: (5 June 2019) &mdash; <i>Sinar harapan baru</i></strong></summary>
 "Following the finalisation of the regulatory framework for crypto exchanges in Malaysia, Securities Commission Malaysia announced today that it has registered 3 recognised market operators to establish and operate digital asset exchanges in Malaysia." &mdash; <a target="_blank" href="https://fintechnews.my/20806/blockchain/cryptocurrency-exchange-malaysia-approval/?fbclid=IwAR1lNUev6JkHswBSofAPyk-OOcDaPUrLv5PW70Lk3iMAOKUX8bUynL8iPWk">Source</a> | <a target="_blank" href="https://i.imgur.com/GK1M28m.jpg">Screenshot</a>
 </details>
+<br/>
 <details>
 <summary><strong>UPDATE: (7 May 2018) &mdash; <i>Withdrawals only</i></strong></summary>
 "Luno recently reactivated Malaysia <strong>withdrawal</strong> functionality, allowing customers to submit new withdrawal requests as of 23 April 2018. We have also started processing all new requests since 2 May 2018." &mdash; <a target="_blank" href="https://www.luno.com/help/en/articles/11000049379-malaysia-bank-deposits-and-withdrawals">Blog post</a> | <a target="_blank" href="https://i.imgur.com/v23lEfF.jpg">Email screenshot</a>
 </details>
+<br/>
 <details>
 <summary><strong>UPDATE: (25 Apr 2018)</strong></summary>
 "We have reactivated Malaysia withdrawal functionality, allowing customers to submit new withdrawal requests from now onwards. We will start processing all new requests from 2 May 2018" &mdash; <a target="_blank" href="https://luno.statuspage.io/">Source</a>
 </details>
+<br/>
 <details>
 <summary><strong>NOTICE: (22 Dec 2017)</strong></summary>
 Luno sekarang ada masalah dengan deposit dari bank dan withdrawal ke bank. Baca <a target="_blank" href="https://luno.statuspage.io/">sini</a> untuk update. Tengok <a target="_blank" href="https://i.imgur.com/nTdzrVa.jpg">gambar</a> ni jugak dari Luno app. Hati-hati kalau nak mendeposit atau withdraw.
