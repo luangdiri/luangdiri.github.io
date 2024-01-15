@@ -1,5 +1,5 @@
 ---
-title: "Magic Lantern"
+title: "Canon Magic Lantern"
 date: 2020-09-09 00:47:28
 lastmod: 2020-09-23 03:10:55
 ---
