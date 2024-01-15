@@ -398,95 +398,99 @@ Sini ada beberapa group berkaitan dengan Bitcoin dan legacy market kau boleh joi
 
 <details>
 <summary>Telegram Trading Community</summary>
-<br>
-Crypto
+<br/>
+<ul>Crypto
+<li>https://t.me/unfolded</li>
+<li>https://t.me/CryptoGifs</li>
+<li>https://t.me/jimGIFS</li>
+<li>https://t.me/whalepoolbtc</li>
+<li>https://t.me/whalepooldojo</li>
+<li>https://t.me/shitpool</li>
+<li>https://t.me/guppypool</li>
+<li>https://t.me/cryptoinsiderslobby</li>
+<li>https://t.me/cryptoinsiderslibrary</li>
+<li>https://t.me/yourtradingchannel</li>
+<li>https://t.me/cryptokingfish</li>
+<li>https://t.me/ochadoscrypto</li>
+<li>https://t.me/cryptotraider</li>
+<li>https://t.me/BitMEXSniper</li>
+<li>https://t.me/DeFiSniper</li>
+<li>https://t.me/whale_alert_io</li>
+<li>https://t.me/whalecalls</li>
+<li>https://t.me/CryptoVigilanteANN</li>
+<li>https://t.me/rektplebs</li>
+<li>https://t.me/rektislifereborn</li>
+<li>https://t.me/TheTradeLog</li>
+<li>https://t.me/glassnode</li>
+<li>https://t.me/cryptoquant_alert</li>
+<li>https://t.me/cryptoquant_official</li>
+<li>https://t.me/SINEGY_COMMUNITY</li>
+<li>https://t.me/SinegyPublicBroadcast</li>
+<li>https://t.me/BitmexFundingAlerts</li>
+<li>https://t.me/chartstash_pub</li>
+<li>https://t.me/onchainmetrics</li>
+<li>https://t.me/CryptoPingUniformBot</li>
+<li>https://t.me/scalpexindexbot</li>
+<li>https://t.me/FOMO_Bot</li>
+<li>https://t.me/QCPbroadcast</li>
+<li>https://t.me/crypto_eli5</li>
+<li>https://t.me/bitcoin</li>
+<li>https://t.me/bitcoinpermabulls</li>
+<li>https://t.me/LunoMalaysiaDaily</li>
+<li>https://t.me/jarvis_labs</li>
+<li>https://t.me/pinetraderscharts</li>
+<li>https://t.me/librehash</li>
+<li>https://t.me/librehashANN</li>
+<li>https://t.me/librehashdiscussion</li>
+<li>https://t.me/KillmexPublic</li>
+<li>https://t.me/EmperorbtcTA</li>
+<li>https://t.me/Crypto_Deleted</li>
+</ul>
 
-- https://t.me/unfolded
-- https://t.me/CryptoGifs
-- https://t.me/jimGIFS
-- https://t.me/whalepoolbtc
-- https://t.me/whalepooldojo
-- https://t.me/shitpool
-- https://t.me/guppypool
-- https://t.me/cryptoinsiderslobby
-- https://t.me/cryptoinsiderslibrary
-- https://t.me/yourtradingchannel
-- https://t.me/cryptokingfish
-- https://t.me/ochadoscrypto
-- https://t.me/cryptotraider
-- https://t.me/BitMEXSniper
-- https://t.me/DeFiSniper
-- https://t.me/whale_alert_io
-- https://t.me/whalecalls
-- https://t.me/CryptoVigilanteANN
-- https://t.me/rektplebs
-- https://t.me/rektislifereborn
-- https://t.me/TheTradeLog
-- https://t.me/glassnode
-- https://t.me/cryptoquant_alert
-- https://t.me/cryptoquant_official
-- https://t.me/SINEGY_COMMUNITY
-- https://t.me/SinegyPublicBroadcast
-- https://t.me/BitmexFundingAlerts
-- https://t.me/chartstash_pub
-- https://t.me/onchainmetrics
-- https://t.me/CryptoPingUniformBot
-- https://t.me/scalpexindexbot
-- https://t.me/FOMO_Bot
-- https://t.me/QCPbroadcast
-- https://t.me/crypto_eli5
-- https://t.me/bitcoin
-- https://t.me/bitcoinpermabulls
-- https://t.me/LunoMalaysiaDaily
-- https://t.me/jarvis_labs
-- https://t.me/pinetraderscharts
-- https://t.me/librehash
-- https://t.me/librehashANN
-- https://t.me/librehashdiscussion
-- https://t.me/KillmexPublic
-- https://t.me/EmperorbtcTA
-- https://t.me/Crypto_Deleted
+<ul>Legacy/Macro
 
-Legacy/Macro
+<li>https://t.me/TradingViewMalaysia</li>
+<li>https://t.me/allaboutbursamalaysia</li>
+<li>https://t.me/stockbitmalaysia</li>
+<li>https://t.me/BURSAMASTER_BULLSEYE</li>
+<li>https://t.me/news_finance</li>
+<li>https://t.me/bloom_twits</li>
+<li>https://t.me/zerohedge</li>
+<li>https://t.me/ochadosstock</li>
+<li>https://t.me/marketfeed</li>
+<li>https://t.me/fxwhalepool</li>
+<li>https://t.me/pelhambluetradingchannel</li>
+<li>https://t.me/bearmageddon</li>
+<li>https://t.me/ProAnalysisTrader</li>
+<li>https://t.me/kimstock</li>
+<li>https://t.me/BursaMalaysiaTopGainer</li>
+<li>https://t.me/BSSHCL</li>
+<li>https://t.me/seastock_market</li>
+<li>https://t.me/wallstreetbets</li>
+<li>https://t.me/BursaBets</li>
+<li>https://t.me/klsebets</li>
+<li>https://t.me/BizFeed</li>
+<li>https://t.me/jomnterry</li>
+<li>https://t.me/shibacapital</li>
+<li>https://t.me/ShibaChartReview</li>
+<li>https://t.me/iloveseastockmarket</li>
+<li>https://t.me/scmy1</li>
+<li>https://t.me/notasahambursa</li>
+</ul>
 
-- https://t.me/TradingViewMalaysia
-- https://t.me/allaboutbursamalaysia
-- https://t.me/stockbitmalaysia
-- https://t.me/BURSAMASTER_BULLSEYE
-- https://t.me/news_finance
-- https://t.me/bloom_twits
-- https://t.me/zerohedge
-- https://t.me/ochadosstock
-- https://t.me/marketfeed
-- https://t.me/fxwhalepool
-- https://t.me/pelhambluetradingchannel
-- https://t.me/bearmageddon
-- https://t.me/ProAnalysisTrader
-- https://t.me/kimstock
-- https://t.me/BursaMalaysiaTopGainer
-- https://t.me/BSSHCL
-- https://t.me/seastock_market
-- https://t.me/wallstreetbets
-- https://t.me/BursaBets
-- https://t.me/klsebets
-- https://t.me/BizFeed
-- https://t.me/jomnterry
-- https://t.me/shibacapital
-- https://t.me/ShibaChartReview
-- https://t.me/iloveseastockmarket
-- https://t.me/scmy1
-- https://t.me/notasahambursa
+<ul>Library
 
-Library
-
-- https://t.me/libTA
-- https://libta.org
-- https://t.me/intredasting/1881
-- https://t.me/CoursesLibrary
-- Hanzo Trading Courses
-- https://t.me/intredasting/1939)CryptoCred's Playlist
-- https://www.youtube.com/watch?v=q7BVTJol0IA&list=PLvkpxFSTppmnQ7A5DP386zEKU0Tv_fatm
+<li>https://t.me/libTA</li>
+<li>https://libta.org</li>
+<li>https://t.me/intredasting/1881</li>
+<li>https://t.me/CoursesLibrary</li>
+<li>Hanzo Trading Courses</li>
+<li>https://t.me/intredasting/1939)CryptoCred's Playlist</li>
+<li>https://www.youtube.com/watch?v=q7BVTJol0IA&list=PLvkpxFSTppmnQ7A5DP386zEKU0Tv_fatm</li>
+</ul>
 </details>
+
+<br/>
 
 Terima kasih kerana membaca dan support melalui iklan-iklan tadi. Really appreciate it. Apa-apa masalah dengan post ni roger. Dah mengantuk ni.
 
