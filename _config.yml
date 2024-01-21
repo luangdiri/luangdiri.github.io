@@ -38,7 +38,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://imgur.com/yF00QfW.jpg # Apply default site image
+      image: https://raw.githubusercontent.com/junoblog/junoblog.github.io/main/assets/header1_1.jpg # Apply default site image
   - scope:
       path: ""
       type: posts
