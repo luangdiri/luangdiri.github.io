@@ -38,7 +38,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://i.imgur.com/CGpXOQY.jpg # Apply default site image
+      image: https://imgur.com/CGpXOQY.jpg # Apply default site image
   - scope:
       path: ""
       type: posts
