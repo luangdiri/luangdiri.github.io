@@ -13,7 +13,7 @@ lastmod: 2021-03-01 15:36:29
 
 <ul>
 Update 12 - 15/1/2024:
-<li>Repost to Juno Blog</li>
+<li>Repost to Luangdiri Blog</li>
 <li>Added list of telegram groups/channels in [Sertai komuniti](#9.-sertai-komuniti)</li>
 </ul>
 
@@ -567,7 +567,7 @@ Luno sekarang ada masalah dengan deposit dari bank dan withdrawal ke bank. Baca 
 [30]: https://support.earn.com/digital-currency/bitcoin-transactions-and-fees/how-do-i-calculate-my-transaction-fee
 [31]: https://bitcoincore.org/en/2016/01/26/segwit-benefits/
 [32]: https://segwit.party/charts
-[33]: https://junoblog.github.io/2016/07/18/memahami-blockchain.html
+[33]: https://luangdiri.github.io/2016/07/18/memahami-blockchain.html
 [34]: https://bitinfocharts.com/comparison/ethereum-transactionfees.html
 [35]: https://bittrex.com
 [36]: https://bitcoinwalletpaper.com/
