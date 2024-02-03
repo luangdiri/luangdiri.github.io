@@ -26,7 +26,7 @@ Untuk menjana statistik ni aku pakai https://www.statsforspotify.com/.
 
  Last 4 weeks        |  All time
 -------- | -------
-|![top tracks 4w][track4w] | ![top tracks all time][trackalltime] |
+![top tracks 4w][track4w] | ![top tracks all time][trackalltime]
 
 Nampak la dekat situ, lagu-lagu mainstream dah makin membuat kolonialisasi dalam trend dengaran muzik aku.
 
