@@ -1,6 +1,8 @@
 ---
 title: "Memahami Blockchain"
 date: 2016-07-18T00:00
+tags:
+- blockchain
 ---
 
 <img alt="Blockchain logo" width="700" src="https://i.imgur.com/S5um2JY.png"/>

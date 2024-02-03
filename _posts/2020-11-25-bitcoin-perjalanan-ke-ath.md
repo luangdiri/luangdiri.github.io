@@ -2,6 +2,8 @@
 title: "Bitcoin - Perjalanan ke ATH"
 date: 2020-11-25 00:26:34
 lastmod: 2020-12-05 00:56:17
+tags:
+- blockchain
 ---
 
 Salam COVID-19, salam sejahtera, salam normal baru 😏. Sudah 3 tahun berlalu sejak _The Golden Bullrun&trade; 2017_ dan sedekad berlalu sejak Satoshi Nakamoto mengeluarkan kertas putih yang dinamakan *Bitcoin: A Peer-to-Peer Electronic Cash System.pdf*. Aku curious nak tahu apa perubahan landskap perdagangan crypto waktu sekarang ni.

@@ -2,6 +2,9 @@
 title: "Beli Bitcoin Dengan Luno Exchange"
 date: 2017-03-19T00:00
 lastmod: 2021-03-01 15:36:29
+tags:
+- blockchain
+- tutorial
 ---
 
 >**Nota**:
