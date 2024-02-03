@@ -44,4 +44,4 @@ defaults:
       type: posts
     values:
       tags:
-        - Other # Add a default tag to all posts
+        - other # Add a default tag to all posts
