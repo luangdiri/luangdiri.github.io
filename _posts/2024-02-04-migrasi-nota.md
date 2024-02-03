@@ -36,7 +36,7 @@ Ya, aku pakai ChatGPT. Ini juga pertama kali aku pakai ChatGPT ni untuk tolong a
 
 Bawah ni adalah batch script untuk loop semua file HTML yang ada dalam folder, dan convert file tersebut ke dalam format Markdown. Untuk file conversion, kita pakai library [Pandoc](https://pandoc.org/).
 
-```bat
+```powershell
 @echo off
 
 rem Loop through each HTML file and convert to Markdown
@@ -47,7 +47,7 @@ for %%i in (*.html) do (
 
 Dalam masa yang sama, aku dapat belajar yang expression macam ni: `"%%~ni"` adalah untuk dapatkan filename sahaja, tanpa extension file tersebut.
 
-> Baca chat penuh bersama ChatGPT: https://chat.openai.com/share/dab2d115-7f67-4764-8c04-e715e68f710e
+> Baca chat penuh bersama ChatGPT: [https://chat.openai.com/share/dab2d115-7f67-4764-8c04-e715e68f710e](https://chat.openai.com/share/dab2d115-7f67-4764-8c04-e715e68f710e)
 
 ### 2. Gnotes
 
@@ -86,7 +86,7 @@ Untuk proses `rename` and `copy` aku jalankan berasingan dengan Pandoc, untuk se
 
 Juga pakai ChatGPT, berikut adalah batch script penuh untuk `rename` dan `copy`:
 
-```bat
+```powershell
 @echo off
 setlocal enabledelayedexpansion
 
@@ -104,7 +104,7 @@ for /d %%i in ("%sourceFolder%\*") do (
 echo Done!
 ```
 
-> Chat penuh disini: https://chat.openai.com/share/8cd06f97-4b54-49d2-9a24-382c688373e9
+> Chat penuh disini: [https://chat.openai.com/share/8cd06f97-4b54-49d2-9a24-382c688373e9](https://chat.openai.com/share/8cd06f97-4b54-49d2-9a24-382c688373e9)
 
 ### 3. Juno
 
@@ -156,7 +156,7 @@ Macam biasa, ChatGPT membantu aku menyiapkan kerja dengan pantas. Javascript baw
 7. Profit!!1
 
 
-```javascript
+```js
 const fs = require('fs');
 
 // Read JSON data from external file
@@ -209,7 +209,7 @@ $ npm install fs
 $ npm index.js
 ```
 
-> Baca chat penuh bersama ChatGPT: https://chat.openai.com/share/9c444ee7-865e-4af4-b977-076dadda9b0b
+> Baca chat penuh bersama ChatGPT: [https://chat.openai.com/share/9c444ee7-865e-4af4-b977-076dadda9b0b](https://chat.openai.com/share/9c444ee7-865e-4af4-b977-076dadda9b0b)
 
 ### 4. Blogspot
 
