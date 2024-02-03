@@ -3,6 +3,8 @@ title: "Muzik Di Telinga: Edisi Berubah Angin"
 date: 2024-02-03 19:18:12
 ---
 
+# Muzik Di Telinga: Edisi Berubah Angin
+
 Aku ada terbaca satu post aku tulis tahun 2012 macam tu. Dalam post tu aku tulis lagu-lagu yang aku dengar zaman tu. Bila baca post tu rasa macam aku perlu buat lagi untuk tahun 2020 ke atas ni sebab bila baca di masa hadapan, dapat rasa balik vibe zaman tu. Basically, kembali ke masa lampau tanpa mesin masa.
 
 Aku boleh simpulkan yang waktu dulu lagu aku banyak dengar yang beat nya laju dan keras. Dulu memang aku layan terutamanya hardcore, metal dan EDM (drum and bass, hardstyle, dubstep, house). Mungkin faktor umur membuatkan aku berubah angin. Aku perasan usia sekarang ni aku banyak dengar lagu-lagu slow, yang dah tak jerit-jerit. Dan aku dah boleh terima lagu-lagu balada dari 80s, 90s tu semua, termasuk yang ada dalam mainstream radio. Britney Spears, Backstreet Boys, Siti Nurhaliza, yang jenis-jenis pop tu. Kurang kekusutan dalam kepala. Ya lah, makin berusia, makin banyak tanggungjawab, makin keras hidup, makin kalut fikiran.
