@@ -1,6 +1,6 @@
 ---
-title: "Muzik Di Telinga: Edisi Berubah Angin"
-date: 2024-02-03 19:18:12
+title: 'Muzik Di Telinga: Edisi Berubah Angin'
+date: 2024-02-03 19:18:12 +0800
 ---
 
 # Muzik Di Telinga: Edisi Berubah Angin
