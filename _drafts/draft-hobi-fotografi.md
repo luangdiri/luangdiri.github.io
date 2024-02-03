@@ -1,0 +1,5 @@
+- port favorit fotografi
+- teknik favorit
+- how to do it
+- film or digital
+- what do in the future?
