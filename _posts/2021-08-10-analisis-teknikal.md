@@ -2,6 +2,7 @@
 title: "Analisis Teknikal"
 date: 2021-08-12 15:00:14
 lastmod: 2021-08-12 15:00:11
+tags:
 ---
 
 ```                                                                 
