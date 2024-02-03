@@ -2,6 +2,8 @@
 title: "PS2 Free McBoot (FMCB)"
 date: 2020-05-30 22:26:02
 lastmod: 2020-06-07 20:49:47
+tags:
+- tutorial
 ---
 
 Aku mengidam nak main balik *Grand Theft Auto: San Andreas* dekat Playstation 2. Sekali, bila cari CD game yang aku kumpul sejak zaman sekolah dulu dah hilang. Nak beli koleksi CD game dekat Carousell mahal pula dan kadang-kadang tiada game yang aku nak main. Mujur terjumpa mod FMCB ini.
