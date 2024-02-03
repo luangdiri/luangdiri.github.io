@@ -15,10 +15,15 @@ Untuk menjana statistik ni aku pakai https://www.statsforspotify.com/.
 
 **Top 5 genres**
 
-|![top genre stats last 4w](../_media/topgenre-4w.png)|![top genre stats all time](../_media/topgenre-alltime.png)|
+ Last 4 weeks        |  All time
+-------- | -------
+![top genre stats last 4w](../_media/topgenre-4w.png) | ![top genre stats all time](../_media/topgenre-alltime.png)
+
 
 **Top 10 tracks**
 
+ Last 4 weeks        |  All time
+-------- | -------
 |![top tracks 4w](../_media/toptracks-4w.png)|![top tracks all time](../_media/toptracks-alltime.png)|
 
 Nampak la dekat situ, lagu-lagu mainstream dah makin membuat kolonialisasi dalam trend dengaran muzik aku.
