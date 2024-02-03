@@ -1,13 +1,13 @@
 ---
-title: "Muzik Di Telinga"
-date: 2024-02-03 16:54:55
+title: "Muzik Di Telinga: Edisi Berubah Angin"
+date: 2024-02-03 19:18:12
 ---
 
-Aku ada terbaca satu post aku tulis tahun 2012 macam tu. Dalam post tu aku tulis lagu-lagu yang aku dengar zaman tu. Bila baca post tu rasa macam aku perlu buat lagi untuk tahun 2020 ke atas ni sebab bila baca di masa hadapan, dapat rasa balik vibe zaman tu. Basically, kembali ke masa lampau lah tanpa mesin masa lah.
+Aku ada terbaca satu post aku tulis tahun 2012 macam tu. Dalam post tu aku tulis lagu-lagu yang aku dengar zaman tu. Bila baca post tu rasa macam aku perlu buat lagi untuk tahun 2020 ke atas ni sebab bila baca di masa hadapan, dapat rasa balik vibe zaman tu. Basically, kembali ke masa lampau tanpa mesin masa.
 
-Aku boleh simpulkan yang waktu dulu lagu aku banyak dengar lagu yang beat nya laju dan keras, terutamanya hardcore, metal dan EDM. Mungkin faktor umur membuatkan aku rasa macam tu. Aku perasan usia sekarang ni aku banyak dengar lagu-lagu slow, yang dah tak jerit-jerit. Dan aku dah boleh terima lagu-lagu balada dari 80s, 90s tu semua, termasuk yang ada dalam mainstream radio. Britney Spears, Backstreet Boys, Siti Nurhaliza, yang jenis-jenis jiwang tu.
+Aku boleh simpulkan yang waktu dulu lagu aku banyak dengar yang beat nya laju dan keras. Dulu memang aku layan terutamanya hardcore, metal dan EDM (drum and bass, hardstyle, dubstep, house). Mungkin faktor umur membuatkan aku berubah angin. Aku perasan usia sekarang ni aku banyak dengar lagu-lagu slow, yang dah tak jerit-jerit. Dan aku dah boleh terima lagu-lagu balada dari 80s, 90s tu semua, termasuk yang ada dalam mainstream radio. Britney Spears, Backstreet Boys, Siti Nurhaliza, yang jenis-jenis pop tu. Kurang kekusutan dalam kepala. Ya lah, makin berusia, makin banyak tanggungjawab, makin keras hidup, makin kalut fikiran.
 
-Kalau dulu lagu-lagu aku download secara lanun. Sekarang mudah dan selesa, pakai Spotify je. Banyak lagi platform lain macam Youtube Music, Apple Music, JOOX. Disebabkan faktor nak migrasi tu susah, jadi malas nak tukar platform. Dah lama juga aku pakai Spotify ni. Sejak zaman pakai mod apk dan [modify hosts file][hosts] sampai lah aku subscribe terus plan dia. Banyak dah lagu aku dengar dan playlist pun dah berlambak aku buat. Jadi nak migrate tu bukan lah perkara yang mudah.
+Kalau dulu lagu-lagu aku download secara lanun dalam format mp3 (torrent, warez site, p2p). Sekarang dah mudah dan selesa, pakai Spotify je. Cuma masalah bila offline tak dapat nak dengar, kecuali lagu yang dah di download. Banyak lagi platform lain macam Youtube Music, Apple Music, Tide. Disebabkan faktor nak migrasi tu susah, jadi malas nak tukar platform. Orang kata Youtube Premium lebih banyak faedah nya sebab ada video, ada lagu. Tanpa iklan tu yang poin jualan dia. Dah lama juga aku pakai Spotify ni. Sejak zaman pakai mod apk dan [modify hosts file][hosts] sampai lah aku subscribe terus plan dia. Banyak dah lagu aku dengar dan playlist pun dah berlambak aku buat. Jadi nak migrate tu bukan lah perkara yang mudah.
 
 ### Stats
 
@@ -21,7 +21,7 @@ Untuk menjana statistik ni aku pakai https://www.statsforspotify.com/.
 
 |![top tracks 4w](../_media/toptracks-4w.png)|![top tracks all time](../_media/toptracks-alltime.png)|
 
-Nampak la dekat situ, lagu-lagu slow dah makin membuat proses kolonialisasi dalam playlist.
+Nampak la dekat situ, lagu-lagu mainstream dah makin membuat kolonialisasi dalam trend dengaran muzik aku.
 
 ### Spotify playlist
 
@@ -30,7 +30,7 @@ Berikut adalah senarai playlist yang aku simpan:
 - [Keras][keras] - Hardcore, post-hardcore, metal, deathcore, yang ada jerit-jerit paling rendah pun fry scream.
 - [Tak Keras][tak-keras] - Punk, pop-punk, pop, emo, yang tak berapa jerit-jerit.
 - [Galau-land][galau-land] - Balada, pop, galau, jenis-jenis lagu sadboy, putus cinta dan suara tarik, kebanyakkan artis popular yang masuk radio/tv.
-- [Serumpun][serumpun] - campuran band/penyanyi dari Malaysia 🇲🇾 dan Indonesia 🇮🇩, tak kisah rock ke tak, asalkan yang ada vibe indie. playlist ni perlu dibersihkan btw.
+- [Serumpun][serumpun] - campuran band/artis dari Malaysia 🇲🇾 dan Indonesia 🇮🇩, tak kisah rock ke tak, asalkan dari kedua negara ni. Mungkin ada bercampur Filipina sekali kot sikit. playlist ni perlu dibersihkan sikit btw, macam semak.
 - [Digital Resistance][digital-resistance] - synthwave, retrowave, dreampop, cyberpunk-esque, bila dengar rasa macam nak keluar drive waktu malam sorang-sorang, gitu.
 - [Fengtau][fengtau] - EDM, trance, house, progressive, hardstyle, seperti namanya, Fengtau. Tapi jangan la mabuk-mabuk. Sekadar nak angguk-angguk je dengar beat dia.
 - [175 BPM][175-bpm] - EDM, semuanya drum and bass. Dari liquid ke jungle. Sesuai untuk yang tengah exercise atau yang nak boost adrenaline.
