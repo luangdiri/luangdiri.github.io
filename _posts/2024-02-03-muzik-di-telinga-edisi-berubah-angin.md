@@ -19,14 +19,14 @@ Untuk menjana statistik ni aku pakai https://www.statsforspotify.com/.
 
  Last 4 weeks        |  All time
 -------- | -------
-![top genre stats last 4w](../_media/topgenre-4w.png) | ![top genre stats all time](../_media/topgenre-alltime.png)
+![top genre stats last 4w][genre4w] | ![top genre stats all time][genrealltime]
 
 
 **Top 10 tracks**
 
  Last 4 weeks        |  All time
 -------- | -------
-|![top tracks 4w](../_media/toptracks-4w.png)|![top tracks all time](../_media/toptracks-alltime.png)|
+|![top tracks 4w][track4w] | ![top tracks all time][trackalltime] |
 
 Nampak la dekat situ, lagu-lagu mainstream dah makin membuat kolonialisasi dalam trend dengaran muzik aku.
 
@@ -57,3 +57,7 @@ Kebanyakkan waktu aku tak dengar pun playlist ni semua. Biasanya aku akan buka "
 [anti-depressant]: https://open.spotify.com/playlist/1KYY5exHfccrJYPdSXJxjh?si=2975748ef5ed4037&pt=e0c3aafc1d8da4b3857c924d4ae6692b
 [hitam-putih]: https://open.spotify.com/playlist/46tSwphU6m4kzNxoGig1v5?si=078b7c2153e24891&pt=64daf17019da797eb02f3c64bbc33644
 [hosts]: https://simpletech.xyz/article/block-ads-on-spotify-app/
+[genre4w]: https://raw.githubusercontent.com/luangdiri/luangdiri.github.io/main/_media/topgenre-4w.png
+[genrealltime]: https://raw.githubusercontent.com/luangdiri/luangdiri.github.io/main/_media/topgenre-alltime.png
+[track4w]: https://raw.githubusercontent.com/luangdiri/luangdiri.github.io/main/_media/toptracks-4w.png
+[trackalltime]: https://raw.githubusercontent.com/luangdiri/luangdiri.github.io/main/_media/toptracks-alltime.png
