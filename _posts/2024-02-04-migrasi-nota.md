@@ -62,7 +62,7 @@ Jadi solusi aku,
 
 GNotes punya struktur eksport:
 
-```
+```plaintext
 ~
 │   html2md.bat
 │   rename-move.bat
