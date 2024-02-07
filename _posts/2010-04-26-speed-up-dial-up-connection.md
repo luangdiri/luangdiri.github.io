@@ -19,4 +19,6 @@ So i decided to write something la about benda yang aku baru discover ni. Aku bu
   
 tl;dr lolwat? 56k internet connection? that was so jurassic!  
   
-PDF Link: [How to speed up Dial-Up Connection by S0ViET](http://www.scribd.com/doc/44400511/How-to-Speed-Up-Dial-Up-56k-Connection "Tweak Dial-Up Settings")
+PDF Link: [How to speed up Dial-Up Connection by S0ViET](https://www.scribd.com/doc/44400511/How-to-Speed-Up-Dial-Up-56k-Connection "Tweak Dial-Up Settings")
+
+<iframe class="scribd_iframe_embed" title="How to Speed Up Dial-Up (56k) Connection" src="https://www.scribd.com/embeds/44400511/content?start_page=1&view_mode=scroll&access_key=key-4x2gwy3bhs8y8vwxra9" tabindex="0" data-auto-height="false" data-aspect-ratio="null" scrolling="no" width="400" height="600" frameborder="0"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View How to Speed Up Dial-Up (56k) Connection on Scribd" href="https://www.scribd.com/doc/44400511/How-to-Speed-Up-Dial-Up-56k-Connection#from_embed"  style="text-decoration: underline;">How to Speed Up Dial-Up (56...</a> by <a title="View xdeathcorex's profile on Scribd" href="https://www.scribd.com/user/2298175/xdeathcorex#from_embed"  style="text-decoration: underline;">xdeathcorex</a></p>
