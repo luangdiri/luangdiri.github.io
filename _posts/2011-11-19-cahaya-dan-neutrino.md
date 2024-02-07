@@ -1,14 +1,20 @@
 ---
 title: 'Cahaya & Neutrino'
-date: 2011-11-19T03:39:00.000+08:00
+date: 2011-11-19 03:39:00 +08:00
 url: 
 tags: 
 - science
 ---
 
-> Nota penulis 03/02/2024:
+> Nota penulis (03/02/2024):
 > 
 > Sejauh ingatan aku, ini adalah post blog pertama dalam hidup aku. Repost sebab nostalgia. Tiada edit, cuma konten asli dari 2011 waktu aku sedang belajar.
+>
+> Update (07/02/2024):
+>
+> Rupanya ada lagi lama tahun 2009.
+
+---
 
 [![](http://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg/300px-Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg)](http://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg/300px-Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg)
 
