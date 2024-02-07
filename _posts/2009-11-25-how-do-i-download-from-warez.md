@@ -1,5 +1,5 @@
 ---
-title: 'How do I download Warez?'
+title: 'Download From Warez'
 date: 2009-11-25 05:04:00 +08:00
 draft: false
 url:
