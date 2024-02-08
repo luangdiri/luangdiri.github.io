@@ -22,7 +22,7 @@ theme: "minima"
 
 rss: rss
 
-show_excerpts: true
+show_excerpts: false
 
 kramdown:
   syntax_highlighter_opts:
@@ -38,7 +38,7 @@ titles_from_headings:
 
 
 paginate: 5
-paginate_path: "/page-:num/"
+paginate_path: "/page/:num/"
 
 defaults:
   - scope:
