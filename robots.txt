@@ -1,2 +1,2 @@
 User-agent: *
-sitemap: http://yourdomain.com/sitemap.xml
+sitemap: https://luangdiri.github.io/sitemap.xml
