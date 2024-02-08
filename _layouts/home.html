@@ -10,14 +10,12 @@ layout: base
   {{ content }}
 
   {% if site.paginate %}
-  im in 1
     {% assign posts = paginator.posts %}
   {% else %}
-  im in 2
     {% assign posts = site.posts %}
   {% endif %}
 
-
+  posts size {% echo posts.size %}
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
