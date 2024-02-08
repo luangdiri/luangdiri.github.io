@@ -10,8 +10,10 @@ layout: base
   {{ content }}
 
   {% if site.paginate %}
+  im in 1
     {% assign posts = paginator.posts %}
   {% else %}
+  im in 2
     {% assign posts = site.posts %}
   {% endif %}
 
