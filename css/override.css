@@ -3,11 +3,6 @@ hr {
   margin-bottom: 20px;
 }
 
-.site-title {
-  font-weight: 400;
-  letter-spacing: 0px;
-}
-
 /* Post navigation links */
 .post_navi {
   display: flex;

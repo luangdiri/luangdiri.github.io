@@ -37,7 +37,7 @@ titles_from_headings:
   collections: true
 
 
-paginate: 5
+paginate: 6
 paginate_path: "/page/:num/"
 
 defaults:
