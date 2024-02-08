@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![Luang Diri](https://imgur.com/CGpXOQY.jpg)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Selamat datang, orang yang tidak dikenali. Kalau kamu terjumpa blog ini secara rambang, bermakna anda seorang yang hebat!
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Aku tak tahu apa objektif aku buat blog ini, aku cuma suka menulis apa yang ada dalam fikiran. Jadi tentang apa blog ini berkisar, mungkin benda suka-suka saja. Aku juga bukan lah sesiapa. Cuma seorang boomer yang masih mem-blog sambil meluangkan waktu bersama diri sendiri.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Semoga bermanfaat!
