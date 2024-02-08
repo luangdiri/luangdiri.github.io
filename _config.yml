@@ -19,8 +19,6 @@ github_username: "luangdiri"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
-minima:
-  skin: solarized-dark
 
 rss: rss
 
