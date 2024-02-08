@@ -20,7 +20,7 @@ github_username: "luangdiri"
 #########################################################################################
 theme: "minima"
 minima:
-  skin: classic
+  skin: solarized-dark
 
 rss: rss
 
