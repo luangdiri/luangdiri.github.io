@@ -1,13 +1,8 @@
 ---
-layout: base
+layout: home
 ---
 
 <div class="home">
-  {# {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }} #}
 
   {%- if paginator.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
