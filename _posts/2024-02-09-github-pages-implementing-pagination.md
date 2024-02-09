@@ -1,6 +1,6 @@
 ---
 title: "Github Pages - Implementing Pagination"
-date: 2024-02-09 16:33:24
+date: 2024-02-09 16:58:56 +08:00
 tags:
 - tutorial
 ---
@@ -83,5 +83,7 @@ layout: page
 
 </div>
 ```
+
+If you wish to add a banner or a hero image in the front page, simply edit `index.html` and put it above `<div class='home'>` tag. Or modify it as you wish.
 
 See the [demo](https://luangdiri.github.io/).
