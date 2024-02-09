@@ -29,7 +29,7 @@ paginate_path: "/page/:num/"
 2. Rename `index.md` to `index.html`. 
 3. Add the following code into `index.html`
 
-```
+<pre><code class="language-html">
 ---
 layout: page
 ---
@@ -82,7 +82,7 @@ layout: page
   {%- endif -%}
 
 </div>
-```
+</code></pre>
 
 > Note: Please see [here](https://github.com/luangdiri/luangdiri.github.io/blob/main/_posts/2024-02-09-github-pages-implementing-pagination.md) for the code. It clips the code in here somehow. I'll troubleshoot this issue later.
 
