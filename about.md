@@ -5,13 +5,12 @@ permalink: /about/
 ---
 
 ```plaintext
-
     __                               ____  _      _ 
    / /   __  ______ _____  ____ _   / __ \(_)____(_)
   / /   / / / / __ `/ __ \/ __ `/  / / / / / ___/ / 
  / /___/ /_/ / /_/ / / / / /_/ /  / /_/ / / /  / /  
-/_____/\__,_/\__,_/_/ /_/\__, /  /_____/_/_/  /_/   2024
-                        /____/                      
+/_____/\__,_/\__,_/_/ /_/\__, /  /_____/_/_/  /_/   
+        2024            /____/                      
 ```
 
 Selamat datang, orang yang tidak dikenali. Kalau kamu terjumpa blog ini secara rambang, bermakna anda seorang yang hebat!
