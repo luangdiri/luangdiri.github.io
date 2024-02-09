@@ -10,7 +10,7 @@ permalink: /about/
   / /   / / / / __ `/ __ \/ __ `/  / / / / / ___/ / 
  / /___/ /_/ / /_/ / / / / /_/ /  / /_/ / / /  / /  
 /_____/\__,_/\__,_/_/ /_/\__, /  /_____/_/_/  /_/   
-        2024            /____/                      
+                  2024  /____/                      
 ```
 
 Selamat datang, orang yang tidak dikenali. Kalau kamu terjumpa blog ini secara rambang, bermakna anda seorang yang hebat!
