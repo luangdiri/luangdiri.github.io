@@ -1,38 +1,8 @@
 ---
-title: "Github Pages - Implementing Pagination"
-date: 2024-02-09 16:33:24
-tags:
-- tutorial
----
-
-Followed Jekyll's [documentation](https://jekyllrb.com/docs/pagination/) on how to implement pagination, but it's not enough for me. Eventually got it figured out, so here it is a straightforward guide on how to paginate your blog's homepage using Jekyll's Paginate library.
-
-Firstly, you need to bootstrap your own Jekyll blog using this [guide](https://github.com/chadbaldwin/simple-blog-bootstrap).
-
-Spec from Github Pages [dependency version](https://pages.github.com/versions/) is as follows:
-- jekyll 3.9.3
-- jekyll-paginate 1.1.0
-- minima 2.5.1
-
-This tutorial assumes user to use default configuration of Minima theme. In other words, theme's layout have not been changed.
-
-1. Modify `_config.yml`. Add the following:
-
-```yaml
-paginate: 6
-paginate_path: "/page/:num/"
-```
-
-`paginate`: number of items per page.  
-`paginate_path`: can be anything. This will be displayed as the slug in blog's URL.
-
-3. Rename `index.md` to `index.html`. 
-4. Add the following code into `index.html`
-
-```html
----
 layout: page
 ---
+
+<h1> Let's try adding a hero image here</h1>
 
 <div class="home">
   {%- if paginator.posts.size > 0 -%}
@@ -82,6 +52,3 @@ layout: page
   {%- endif -%}
 
 </div>
-```
-
-See the [demo](https://luangdiri.github.io/).
