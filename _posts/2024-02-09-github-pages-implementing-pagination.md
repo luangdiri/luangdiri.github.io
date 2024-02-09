@@ -84,6 +84,8 @@ layout: page
 </div>
 ```
 
+> Note: Please see [here](https://github.com/luangdiri/luangdiri.github.io/blob/main/_posts/2024-02-09-github-pages-implementing-pagination.md) for the code. It clips the code in here somehow. I'll troubleshoot this issue later.
+
 If you wish to add a banner or a hero image in the front page, simply edit `index.html` and put it above `<div class='home'>` tag. Or modify it as you wish.
 
 See the [demo](https://luangdiri.github.io/).
