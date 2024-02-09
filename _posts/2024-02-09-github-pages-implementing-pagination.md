@@ -29,7 +29,7 @@ paginate_path: "/page/:num/"
 3. Rename `index.md` to `index.html`. 
 4. Add the following code into `index.html`
 
-```html
+```plaintext
 ---
 layout: page
 ---
