@@ -1,0 +1,2 @@
+- juno diary
+- simple, intuitive, straight forward
