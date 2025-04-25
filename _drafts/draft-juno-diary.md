@@ -1,3 +1,10 @@
+---
+title: 'Juno — App Journal Ringkas'
+date: 2015-11-10 07:20:30 +08:00
+tags:
+---
+
+
 Dalam dunia serba laju hari ini, kadangkala kita cuma perlukan sesuatu yang mudah, ringkas dan terus ke point. Tanpa butang-butang pelik, tanpa pendaftaran yang melecehkan, tanpa gangguan dari iklan. Inilah matlamat Juno, sebuah aplikasi journal peribadi yang direka untuk menjadi peneman setia kau mencatat cerita harian – secara jujur, tenang dan peribadi.
 
 ✍️ Satu Hari, Satu Catatan
