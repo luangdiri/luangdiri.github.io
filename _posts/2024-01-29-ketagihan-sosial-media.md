@@ -8,15 +8,15 @@ tags:
 - meta
 ---
 
-### Kecanduan
+## Kecanduan
 
 Tergantung juga pada individu itu sendiri cara dia guna sosial media. Ada orang takde selera langsung nak buka hari-hari. Ada orang, buka hari-hari. Dan aku rasa kes kedua ni lah yang majoriti orang terlibat sekali. Jujur cakap perkara ni tak elok untuk kesihatan. Bagi aku, sosmed ni macam dadah. Ia sesuatu yang melalaikan dan boleh bikin ketagihan bila diguna secara berlebihan. Benda bikin ketagih ni selalunya tak elok. *Selalunya*. Ada je benda yang sepatutnya kita ketagih, seperti bersedekah, solat 5 waktu, baca quran, ketagih jumpa ibu bapa, bersenam. Cuma ketagihan yang baik dan positif ni susah nak buat. Tapi hal sosmed ni mudah nak buat maka ia jatuh dalam kategori melalaikan.
 
-### Perhatian yang singkat
+## Perhatian yang singkat
 
 Dengan terciptanya fitur Shorts (Reels dan Story kata nama lain) di kebanyakkan aplikasi sosmed sekarang, aku rasa tahap kesabaran generasi baru kita bakal pupus. Aku jangkakan tak lama lagi, di masa hadapan, kemahiran bersabar perlu ada dalam resume sebelum nak minta kerja. Kenapa? sebab fitur Shorts ni video berdurasi pendek. Ia seronok dilihat sebab tak sampai 30 saat pun kita boleh belajar macam-macam. Sedangkan nak belajar dan berjaya dalam sesuatu bidang ambil masa yang lama. Kalau dari awal dah diajar untuk layan Shorts, dah besar nanti jadi tak sabar nak berjaya. Bila gagal sekali dah merungut, langsung bendera putih 🏳.
 
-### Komuniti toksik
+## Komuniti toksik
 
 Aku sebagai peminat bola sepak, lagi-lagi bola sepak tempatan, bila tengok page berkenaan sukan ni dekat Instagram, ya rabbi komentar nya. Faham sendiri lah ya macam mana busuk nya komen yang ada dalam tu. Dah macam tempat loji pembuangan taik. Walaupun kita sendiri tahu yang kita tak perlu pun terlibat dalam perbualan toksik dalam tu. Tapi bila dah terbaca tu, desakan untuk diri ni untuk respon komen tersebut sangatlah kuat sampai kita sendiri koyak. Benda remeh je pun, tak boleh bawa pun ke akhirat.
 
@@ -29,7 +29,7 @@ Tiada soalan bodoh,
 
 Isu-isu atas ni sebenarnya senang je nak kawal: jangan libatkan diri langsung je. Aku je lah kot yang mengada nak terlibat sama, itu yang sama jadi bengis dalam post ni lmao.
 
-### Strategi kawal penggunaan sosmed
+## Strategi kawal penggunaan sosmed
 
 Sebelum ni aku ada buat eksperimen ni dan aku berjaya hapuskan terus akaun Instagram aku. Hidup tenang aman damai waktu tu. Setelah beberapa tahun, aku mula berkecimpung semula dalam sosmed ni, terutamanya Instagram. 
 
