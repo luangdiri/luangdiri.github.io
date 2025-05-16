@@ -8,9 +8,7 @@ tags:
 - meta
 ---
 
-## Kecanduan
-
-Tergantung juga pada individu itu sendiri cara dia guna sosial media. Ada orang takde selera langsung nak buka hari-hari. Ada orang, buka hari-hari. Dan aku rasa kes kedua ni lah yang majoriti orang terlibat sekali. Jujur cakap perkara ni tak elok untuk kesihatan. Bagi aku, sosmed ni macam dadah. Ia sesuatu yang melalaikan dan boleh bikin ketagihan bila diguna secara berlebihan. Benda bikin ketagih ni selalunya tak elok. *Selalunya*. Ada je benda yang sepatutnya kita ketagih, seperti bersedekah, solat 5 waktu, baca quran, ketagih jumpa ibu bapa, bersenam. Cuma ketagihan yang baik dan positif ni susah nak buat. Tapi hal sosmed ni mudah nak buat maka ia jatuh dalam kategori melalaikan.
+Kecanduan ini tergantung juga pada individu itu sendiri cara dia guna sosial media. Ada orang takde selera langsung nak buka hari-hari. Ada orang, buka hari-hari. Dan aku rasa kes kedua ni lah yang majoriti orang terlibat sekali. Jujur cakap perkara ni tak elok untuk kesihatan. Bagi aku, sosmed ni macam dadah. Ia sesuatu yang melalaikan dan boleh bikin ketagihan bila diguna secara berlebihan. Benda bikin ketagih ni selalunya tak elok. *Selalunya*. Ada je benda yang sepatutnya kita ketagih, seperti bersedekah, solat 5 waktu, baca quran, ketagih jumpa ibu bapa, bersenam. Cuma ketagihan yang baik dan positif ni susah nak buat. Tapi hal sosmed ni mudah nak buat maka ia jatuh dalam kategori melalaikan.
 
 ## Perhatian yang singkat
 
