@@ -37,22 +37,22 @@ Jadi, untuk mengatasi masalah ketagihan penggunaan sosal media, sini aku tunjuk 
 
 1. **Bikin akaun lain**
 
-Basically, kau cipta akaun baru khas untuk kau follow minat atau hobi kau yang spesifik. Contohnya, kalau minat memasak, kau cipta akaun khas untuk follow benda memasak je. Cara ni aku rasa berkesan sebab feed tak berseloroh dengan konten merepek. Kita juga dapat ajar Explore page untuk tunjukkan kita benda yang kita minat je. Selain tu, akaun khas untuk stalking pun mesti ada. Akaun ni biasanya follower/following 0. Sekadar nak login dan stalk orang je. Kenapa? sebab website zaman sekarang perlukan visitor login untuk tengok konten dalam website.
+    Basically, kau cipta akaun baru khas untuk kau follow minat atau hobi kau yang spesifik. Contohnya, kalau minat memasak, kau cipta akaun khas untuk follow benda memasak je. Cara ni aku rasa berkesan sebab feed tak berseloroh dengan konten merepek. Kita juga dapat ajar Explore page untuk tunjukkan kita benda yang kita minat je. Selain tu, akaun khas untuk stalking pun mesti ada. Akaun ni biasanya follower/following 0. Sekadar nak login dan stalk orang je. Kenapa? sebab website zaman sekarang perlukan visitor login untuk tengok konten dalam website.
 
 2. **Hanya terima kenalan rapat**
 
-Benda ni personal, tapi secara peribadi, aku prefer follow orang yang aku kenal je. Keluarga rapat, kawan kawan atau pun orang yang kita kenal melalui sosmed lain. Jadi ia lebih pada akaun peribadi, bukan niche akaun macam point 1.
+    Benda ni personal, tapi secara peribadi, aku prefer follow orang yang aku kenal je. Keluarga rapat, kawan kawan atau pun orang yang kita kenal melalui sosmed lain. Jadi ia lebih pada akaun peribadi, bukan niche akaun macam point 1.
 
 3. **Lepas pakai, logout**
 
-Lepas habis pakai, logout. Lepas tu uninstall. Kalau deactivate ni macam takde makna pun. Ada kalanya kita nak login balik atas sebab tertentu, bosan ke, nak check DM ke. Tapi kalau deactivate memang DM tak masuk, orang pun takleh view profile kita. Aku prefer logout dan uninstall je untuk short term detox. Ada orang memang taknak di stalk waktu menyendiri, jadi deactivation lebih berfungsi untuk itu. 
+    Lepas habis pakai, logout. Lepas tu uninstall. Kalau deactivate ni macam takde makna pun. Ada kalanya kita nak login balik atas sebab tertentu, bosan ke, nak check DM ke. Tapi kalau deactivate memang DM tak masuk, orang pun takleh view profile kita. Aku prefer logout dan uninstall je untuk short term detox. Ada orang memang taknak di stalk waktu menyendiri, jadi deactivation lebih berfungsi untuk itu. 
 
 4. **Guna web dari mobile app**
 
-Aku sarankan pakai web app untuk Instagram dan Twitter. Sebab functionality dalam web agak terhad. Kau takleh post story, takleh nak laju laju komen, semua benda jadi slow. Bila benda jadi slow, kau pun akan rasa terhad nak doom scroll. Bila aktiviti dalam tu terhad, maka kau pun jadi malas, bila malas, terus tutup. Ini teknik paling efektif untuk aku dan sampai sekarang aku pakai.
+    Aku sarankan pakai web app untuk Instagram dan Twitter. Sebab functionality dalam web agak terhad. Kau takleh post story, takleh nak laju laju komen, semua benda jadi slow. Bila benda jadi slow, kau pun akan rasa terhad nak doom scroll. Bila aktiviti dalam tu terhad, maka kau pun jadi malas, bila malas, terus tutup. Ini teknik paling efektif untuk aku dan sampai sekarang aku pakai.
 
-6. **Perlahan ajar diri**
+5. **Perlahan ajar diri**
 
-Nak melakukan perubahan semestinya sesuatu mengambil masa. Lebih lebih lagi nak buang sesuatu yang dah lama terpaut dalam diri. Kalau sedar diri tu dah terlalu ketagih dan rasa komited untuk kurangkan nya, lakukan lah secara perlahan. 1 hari, 5 hari, seminggu, sebulan, setahun, selamanya. Teknik ni bukan saja untuk hindari ketagihan sosial media malah untuk aspek lain dalam hidup juga.
+    Nak melakukan perubahan semestinya sesuatu mengambil masa. Lebih lebih lagi nak buang sesuatu yang dah lama terpaut dalam diri. Kalau sedar diri tu dah terlalu ketagih dan rasa komited untuk kurangkan nya, lakukan lah secara perlahan. 1 hari, 5 hari, seminggu, sebulan, setahun, selamanya. Teknik ni bukan saja untuk hindari ketagihan sosial media malah untuk aspek lain dalam hidup juga.
 
 [1]: https://luangdiri.github.io/2016/06/03/detox-sosial-media.html
