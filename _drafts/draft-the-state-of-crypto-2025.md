@@ -1,7 +1,7 @@
 ---
 title: "Keadaan Mutlak Crypto Tahun 2025"
 date: 2025-05-19 11:59:56
-updated: 2025-06-26 17:32:55
+updated: 2025-06-30 16:15:22
 tags:
 - crypto
 ---
@@ -111,31 +111,21 @@ Persoalan nya, adakah perubahan politik global seperti ini bakal menyaksikan per
 - The Gold Standard
 - Dot-Com Bubble
 - Krisis Kewangan Global 2008
-  - Bitcoin di cipta waktu ini
 - COVID-19
-  - pencetakan wang secara besar-besaran
-  - digitalisasi sistem kewangan
 
-Konflik Iran-Israel ini bakal kita lihat perubahan lanskap kewangan dunia dengan
+Konflik Iran-Israel ini bakal kita lihat perubahan lanskap kewangan dunia berskala besar dimulai dengan pelarian pelabur melabur ke aset lindung nilai seperti emas dan Bitcoin.
 
-Pelabur akan mencari aset lindung nilai seperti emas dan Bitcoin.
+1. Kebangkitan Aset Alternatif:
+  - Krisis keyakinan terhadap sistem dolar (akibat hutang AS yang tinggi, konflik antarabangsa) boleh mempercepat penggunaan Bitcoin sebagai rizab alternatif oleh negara tertentu.
 
-Kebangkitan Aset Alternatif:
+2. Stablecoin dan CBDC (Central Bank Digital Currencies):
+  - Dunia kini mula bergerak ke arah sistem pembayaran digital berasaskan blockchain.
+  - Konflik dan geopolitik hanya mempercepatkan keperluan untuk sistem yang lebih pantas, murah, dan neutral.
 
-Krisis keyakinan terhadap sistem dolar (akibat hutang AS yang tinggi, konflik antarabangsa) boleh mempercepat penggunaan Bitcoin sebagai rizab alternatif oleh negara tertentu.
+3. De-dollarisasi:
+  - Negara-negara seperti BRICS semakin menjauh dari USD dalam perdagangan antarabangsa.
+  - Krisis geopolitik boleh mempercepat langkah ini.
 
-Stablecoin dan CBDC (Central Bank Digital Currencies):
+Walaupun kita belum sampai ke tahap revolusi kewangan sepenuhnya, petanda awalnya sudah pun kelihatan, sebagai contoh digitalisasi kewangan sudah pun terserap masuk ke dalam penggunaan seharian kita seperti pembayaran tanpa tunai menggunakan e-wallet (post-COVID19). Sejarah menunjukkan bahawa krisis politik besar hampir selalu menjadi pencetus anjakan paradigma serta struktur kewangan global. Dunia kini semakin bersedia untuk alternatif: Bitcoin, stablecoin, sistem kewangan berasaskan blockchain, dan mungkin model kewangan multipolar yang tidak hanya bersandarkan kepada dollar.
 
-Dunia kini mula bergerak ke arah sistem pembayaran digital berasaskan blockchain.
-
-Konflik dan geopolitik hanya mempercepatkan keperluan untuk sistem yang lebih pantas, murah, dan neutral.
-
-De-dollarisasi:
-
-Negara-negara seperti BRICS semakin menjauh dari USD dalam perdagangan antarabangsa.
-
-Krisis geopolitik boleh mempercepat langkah ini.
-
-Walaupun kita belum sampai ke tahap revolusi kewangan sepenuhnya, tanda-tanda awal sudah kelihatan. Sejarah menunjukkan bahawa krisis politik besar hampir selalu menjadi pencetus perubahan struktur kewangan. Dunia kini semakin bersedia untuk alternatif: Bitcoin, stablecoin, sistem kewangan berasaskan blockchain, dan mungkin model kewangan multipolar yang tidak hanya bersandarkan kepada dolar.
-
-Jika konflik berterusan atau berkembang, 2025–2030 mungkin dikenang sebagai dekad perubahan sistem kewangan dunia.
+Jika konflik berterusan atau berkembang, 2020–2030 mungkin dikenang sebagai dekad buat perubahan sistem kewangan dunia.
