@@ -15,7 +15,7 @@ tags:
 - [Politik AS](#politik-as)
 - [Ambang Perang Dunia Ke-3](#ambang-perang-dunia-ke-3)
 
-Bersua kembali ke siri keadaan bitcoin ke ATH tahun 2025. Post terakhir aku ada ulas tentang perjalanan Bitcoin ke $20,000 (ATH waktu itu). Kali ini aku nak sembang pula pasal keadaan crypto pada tahun 2025.
+Bersua kembali ke siri keadaan bitcoin ke ATH tahun 2025. Post terakhir aku ada ulas tentang [perjalanan Bitcoin ke $20,000](https://luangdiri.github.io/2020/11/25/bitcoin-perjalanan-ke-ath.html) (ATH waktu itu). Kali ini aku nak sembang pula pasal keadaan crypto pada tahun 2025.
 
 ![halving](https://i.imgur.com/VaO4tJ6.png)
 
@@ -85,11 +85,15 @@ Hampir kesemua hukuman undang-undang yang dikenakan kepada syarikat crypto di AS
 
 3. **Kebangkitan Stablecoin**
 
-Stablecoins telah wujud lama dalam dunia crypto. Peranan stablecoin dalam pasaran crypto amat penting bagi melicinkan perdagangan dalam infrastruktur crypto. Tether merupakan pengeluar stablecoin pertama iaitu USD Tether (USDT). Tanpa stablecoin mungkin kita tak boleh nak berinteraksi di dalam blockchain seperti decentralized exchange dan on-ramping pengguna baru mungkin lebih sukar. USDC juga adalah sebuah stablecoin yang bersaing dominasi bersama USDT. Kelebihan USDC adalah ia dikawal selia oleh kerajaan AS, manakal USDT hidup diluar selia kerajaan. Ini membuatkan USDT kian hilang dominasi dalam pasaran dan penggunaan USDC dalam infrastruktur crypto makin meningkat. Ripple juga telah melancarkan stablecoin nya sendiri yang dinamakan RLUSD. Ia adalah stablecoin yang disandarkan oleh AS dollar sepenuhnya bertujuan untuk penggunaan enterprise dan institusi. Dengan wujud nya bermacam pilihan stablecoin ini membuatkan ia menjadi satu kunci utama dalam sistem pembayaran, DeFi dan kiriman wang rentas sempadan, sekali gus menyambung dunia crypto dan kewangan tradisional. Dari segi undang-undang pula, Akta Genius (rang undang-undang AS yang menyokong rangka kerja stablecoin terkawal) baru-baru ini diluluskan, memberikan kejelasan undang-undang untuk pengeluar-pengeluar stablecoin.
+Stablecoins telah wujud lama dalam dunia crypto. Peranan stablecoin dalam pasaran crypto amat penting bagi melicinkan perdagangan dalam infrastruktur crypto. Tether merupakan pengeluar stablecoin pertama iaitu USD Tether (USDT). Tanpa stablecoin mungkin kita tak boleh nak berinteraksi di dalam blockchain seperti decentralized exchange. Proses on-ramping pengguna baru juga mungkin lebih sukar jika stablecoin tidak dicipta. USDC juga adalah sebuah stablecoin yang bersaing dominasi bersama USDT. Kelebihan USDC adalah ia dikawal selia oleh kerajaan AS, manakal USDT hidup diluar selia kerajaan. Ini membuatkan USDT kian hilang dominasi dalam pasaran dan penggunaan USDC dalam infrastruktur crypto makin meningkat. Ripple juga telah melancarkan stablecoin nya sendiri yang dinamakan RLUSD. Ia adalah stablecoin yang disandarkan oleh AS dollar sepenuhnya bertujuan untuk penggunaan enterprise dan institusi. Dengan wujud nya bermacam pilihan stablecoin ini membuatkan ia menjadi satu kunci utama dalam sistem pembayaran, DeFi dan kiriman wang rentas sempadan, sekali gus menyambung dunia crypto dan kewangan tradisional. Dari segi undang-undang pula, Akta Genius (rang undang-undang AS yang menyokong rangka kerja stablecoin terkawal) baru-baru ini diluluskan, memberikan kejelasan undang-undang untuk pengeluar-pengeluar stablecoin.
 
 ![stablecoin-index](https://i.imgur.com/CK87Eq3.png)
 
+*Rajah: Market cap stablecoin kian meningkat saban tahun.*
+
 ![top-10-stable](https://i.imgur.com/4SbIec5.png)
+
+*Rajah: Indeks top 10 stablecoin dalam crypto market.*
 
 [DefiLlama Stablecoin Index](https://defillama.com/stablecoins)
 
@@ -101,7 +105,11 @@ Lonjakan konflik ini telah mencetus volatility di dalam pasaran kewangan. Yang p
 
 ![bitcoin-price-ww3](https://i.imgur.com/X6RyY9D.png)
 
+*Rajah: Gerak harga BTC/USD ketika Iran menyerang Israel.*
+
 ![gold-price-ww3](https://i.imgur.com/f6O1jDw.png)
+
+*Rajah: Gerak harga XAU/USD ketika Iran menyerang Israel.*
 
 Konflik Iran-Israel, yang ditandai dengan serangan peluru berpandu Iran dan kempen agresif Israel, telah meningkatkan ketidakstabilan serantau, mengganggu pasaran, dan menimbulkan kebimbangan terhadap peningkatan global. Walaupun pasaran kewangan menunjukkan daya tahan yang stabil, potensi konflik yang lebih luas masih menjadi kebimbangan kritikal. Jika AS campur tangan secara langsung atau Iran menyasarkan negara Teluk, konflik itu boleh menarik kuasa global, semakin hampir kepada senario Perang Dunia ke-3.
 
@@ -116,15 +124,15 @@ Persoalan nya, adakah perubahan politik global seperti ini bakal menyaksikan per
 Konflik Iran-Israel ini bakal kita lihat perubahan lanskap kewangan dunia berskala besar dimulai dengan pelarian pelabur melabur ke aset lindung nilai seperti emas dan Bitcoin.
 
 1. Kebangkitan Aset Alternatif:
-  - Krisis keyakinan terhadap sistem dolar (akibat hutang AS yang tinggi, konflik antarabangsa) boleh mempercepat penggunaan Bitcoin sebagai rizab alternatif oleh negara tertentu.
+   - Krisis keyakinan terhadap sistem dolar (akibat hutang AS yang tinggi, konflik antarabangsa) boleh mempercepat penggunaan Bitcoin sebagai rizab alternatif oleh negara tertentu.
 
 2. Stablecoin dan CBDC (Central Bank Digital Currencies):
-  - Dunia kini mula bergerak ke arah sistem pembayaran digital berasaskan blockchain.
-  - Konflik dan geopolitik hanya mempercepatkan keperluan untuk sistem yang lebih pantas, murah, dan neutral.
+   - Dunia kini mula bergerak ke arah sistem pembayaran digital berasaskan blockchain.
+   - Konflik dan geopolitik hanya mempercepatkan keperluan untuk sistem yang lebih pantas, murah, dan neutral.
 
 3. De-dollarisasi:
-  - Negara-negara seperti BRICS semakin menjauh dari USD dalam perdagangan antarabangsa.
-  - Krisis geopolitik boleh mempercepat langkah ini.
+   - Negara-negara seperti BRICS semakin menjauh dari USD dalam perdagangan antarabangsa.
+   - Krisis geopolitik boleh mempercepat langkah ini.
 
 Walaupun kita belum sampai ke tahap revolusi kewangan sepenuhnya, petanda awalnya sudah pun kelihatan, sebagai contoh digitalisasi kewangan sudah pun terserap masuk ke dalam penggunaan seharian kita seperti pembayaran tanpa tunai menggunakan e-wallet (post-COVID19). Sejarah menunjukkan bahawa krisis politik besar hampir selalu menjadi pencetus anjakan paradigma serta struktur kewangan global. Dunia kini semakin bersedia untuk alternatif: Bitcoin, stablecoin, sistem kewangan berasaskan blockchain, dan mungkin model kewangan multipolar yang tidak hanya bersandarkan kepada dollar.
 
