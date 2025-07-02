@@ -1,5 +1,5 @@
 ---
-title: "Perdagangan Algoritma -- Bhg. 1"
+title: "Perdagangan Algoritma — Bhg. 1"
 date: 2021-08-21 21:28:55
 lastmod: 2025-07-02 16:30:23
 tags:
@@ -17,6 +17,7 @@ tags:
   - [5.1 Guna Alert untuk Uji Keberkesanan](#51-guna-alert-untuk-uji-keberkesanan)
   - [5.2 Pentingnya Faham Kelemahan Backtest](#52-pentingnya-faham-kelemahan-backtest)
 
+---
 
 Perdagangan algoritma atau **algorithm trading** adalah kaedah berdagang menggunakan kod yang ditulis untuk mengikuti strategi tertentu tanpa perlu campur tangan manusia. Untuk pedagang yang sukakan automasi, ini adalah satu jalan ke arah perdagangan konsisten dan efisien tanpa melibatkan emosi manusia. Dalam post kali ini, aku akan kongsikan langkah-langkah asas untuk bermula dengan algo trading berdasarkan pengalaman aku sendiri.
 
@@ -54,7 +55,7 @@ Kebanyakan orang terus nak automate tanpa faham **"tingkah laku strategi"** ters
 
 ## 3. Apa Itu Tingkah Laku Strategi?
 
-Setiap strategi ada tingkah laku nya tersendiri. Sama seperti apa yang aku pernah bincangkan dalam post [https://luangdiri.github.io/2021/08/12/analisis-teknikal.html](Analisis Teknikal), setiap pair symbol juga ada personaliti nya tersendiri. Maka untuk mengenal personliti pairing tersebut haruslah kita kenalpasti tingkah laku strategi kita.
+Setiap strategi ada tingkah laku nya tersendiri. Sama seperti apa yang aku pernah bincangkan dalam post [Analisis Teknikal](https://luangdiri.github.io/2021/08/12/analisis-teknikal.html), setiap pair symbol juga ada personaliti nya tersendiri. Maka untuk mengenal personliti pairing tersebut haruslah kita kenalpasti tingkah laku strategi kita.
 
 Contoh:
 

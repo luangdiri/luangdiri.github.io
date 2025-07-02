@@ -1,10 +1,12 @@
 ---
-title: "Bitcoin - $100k Dan Seterusnya"
+title: "Bitcoin — $100k Dan Seterusnya"
 date: 2025-05-19 11:59:56
 updated: 2025-07-02 16:38:43
 tags:
 - blockchain
 ---
+
+**Kandungan:**
 
 - [Reaksi Gerak Harga Di Atas $100k](#reaksi-gerak-harga-di-atas-100k)
 - [Suasana Hambar](#suasana-hambar)
@@ -14,6 +16,8 @@ tags:
 - [Institusi Tetap Membeli](#institusi-tetap-membeli)
 - [Politik AS](#politik-as)
 - [Ambang Perang Dunia Ke-3](#ambang-perang-dunia-ke-3)
+
+---
 
 Bersua kembali ke siri keadaan bitcoin ke ATH tahun 2025. Post terakhir aku ada ulas tentang [perjalanan Bitcoin ke $20,000](https://luangdiri.github.io/2020/11/25/bitcoin-perjalanan-ke-ath.html) (ATH waktu itu). Kali ini aku nak sembang pula pasal keadaan crypto pada tahun 2025.
 
