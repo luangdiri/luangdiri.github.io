@@ -1,9 +1,9 @@
 ---
-title: "Keadaan Crypto Tahun 2025"
+title: "Bitcoin - $100k Dan Seterusnya"
 date: 2025-05-19 11:59:56
-updated: 2025-06-30 16:15:22
+updated: 2025-07-02 16:38:43
 tags:
-- crypto
+- blockchain
 ---
 
 - [Reaksi Gerak Harga Di Atas $100k](#reaksi-gerak-harga-di-atas-100k)
@@ -69,7 +69,7 @@ Banyak projek-projek crypto menunjukkan peningkatan real-world adoption dan util
 
 Ingat tak aku pernah cerita pasal sorang mamat ni dia beli bitcoin dengan kuantiti yang banyak dalam post yang lepas? Dia masih lagi aktif membeli bitcoin untuk company dia Strategy (dulu nya MicroStrategy). Walaupun harga bitcoin tinggi pun dia tetap beli. Dia punya conviction terhadap market memang utuh, membuatkan orang lain bermotivasi untuk kekal dalam pasaran.
 
-2. **Institutions keep buying**
+2. **Boomers telah datang**
 
 Spot Bitcoin ETF menyuntik modal baru dari dunia kewangan tradisional. Kini, boomers dari Wall St (dana pencen, hedge fund dan sovereign wealth fund) dah boleh beli dan trade crypto dengan mudah dengan menggunakan ETF ini. Tiada kerisauan dari segi self-custody atau pengenaan cukai lagi. Kerana semua nya sudah tersedia dalam bentuk spot ETF. Institusi besar seperti BlackRock, Fidelity dan lain-lain secara berterusan menambah akaun mereka dengan BTC dan crypto asset lain. Ini menunjukkan bahawa pasaran crypto semakan matang dan stabil berbanding zaman retail bull run dulu. Maka nya harga bitcoin tak naik secara mendadak lagi kerana ada nya institusi ini beli secara TWAP.
 

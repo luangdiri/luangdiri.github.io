@@ -1,5 +1,7 @@
+untuk dokumentasi hobi fotografi
+
 - port favorit fotografi
-- teknik favorit
-- how to do it
+- teknik favorit, timelapse, icm, hdr
+- how to do it, simply
 - film or digital
 - what do in the future?
