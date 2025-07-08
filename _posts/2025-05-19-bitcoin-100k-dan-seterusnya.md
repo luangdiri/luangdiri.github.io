@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin — $100k Dan Seterusnya"
+title: "Bitcoin - $100k Dan Seterusnya"
 date: 2025-05-19 11:59:56
 updated: 2025-07-02 16:38:43
 tags:
