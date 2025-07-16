@@ -5,9 +5,9 @@ tags:
 - meta
 ---
 
-Aku dah tak pakai Zettel Notes untuk penulisan nota harian aku. Aku sekarang pakai [Markor Notes](https://github.com/gsantner/markor).
+Sedikit update, aku dah tak pakai *Zettel Notes* untuk penulisan nota harian aku, sekarang aku pakai [Markor Notes](https://github.com/gsantner/markor).
 
-App ni dia macam file manager biasa, cuma dia scan directory pilihan yang ada file text dan markdown dia keluarkan. Jadi kita boleh edit file tersebut dalam app ni. Open source dan free. Menyokong banyak lagi file selain Markdown dan plain text file.
+App ni dia macam file manager, cuma dia scan directory pilihan yang ada file text dan markdown dia akan keluarkan. Jadi kita boleh edit file tersebut dalam app ni. Open source dan free. Menyokong banyak lagi file selain Markdown dan plain text file.
 
 Untuk cloud storage aku guna Dropbox, jadi Dropbox ni dia cuma sync direktori Markor ni tadi je. Text file berapa benar lah size nya kan, jadi tak memakan banyak storage pun.
 

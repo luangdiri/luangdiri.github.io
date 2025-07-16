@@ -159,10 +159,8 @@ Jika ada no telefon seseorang waima dapat panggilan atau SMS yang tidak dikenali
 
 ## Kejuruteraan sosial
 
-1. Berkawan dengan mutuals
+> *Individu A nak stalk individu B, tapi individu B merahsiakan keberadaan dia. Seorang jurutera sosial boleh kenal menjejak individu B dengan berkenalan dengan individu C, iaitu sahabat baik individu B.*
 
-    *Individu A nak stalk individu B, tapi individu B merahsiakan keberadaan dia. Seorang jurutera sosial boleh kenal menjejak individu B dengan berkenalan dengan individu C, iaitu sahabat baik individu B.*
+Itu lah social engineering: teknik eksploitasi menggunakan kelemahan manusia. Teknik hacking yang paling berkesan sampai ke abad ini kerana ia melibatkan emosi dan psikologi manusia yang rapuh jika nak dibandingkan dengan eksploitasi mesin.
 
-    Itu lah social engineering: teknik eksploitasi menggunakan kelemahan manusia. Teknik hacking yang paling berkesan sampai ke abad ini kerana ia melibatkan emosi dan psikologi manusia yang rapuh jika nak dibandingkan dengan eksploitasi mesin.
-
-    Ikut kreativiti masing-masing, banyak lagi metode social engineering yang wujud dalam dunia ni. Kalau nak tahu, kebanyakkan kebocoran data yang berlaku selama ini adalah dari kesilapan manusia sendiri.
+Ikut kreativiti masing-masing, banyak lagi metode social engineering yang wujud dalam dunia ni. Kalau nak tahu, kebanyakkan kebocoran data yang berlaku selama ini adalah dari kesilapan manusia sendiri.
