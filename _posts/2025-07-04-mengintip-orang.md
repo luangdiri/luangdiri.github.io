@@ -1,7 +1,7 @@
 ---
-title: "Mengintip Orang Di Internet"
+title: "Mengintip Orang"
 date: 2025-07-04 15:41:25
-updated: 2025-07-06 16:08:20
+updated: 2025-07-19 08:37:03
 tags:
 - tutorial
 ---
@@ -19,10 +19,11 @@ tags:
 - [Username](#username)
 - [Nombor telefon](#nombor-telefon)
 - [Kejuruteraan sosial](#kejuruteraan-sosial)
+- [Contoh](#contoh)
 
 ---
 
-Berikut adalah cara-cara untuk membuat penyelidikan tentang seseorang dalam internet. Dipanggil Open Source Intelligence (OSINT) menggunakan sumber data terbuka yang dah sedia ada di internet. Semua cara-cara ini adalah terhad kepada pengetahuan aku saja. Mungkin banyak lagi cara, tapi cuma nak dokumen kan apa yang aku tahu selama ini.
+Berikut adalah cara-cara untuk membuat penyelidikan tentang seseorang dalam internet. Dipanggil Open Source Intelligence (OSINT) menggunakan sumber data terbuka yang dah sedia ada di internet. Semua cara-cara ini adalah terhad kepada pengetahuan aku saja. Mungkin banyak lagi cara. Aku post ni adalah untuk pembelajaran dan dokumentasi untuk diri sendiri. 
 
 ## Pencarian imej
 
@@ -164,3 +165,18 @@ Jika ada no telefon seseorang waima dapat panggilan atau SMS yang tidak dikenali
 Itu lah social engineering: teknik eksploitasi menggunakan kelemahan manusia. Teknik hacking yang paling berkesan sampai ke abad ini kerana ia melibatkan emosi dan psikologi manusia yang rapuh jika nak dibandingkan dengan eksploitasi mesin.
 
 Ikut kreativiti masing-masing, banyak lagi metode social engineering yang wujud dalam dunia ni. Kalau nak tahu, kebanyakkan kebocoran data yang berlaku selama ini adalah dari kesilapan manusia sendiri.
+
+## Contoh
+
+Basically, rutin aku kalau dapat nombor yang tak kenal tiba-tiba call.
+
+1. Check melalui **TrueCaller**
+2. Check pakai `wa.me` shortlink untuk check profil WhatsApp nombor tersebut
+3. Check pakai `t.me` shortlink untuk check profil Telegram nombor tersebut
+4. Kalau dapat info seperti nama, gambar profil atau sebagainya:
+   - Google search
+   - Reverse image
+   - Facebook search
+   - Instagram search
+
+Banyak lagi senario yang kita hadapi selain orang yang tak kenal call kita. Mungkin jumpa tengah-tengah jalan, atau tiba-tiba dapat surat layang dari seseorang. Gunakan internet sebagai titik permulaaan anda menjadi detektif.
