@@ -1,10 +1,12 @@
 ---
-title: "Perdagangan Algoritma -- Bhg. 2"
+title: "Perdagangan Algoritma -- Bhg. 3"
 date: 2025-07-02 16:31:00
 lastmod: 2025-07-02 16:30:23
 tags:
 - tutorial
 ---
+
+TODO: untuk python run dekat server
 
 Bahagian 1 post ini telah membincangkan tentang pramuka perdagangan algoritma. Untuk bahagian 2, kita akan bincangkan macam mana nak mengaplikasikan teori strategi dalam bentuk code.
 
