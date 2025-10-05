@@ -101,32 +101,9 @@ Menghilangkan diri daripada internet boleh buat kita rasa bebas dan perkasa, tet
     Kandungan yang anda buat (blog, foto, video, ulasan) mungkin bernilai kepada orang lain atau diri anda pada masa hadapan.
     Anda melepaskan peluang untuk membentuk naratif anda sendiri — ketiadaan anda mungkin menyebabkan orang lain membuat andaian.
 
-5. Pengasingan daripada Budaya Moden
-   
-    Meme, berita, acara dan aliran digital sering beredar terutamanya dalam talian.
-    Tanpa akses, anda mungkin berasa "keluar dari gelung" atau terputus hubungan daripada apa yang berlaku di dunia.
-
-6. Sukar untuk Menyertai Semula Kemudian
-   
-    Sebaik sahaja anda hilang, membina semula jejak digital anda (terutamanya di bawah nama pengguna atau identiti yang sama) mungkin sukar jika orang lain mengambil alih pemegang atau nama tersebut.
-    Memulihkan kandungan atau akaun yang dipadam mungkin tidak selalu dapat dilakukan.
-
-7. Tiada Kawalan Ke Atas Apa yang Tertinggal
-   
-    Memadamkan kehadiran anda tidak menjamin semuanya hilang. Halaman cache, tangkapan skrin, kandungan yang disiarkan semula atau data yang dipegang oleh pihak ketiga mungkin kekal — dan anda mungkin tidak menyedarinya.
-
-8. Mengurangkan Keupayaan untuk Menyokong atau Mempengaruhi
-   
-    Tanpa suara digital, anda kehilangan akses kepada platform yang membolehkan anda bersuara, menyokong punca atau mempengaruhi orang lain.
-    Ketiadaan anda juga mungkin menyukarkan untuk mempertahankan diri anda jika orang lain menyiarkan maklumat salah tentang anda.
-
-9.  Kebergantungan kepada Orang Lain untuk Komunikasi
+5.  Kebergantungan kepada Orang Lain untuk Komunikasi
     
     Jika orang lain berkomunikasi melalui sembang kumpulan, acara atau media sosial, anda mungkin terlepas melainkan seseorang membuat usaha khas untuk menyertakan anda.
-
-10. Bukan Melarikan Diri Sebenar dari Pengawasan
-    
-    Menghilang daripada media sosial tidak bermakna anda berada di luar grid — data anda masih dikumpul melalui perbankan, perkhidmatan lokasi, pembelian dalam talian dan juga CCTV.
 
 
 ## Kehadapan

@@ -4,13 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Selamat datang ke
+Selamat datang ke <i>Luang Diri</i>.
 
-```plaintext
-    __                               ____  _      _ 
-   / /   __  ______ _____  ____ _   / __ \(_)____(_)
-  / /   / / / / __ `/ __ \/ __ `/  / / / / / ___/ / 
- / /___/ /_/ / /_/ / / / / /_/ /  / /_/ / / /  / /  
-/_____/\__,_/\__,_/_/ /_/\__, /  /_____/_/_/  /_/
-             2024-2025  /____/                      
-```
+Mencatat hal yang aku lihat, baca dan dengar. Itu pun kalau rajin. Semoga rajin, amin.
