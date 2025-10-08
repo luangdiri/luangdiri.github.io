@@ -2,20 +2,20 @@
 <div class="post_navi">
   {%- if page.previous.url -%}
   <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Pos Sebelum</div><div><span>{{ page.previous.title }}</span></div>
+    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Sebelum</div><div><span>{{ page.previous.title }}</span></div>
   </a>
   {%- else -%}
   <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}" title="Arkib Blog">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Arkib Blog</div><div><span>Arkib semua catatan blog sebelum ini</span></div>
+    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Arkib</div><div><span>Semua catatan blog sebelum ini</span></div>
   </a>
   {%- endif -%}
   {%- if page.next.url -%}
   <a class="post_navi-item nav_next" href="{{ page.next.url }}" title="{{ page.next.title }}">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Pos Seterusnya</div><div><span>{{ page.next.title }}</span></div>
+    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Seterusnya</div><div><span>{{ page.next.title }}</span></div>
   </a>
   {%- else -%}
   <a class="post_navi-item nav_next" href="{{ 'archive.html' | absolute_url }}" title="Arkib Blog">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Arkib Blog</div><div><span>Arkib semua catatan blog sebelum ini</span></div>
+    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Arkib</div><div><span>Semua catatan blog sebelum ini</span></div>
   </a>
   {%- endif -%}
 </div>

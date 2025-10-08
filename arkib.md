@@ -1,6 +1,6 @@
 ---
 layout: page
-title: arkib
+title: Arkib
 ---
 
 {% for tag in site.tags %}
