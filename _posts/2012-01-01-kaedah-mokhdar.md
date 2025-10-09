@@ -1,17 +1,14 @@
 ---
 title: 'Kaedah Mokhdar'
 date: 2012-01-01 04:13:00 +08:00
-draft: true
-url: 
 tags:
+- tutorial
 ---
 
 [![](http://3.bp.blogspot.com/_dFctgRacEGg/S_3p66bQgDI/AAAAAAAAAv8/F6H24BR-KSQ/s320/DSC03419.JPG)](http://3.bp.blogspot.com/_dFctgRacEGg/S_3p66bQgDI/AAAAAAAAAv8/F6H24BR-KSQ/s1600/DSC03419.JPG)
 
 **_This guy, is a jenius!_**
 
-  
-  
 Ada sesiapa tahu pasal method perkiraan ni tak? Aku belajar waktu form 2 dulu. Mak aku suruh pergi kelas ni waktu cuti sekolah. Damn I want holidays tapi kena pergi belajar pulak.  
   
 Anyway, ada jugak hikmah aku datang kelas ni. Syok bhai. Tak rugi sial. Cara kira nombor atau encryption yang macho! Aku rewrite benda ni sebab takut lupa /amnesia.  

@@ -1,45 +1,53 @@
 ---
-title: 'Juno — App Journal Ringkas'
-date: 2015-11-10 07:20:30 +08:00
+title: 'Juno App'
+date: 2025-10-09 00:18:20
+updated_at: 2025-10-09 16:30:16
 tags:
+- apps
 ---
 
+Jarang dengar lelaki buat jurnal aktiviti seharian. Tapi itu lah aku, sejak zaman sekolah lagi aku dah mula tulis jurnal setiap hari. Bermula dari buku fizikal yang aku tulis pakai tangan, sehingga lah berpindah ke format digital sekarang.
 
-Dalam dunia serba laju hari ini, kadangkala kita cuma perlukan sesuatu yang mudah, ringkas dan terus ke point. Tanpa butang-butang pelik, tanpa pendaftaran yang melecehkan, tanpa gangguan dari iklan. Inilah matlamat Juno, sebuah aplikasi journal peribadi yang direka untuk menjadi peneman setia kau mencatat cerita harian – secara jujur, tenang dan peribadi.
+*P/s: Aku guna perkataan "jurnal" sebab "diari" tu macam terlalu feminin. Tapi ya, secara teknikal nya memang aku ada tulis diari setiap hari.*
 
-✍️ Satu Hari, Satu Catatan
-Dengan Juno, kau cuma perlu buka app, tulis apa yang terjadi hari ini, dan siap. Tak perlu pilih mood, tak perlu letak tag atau kategori, tak perlu fikir banyak. Fokus Juno adalah pada menulis, bukan pada sistem.
+Sejarah nya, waktu sekolah dulu aku suka dengan konsep kapsul masa. Di mana aku set satu tarikh di masa hadapan lepas tu letak mesej yang aku nak baca waktu tu. Dari situ idea untuk buat jurnal pun terjebak lah. Maka aku pakai satu buku untuk tulis apa aku buat dalam hari tu. Sampai lah ke hari ini, tahun 2025 aku masih lagi menulis aktiviti harian aku. Cuma sekarang pakai keyboard lah.
 
-Kadang-kadang kita cuma nak lepaskan apa yang ada dalam kepala. Juno bagi ruang tu – bersih, minimal, tak ganggu.
+Sebelum aku bina apps aku sendiri untuk tulis diari ni, aku cuma pakai notepad je. Kalau dalam phone, aku pakai mana-mana note taking app yang ada dekat pasaran waktu itu. Cerita tentang migrasi nota aku ada di [sini](1).
 
-💾 Backup? Senang. Export je.
-Risau kalau catatan hilang? Jangan bimbang. Juno ada fungsi export ke .txt dan .xls – senang nak simpan di komputer, dalam pendrive atau pun Google Drive. Kau boleh baca balik bila-bila masa, atau simpan sebagai kenangan.
+Oleh sebab aku peduli tentang privasi, aku pun mulakan langkah untuk membina app sendiri. Takut pakai app orang ni dia boleh baca diari kita, itu yang aku buat sendiri. Maka terlahir lah, **Juno**.
 
-🔓 Open Source & Telus
-Dalam zaman di mana privasi makin terancam, Juno mengambil pendekatan telus sepenuhnya.
-Source code Juno adalah open source dan boleh diakses secara awam di GitHub (link akan dimasukkan). Ini bermakna sesiapa sahaja boleh audit kod Juno dan pastikan:
+## Juno Electron (desktop)
 
-Tiada data dihantar ke mana-mana server.
+Nama Juno ni berasal dari perkataan journal. Dari journal jadi lah Juno.
 
-Tiada tracking tersembunyi.
+Versi pertama app ni aku bina pakai Electron. Vuejs untuk framework UI. Backend nya pakai Express framework dan MySQL untuk database. Tak ada mobile app, cuma ada desktop je. Jadi kurang convenient la dekat situ. 
 
-Semua data kekal dalam peranti kau sendiri.
+<img width="60%" src="https://i.imgur.com/CHrVSCw.png"/>
 
-Kau boleh run sendiri, ubah suai ikut suka, atau bahkan bina versi kau sendiri kalau kau rasa perlu.
+**Source code:**
 
-💡 Kenapa Juno?
-Straightforward – tak payah belajar guna. Buka dan terus tulis.
+- Juno Electron (client): [https://github.com/aemxn/juno-ui](2)
+- Juno Electron (backend): [https://github.com/aemxn/juno-server](3)
 
-Minimal – tiada gangguan, tiada notifikasi, tiada drama.
+Antara feature yang ada dalam app ni adalah:
 
-Private – catatan disimpan secara peribadi, dalam peranti kau sendiri.
+1. Create, update dan delete diary
+2. Timeline view berdasarkan tahun dan bulan
+3. Search diary entry
+4. Export database (ke .sql)
+5. Pagination
 
-Backup Mudah – dengan satu klik, semua jurnal boleh disimpan dalam bentuk fail.
+Aku tahu Electron framework ni boleh cross platform, tapi aku tak bina dengan plan untuk buat mobile app nya. Maka setiap hari kena buka laptop untuk tulis diari. Kadang tu aku dah tulis dulu dalam phone, lepas tu baru pindah ke desktop. Leceh.
 
-Open Source – telus dan boleh diaudit sesiapa saja.
+Satu benda aku kurang gemar tentang app ni adalah ia rasa berat. Kali pertama kot bina app note taking ni. Semua benda pun aku nak sumbat, maka dia jadi bloated. Actually takde la bloated sangat, cuma dalam otak aku, aku expect app ni simple je: asalkan boleh CRUD dan export.
 
-Juno bukan untuk semua orang. Tapi kalau kau jenis yang suka simplicity, tak suka app yang “overdesign”, dan cuma nak ruang untuk tulis – mungkin Juno boleh jadi tempat kau bercerita.
+So projek ni pun terbengkalai akibat kurang memuaskan.
 
-Muat turun. Buka. Tulis. Siap.
-Selamat menulis dengan Juno.
+## Juno Android (mobile)
 
+
+
+[1]: https://luangdiri.github.io/2024/02/03/migrasi-nota.html
+[2]: https://github.com/aemxn/juno-ui
+[3]: https://github.com/aemxn/juno-server
+[4]: https://i.imgur.com/CHrVSCw.png
