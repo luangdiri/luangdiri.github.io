@@ -1,7 +1,7 @@
 ---
 title: 'Juno App'
 date: 2025-10-09 00:18:20
-updated_at: 2025-10-09 16:30:16
+updated_at: 2025-10-09 23:16:44
 tags:
 - apps
 ---
@@ -18,36 +18,70 @@ Oleh sebab aku peduli tentang privasi, aku pun mulakan langkah untuk membina app
 
 ## Juno Electron (desktop)
 
-Nama Juno ni berasal dari perkataan journal. Dari journal jadi lah Juno.
+Nama **Juno** ni berasal dari perkataan journal. Dari journal jadi lah Juno.
 
-Versi pertama app ni aku bina pakai Electron. Vuejs untuk framework UI. Backend nya pakai Express framework dan MySQL untuk database. Tak ada mobile app, cuma ada desktop je. Jadi kurang convenient la dekat situ. 
+Versi pertama app ni aku bina pakai Electron. Vuejs untuk framework UI. Backend nya pakai Express framework dan MySQL untuk database. Tak ada mobile app, cuma ada desktop saja. Jadi kurang convenient la dekat situ. 
 
 <img width="60%" src="https://i.imgur.com/CHrVSCw.png"/>
 
-**Source code:**
+Antara feature yang ada dalam app ni:
+
+1. Create, update dan delete diary
+2. Timeline view berdasarkan tahun dan bulan
+3. Search diary
+4. Export ke .sql (cringe)
+5. Pagination
+
+Tak power pun, tapi cukup untuk aku. Aku tahu Electron framework ni boleh cross-platform, tapi aku tak design codebase nya untuk mobile app. Maka setiap hari kena buka laptop untuk tulis diari. Kadang tu aku dah tulis dulu dalam phone, lepas tu baru pindah ke desktop. Leceh.
+
+Satu benda aku kurang gemar tentang app ni adalah ia rasa berat. Kali pertama kot bina app note taking. Semua benda pun aku nak sumbat, maka dia jadi bloated. Actually takde la bloated sangat, cuma dalam otak aku, aku expect app ni simple je: asalkan boleh CRUD dan export.
+
+Maka nya, projek ni pun terbengkalai akibat kurang memuaskan developer nya.
+
+**Source code**
 
 - Juno Electron (client): [https://github.com/aemxn/juno-ui](2)
 - Juno Electron (backend): [https://github.com/aemxn/juno-server](3)
 
-Antara feature yang ada dalam app ni adalah:
-
-1. Create, update dan delete diary
-2. Timeline view berdasarkan tahun dan bulan
-3. Search diary entry
-4. Export database (ke .sql)
-5. Pagination
-
-Aku tahu Electron framework ni boleh cross platform, tapi aku tak bina dengan plan untuk buat mobile app nya. Maka setiap hari kena buka laptop untuk tulis diari. Kadang tu aku dah tulis dulu dalam phone, lepas tu baru pindah ke desktop. Leceh.
-
-Satu benda aku kurang gemar tentang app ni adalah ia rasa berat. Kali pertama kot bina app note taking ni. Semua benda pun aku nak sumbat, maka dia jadi bloated. Actually takde la bloated sangat, cuma dalam otak aku, aku expect app ni simple je: asalkan boleh CRUD dan export.
-
-So projek ni pun terbengkalai akibat kurang memuaskan.
+Versi ni kena build sendiri .exe nya (guide untuk build ada dalam README.md). Aku tak ingat aku ada .exe file nya ke tidak. Tapi kalau ada pun kena run MySQL juga untuk dia berfungsi. Jadi takyah lah, buang masa je.
 
 ## Juno Android (mobile)
 
+Juno versi kedua aku bina dalam bentuk mobile app. Tech stack nya cuma Flutter dan Dart saja. Tiada network access, tiada external database, tiada panggil-panggil API. Kali ni aku bikin simple dan basic, memang pure CRUD app tapi direka untuk berfokuskan *menulis dan membaca diari*.
 
+**Features**
+
+Feature yang ada cuma lah yang basic-basic:
+
+1. Create, update, view dan update diary
+2. Search by date dan search by text
+3. Favorite diary -- untuk nak senang cari hari yang penting untuk aku
+4. Yang paling penting, boleh export ke Markdown dan boleh pilih range tarikh untuk export -- Tiada lagi dah export ke cringe SQL
+
+Juno versi ini hanya untuk peranti Android saja. Aku belum cuba compile ke iOS sebab aku tak pakai Apple :/
+
+Bawah aku sajikan screenshot Juno Android:
+
+<img width="30%" src="https://i.imgur.com/cZpom6A.png"/>
+<img width="30%" src="https://i.imgur.com/dZTiY9l.png"/>
+
+App ni aku vibe code je. Guna ChatGPT, Grok dan Gemini dalam Android Studio tu. Mudah kerja. Sebenarnya banyak lagi feature aku nak taruk, macam lock pakai *pin code* dan *encryption*. Tapi dia jadi rumit dekat bahagian nak export ke Markdown. Bila ada encryption, kerja meng-export ke Markdown tu macam anti-thesis pula (sebab plaintext). Aku nak bikin sesimple yang mungkin. Kalau boleh taknak ada internet access pun. Makna nya app ni boleh juga dipakai dalam phone lama.
+
+**Synchronization**
+
+Untuk synchronization, rujuk post [Migrasi Nota Bhg II](5) ni. Aku pakai **Dropsync**, iaitu app untuk scan folder dan sync ke Dropbox secara berkala.
+
+Flow untuk synchronization:
+
+1. Setiap akhir bulan aku akan export ke Markdown file
+2. File tersebut disimpan dalam satu folder (boleh set)
+3. Folder tersebut di sync ke Dropbox guna Dropsync
+
+**Source code**
+
+Aku belum upload lagi source code nya ke Github. Nanti lah aku update sini siap APK nya sekali.
 
 [1]: https://luangdiri.github.io/2024/02/03/migrasi-nota.html
 [2]: https://github.com/aemxn/juno-ui
 [3]: https://github.com/aemxn/juno-server
-[4]: https://i.imgur.com/CHrVSCw.png
+[5]: https://luangdiri.github.io/2024/12/24/migrasi-nota-bhg-ii.html
