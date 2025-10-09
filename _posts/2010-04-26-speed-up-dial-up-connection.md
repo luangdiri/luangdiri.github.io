@@ -1,8 +1,6 @@
 ---
 title: 'Speed Up Dial-Up Connection'
 date: 2010-04-26 23:52:00 +08:00
-draft: false
-url:
 tags: 
 - tutorial
 ---

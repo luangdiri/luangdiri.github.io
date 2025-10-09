@@ -8,7 +8,7 @@ tags:
 
 _First posted on 20/04/2014_
 
-Getting Started with Bitcoin. Post sebelum ini pasal [Cryptocurrency - Bitcoin](https://blog.aimanbaharum.com/2014/02/cryptocurrency-bitcoin.html)
+Getting Started with Bitcoin. Post sebelum ini pasal [Cryptocurrency - Bitcoin](https://luangdiri.github.io/2014/02/08/cryptocurrency-bitcoin.html)
 
 **Kandungan:**
 

@@ -6,6 +6,8 @@ tags:
 - blockchain
 ---
 
+stub
+
 ### Everything
 https://www.reddit.com/r/Bitcoin/comments/4t9pq6/what_are_some_good_books_for_cryptography_and/
 

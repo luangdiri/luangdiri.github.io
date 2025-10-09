@@ -1,8 +1,9 @@
 ---
-title: "Github Pages - Implementing Pagination"
+title: "Github Pages - Pagination"
 date: 2024-02-09 16:58:56 +08:00
 tags:
 - tutorial
+- programming
 ---
 
 I've followed Jekyll's [documentation](https://jekyllrb.com/docs/pagination/) on how to implement pagination, but it's not enough for me. Eventually got it figured out after few hours of try and error, so here it is a straightforward guide on how to paginate your blog's homepage using Jekyll's Paginate library.

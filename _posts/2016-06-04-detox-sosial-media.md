@@ -1,9 +1,7 @@
 ---
 title: 'Detox Sosial Media'
 date: 2016-06-04 05:04:00 +08:00
-lastmod: 2022-12-07 23:54:50
-draft: false
-url:
+updated_at: 2022-12-07 23:54:50
 tags: 
 - meta
 ---

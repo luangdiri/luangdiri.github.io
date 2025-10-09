@@ -1,9 +1,7 @@
 ---
 title: 'Ketagihan Sosial Media'
 date: 2024-01-29 22:22:23
-lastmod: 2024-01-29 22:22:23
-draft: false
-url:
+updated_at: 2024-01-29 22:22:23
 tags: 
 - meta
 ---

@@ -6,6 +6,8 @@ tags:
 - programming
 ---
 
+stub
+
 ## Android boilerplates
 
 ### recyclerview 

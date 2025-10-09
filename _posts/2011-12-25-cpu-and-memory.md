@@ -1,9 +1,8 @@
 ---
 title: 'CPU & Memory'
 date: 2011-12-25 20:56:00 +08:00
-draft: true
-url: 
 tags:
+- programming
 ---
 
 Sedang aku mengemas HDD aku, terjumpa benda ni. CPU dan memory, waktu aku belajar subjek computer organization dulu. Aku ada buat mindmap ni. Tak tahu lah aku faham lagi ke tidak sekarang. Tapi benda ni dulu sangat membantu aku. Oh, bila lah aku nak buat OC baru ni. Aku dah makin malas. Fuck it.  

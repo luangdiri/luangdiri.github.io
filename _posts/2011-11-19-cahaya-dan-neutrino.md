@@ -1,7 +1,6 @@
 ---
 title: 'Cahaya & Neutrino'
 date: 2011-11-19 03:39:00 +08:00
-url: 
 tags: 
 - science
 ---
