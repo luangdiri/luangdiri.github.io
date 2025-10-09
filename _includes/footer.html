@@ -17,6 +17,8 @@
             </li>
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- if site.footer_year -%}
+            <li>{{ footer_year | escape }}</li>
             {%- endif -%}
         </ul>
       </div>
