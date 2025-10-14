@@ -114,7 +114,7 @@ Untuk masalah ni, aku selesaikan dengan tulis Javascript untuk parse JSON terseb
 
 Ini adalah struktur JSON diari tu:
 
-<div class="shj-lang-js">
+```js
 {
   "entries": [
     {
@@ -143,7 +143,7 @@ Ini adalah struktur JSON diari tu:
     }
   ]
 }
-</div>
+```
 
 Macam biasa, ChatGPT membantu aku menyiapkan kerja dengan pantas. Javascript bawah ni kerja dia adalah,
 
@@ -156,7 +156,7 @@ Macam biasa, ChatGPT membantu aku menyiapkan kerja dengan pantas. Javascript baw
 7. Profit!!1
 
 
-<div class="shj-lang-js">
+```js
 const fs = require('fs');
 
 // Read JSON data from external file
@@ -198,7 +198,7 @@ jsonData.entries.forEach(entry => {
 
     console.log(`Markdown file created: ${filename}`);
 });
-</div>
+```
 
 Untuk rekod, cara nak run benda ni:
 
