@@ -156,7 +156,7 @@ Macam biasa, ChatGPT membantu aku menyiapkan kerja dengan pantas. Javascript baw
 7. Profit!!1
 
 
-<div class="shj-lang-js">
+```javascript
 const fs = require('fs');
 
 // Read JSON data from external file
@@ -198,7 +198,7 @@ jsonData.entries.forEach(entry => {
 
     console.log(`Markdown file created: ${filename}`);
 });
-</div>
+```
 
 Untuk rekod, cara nak run benda ni:
 

@@ -10,10 +10,11 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  <!-- Speed Highlight -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speed-highlight/core/dist/themes/github-dark.css">
-  <script src="https://cdn.jsdelivr.net/gh/speed-highlight/core/dist/index.min.js"></script>
-  <!-- End Speed Highlight -->
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/github-dark.min.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <!-- end highlight.js -->
 
   <!-- analytics using goatcounter -->
   <script data-goatcounter="https://luangdiri.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
