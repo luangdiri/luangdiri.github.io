@@ -36,7 +36,7 @@ Ya, aku pakai ChatGPT. Ini juga pertama kali aku pakai ChatGPT ni untuk tolong a
 
 Bawah ni adalah batch script untuk loop semua file HTML yang ada dalam folder, dan convert file tersebut ke dalam format Markdown. Untuk file conversion, kita pakai library [Pandoc](https://pandoc.org/).
 
-```powershell
+```ps
 @echo off
 
 rem Loop through each HTML file and convert to Markdown
@@ -86,7 +86,7 @@ Untuk proses `rename` and `copy` aku jalankan berasingan dengan Pandoc, untuk se
 
 Juga pakai ChatGPT, berikut adalah batch script penuh untuk `rename` dan `copy`:
 
-```powershell
+```ps
 @echo off
 setlocal enabledelayedexpansion
 
@@ -114,7 +114,7 @@ Untuk masalah ni, aku selesaikan dengan tulis Javascript untuk parse JSON terseb
 
 Ini adalah struktur JSON diari tu:
 
-```js
+```javascript
 {
   "entries": [
     {
