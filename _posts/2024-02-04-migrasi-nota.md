@@ -156,7 +156,7 @@ Macam biasa, ChatGPT membantu aku menyiapkan kerja dengan pantas. Javascript baw
 7. Profit!!1
 
 
-```js
+```javascript
 const fs = require('fs');
 
 // Read JSON data from external file
