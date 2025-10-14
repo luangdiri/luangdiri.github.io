@@ -114,7 +114,7 @@ Untuk masalah ni, aku selesaikan dengan tulis Javascript untuk parse JSON terseb
 
 Ini adalah struktur JSON diari tu:
 
-```json
+```shj-lang-js
 {
   "entries": [
     {
@@ -156,7 +156,7 @@ Macam biasa, ChatGPT membantu aku menyiapkan kerja dengan pantas. Javascript baw
 7. Profit!!1
 
 
-```js
+```shj-lang-js
 const fs = require('fs');
 
 // Read JSON data from external file
