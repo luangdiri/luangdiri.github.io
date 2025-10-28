@@ -23,7 +23,7 @@ Happy flashing! (pun intended)
 ### 1. Flashing with Odin3 + Download Mode (Clean install)
 
 1. Download [Odin3](http://www.android.gs/download-odin-1-85/). I'm using v1.85
-2. Download custom ROM (.tar.md5) in this case I'll be using [I9100GXXLSR_I9100GXEFLSR_XEF.zip](http://forum.xda-developers.com/showthread.php?t=1679636) | 565.9 MB (France JellyBean Stock ROM)
+2. Download custom ROM (.tar.md5) in this case I'll be using [I9100GXXLSR_I9100GXEFLSR_XEF.zip](http://forum.xda-developers.com/showthread.php?t=1679636), 565.9 MB (France JellyBean Stock ROM)
 3. Open Odin3. Do NOT touch any of the Option.
 4. In Files [Download] section, press PDA button and choose .tar.md5 ROM file that you have downloaded.
 5. Now reboot your phone to Download Mode (volume DOWN key + home button + power buttons), Press volume up to proceed.
