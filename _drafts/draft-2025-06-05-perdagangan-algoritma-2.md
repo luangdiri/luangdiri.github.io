@@ -1,5 +1,5 @@
 ---
-title: "Perdagangan Algoritma -- Bhg. 2"
+title: "Perdagangan Algoritma - Bhg II"
 date: 2025-06-05 16:31:00
 lastmod: 2025-07-23 19:53:38
 tags:
