@@ -1,5 +1,5 @@
 ---
-title: 'Memahami Wacana OP_RETURN'
+title: 'Memahami Wacana OP RETURN'
 date: 2025-11-18 22:26:06
 updated_at: 2025-11-18 22:25:54
 tags:
@@ -85,7 +85,7 @@ Aku peduli pasal ni sebab sedekad sudah aku mengikut perkembangan Bitcoin. Aku l
 
 Kalau aku, aku akan pilih Knots. Sebab aku lebih suka Bitcoin dengan cara yang lama, kekal tradisi sebagai sistem tunai p2p. Penambahbaikan yang perlu dibuat adalah dari segi privasi, sekuriti dan pengurusan fee. Kalau nak programmability atau smart contract, malah NFT, biarlah blockchain lain yang buat. Kerana lebih kompleks sebuah sistem itu, lebih banyak vektor serangan boleh di buat. Aku nak tengok Bitcoin berjaya tembus pasaran retail, di mana kita boleh belanja Bitcoin untuk beli barangan di kedai. Dah sedekah lama nya teknologi ini, tapi masih tak nampak poster "Bitcoin accepted here".
 
-1: https://nbx.com/blog-en/bitcoin-bips-and-upgrades-what-you-need-to-know
+1: https://nbx.com/blog-en/bitcoin-bips-and-upgrades-what-you-need-to-know  
 2: https://www.bitstamp.net/en-gb/learn/crypto-101/exploring-bitcoin-forks/
 
 [1]: https://luangdiri.github.io/2014/02/08/cryptocurrency-bitcoin.html
