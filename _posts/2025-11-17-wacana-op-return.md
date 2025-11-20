@@ -1,7 +1,7 @@
 ---
-title: 'Memahami Wacana OP_RETURN'
+title: 'Wacana OP_RETURN'
 date: 2025-11-17 22:26:06
-updated_at: 2025-11-17 22:25:54
+updated_at: 2025-11-20 22:36:07
 tags:
 - blockchain
 ---
