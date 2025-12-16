@@ -7,16 +7,16 @@ title: Arkib
 
 {%- assign allposts = site.posts | sort_natural: "date" | reverse %}
 
-{%- assign postsByYear = allposts | group_by_exp: "post", "post.date | date: '%Y'" | reverse %}
+{%- assign postsByYear = allposts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {%- for year in postsByYear %}
 <h2>{{ year.name }}</h2>
 
-{%- assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%m %B'" | sort: "name" | reverse %}
+{%- assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%m %B'" | sort: "name" %}
 
 {%- for month in postsByMonth %}
 {%- assign monthName = month.name | split: " " | last %}
-<h3>{{ monthName }}</h3>
+<h4>{{ monthName }}</h4>
 <ul>
   {%- for post in month.items %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
