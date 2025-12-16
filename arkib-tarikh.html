@@ -3,17 +3,25 @@ layout: page
 title: Arkib
 ---
 
-<a href="/arkib.html">Mengikut tag</a>
+<p><a href="/arkib.html">Susun mengikut tag</a></p>
 
 {%- assign allposts = site.posts | sort_natural: "date" | reverse %}
 
-{%- assign postsByYearMonth = allposts | group_by_exp:"allposts", "allposts.date | date: '%Y %B'"  %}
+{%- assign postsByYear = allposts | group_by_exp: "post", "post.date | date: '%Y'" | reverse %}
 
-{%- for yearMonth in postsByYearMonth %}
-<h3>{{ yearMonth.name }}</h3>
+{%- for year in postsByYear %}
+<h2>{{ year.name }}</h2>
+
+{%- assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%m %B'" | sort: "name" | reverse %}
+
+{%- for month in postsByMonth %}
+{%- assign monthName = month.name | split: " " | last %}
+<h3>{{ monthName }}</h3>
 <ul>
-  {%- for post in yearMonth.items %}
+  {%- for post in month.items %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {%- endfor %}
 </ul>
+{%- endfor %}
+
 {%- endfor %}
