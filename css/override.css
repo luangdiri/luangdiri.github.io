@@ -2,9 +2,17 @@
   font-style: italic;
 }
 
+.site-header {
+  border-top-color: #5bbed3;
+  border-bottom-color: #275d59;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  border: none;
+  height: 1px;
+  background-color: #5959598c
 }
 
 /* Post navigation links */
