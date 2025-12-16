@@ -1,35 +1,37 @@
 ---
 title: 'Ketagihan Sosial Media'
 date: 2024-01-29 22:22:23
-updated_at: 2024-01-29 22:22:23
+updated_at: 2025-12-17 01:05:42
 tags: 
 - meta
 ---
 
-Kecanduan ini tergantung juga pada individu itu sendiri cara dia guna sosial media. Ada orang takde selera langsung nak buka hari-hari. Ada orang, buka hari-hari. Dan aku rasa kes kedua ni lah yang majoriti orang terlibat sekali. Jujur cakap perkara ni tak elok untuk kesihatan. Bagi aku, sosmed ni macam dadah. Ia sesuatu yang melalaikan dan boleh bikin ketagihan bila diguna secara berlebihan. Benda bikin ketagih ni selalunya tak elok. *Selalunya*. Ada je benda yang sepatutnya kita ketagih, seperti bersedekah, solat 5 waktu, baca quran, ketagih jumpa ibu bapa, bersenam. Cuma ketagihan yang baik dan positif ni susah nak buat. Tapi hal sosmed ni mudah nak buat maka ia jatuh dalam kategori melalaikan.
+<img width="40%" alt="doomscroll" src="https://i.imgur.com/1eNiz1W.png">
+
+Kecanduan ini tergantung juga pada individu itu sendiri cara dia guna sosial media. Ada orang langsung tiada selera nak buka hari-hari. Ada orang, buka hari-hari. Dan aku rasa kes kedua ni lah yang majoriti orang terlibat sekali. Jujur cakap perkara ni tak elok untuk kesihatan. Bagi aku, sosmed ni macam dadah. Ia sesuatu yang melalaikan dan boleh bikin ketagihan bila diguna secara berlebihan. Benda bikin ketagih ni selalunya tak elok. *Selalunya*. Ada je benda yang sepatutnya kita ketagih, seperti solat 5 waktu, baca quran, ketagih jumpa ibu bapa, bersenam, minum air kosong. Cuma ketagihan yang baik dan positif ni sukar untuk dilakukan. Tapi hal sosmed ni mudah, maka ia jatuh dalam kategori melalaikan.
 
 ### Perhatian yang singkat
 
-Dengan terciptanya fitur Shorts (Reels dan Story kata nama lain) di kebanyakkan aplikasi sosmed sekarang, aku rasa tahap kesabaran generasi baru kita bakal pupus. Aku jangkakan tak lama lagi, di masa hadapan, kemahiran bersabar perlu ada dalam resume sebelum nak minta kerja. Kenapa? sebab fitur Shorts ni video berdurasi pendek. Ia seronok dilihat sebab tak sampai 30 saat pun kita boleh belajar macam-macam. Sedangkan nak belajar dan berjaya dalam sesuatu bidang ambil masa yang lama. Kalau dari awal dah diajar untuk layan Shorts, dah besar nanti jadi tak sabar nak berjaya. Bila gagal sekali dah merungut, langsung bendera putih 🏳.
+Dengan terciptanya fitur Shorts (Reels dan Story kata nama lain) di kebanyakkan aplikasi sosmed sekarang, aku rasa tahap kesabaran generasi baru kita bakal pupus. Aku jangkakan tak lama lagi, di masa hadapan, kemahiran bersabar perlu ada dalam resume untuk nak cari kerja. Kesabaran juga akan jadi sesuatu yang bernilai, mungkin boleh dijadikan matawang tak lama lagi.
+
+Shorts ni video berdurasi pendek. Ia seronok dilihat sebab tak sampai 30 saat pun kita boleh belajar macam-macam. Sedangkan nak belajar dan berjaya dalam sesuatu bidang ambil masa yang lama. Kalau dari awal dah diajar untuk layan Shorts, dah besar nanti jadi tak sabar nak berjaya. Bila gagal sekali dah merungut, langsung putus asa.
 
 ### Komuniti toksik
 
-Aku sebagai peminat bola sepak, lagi-lagi bola sepak tempatan, bila tengok page berkenaan sukan ni dekat Instagram, ya rabbi komentar nya. Faham sendiri lah ya macam mana busuk nya komen yang ada dalam tu. Dah macam tempat loji pembuangan taik. Walaupun kita sendiri tahu yang kita tak perlu pun terlibat dalam perbualan toksik dalam tu. Tapi bila dah terbaca tu, desakan untuk diri ni untuk respon komen tersebut sangatlah kuat sampai kita sendiri koyak. Benda remeh je pun, tak boleh bawa pun ke akhirat.
+Aku sebagai peminat bola sepak, lagi-lagi bola sepak tempatan, bila tengok page berkenaan sukan ni dekat Instagram, ya rabbi komentar nya. Faham sendiri lah ya macam mana busuk nya komen yang ada dalam tu. Walaupun kita sendiri tahu yang kita tak perlu pun terlibat dalam perbualan toksik dalam tu. Tapi bila dah terbaca tu, desakan untuk merespon komen-komen itu sangatlah kuat sampai kita sendiri koyak. Benda remeh je pun, tak boleh bawa pun ke akhirat.
 
-Selain ketoksikan komen, toksik dalam konteks pertanyaan pun ada. Pernah tak lihat orang tanya soalan, lepas tu dijawab dengan sindiran? Ya begitulah komuniti internet zaman sekarang. Beza sungguh dengan zaman dulu, tanya je soalan bodoh sekalipun, dijawab dengan beradab, sopan santun dan harmoni. Netizen sekarang semua benda nak bengis (tak semua). Itu yang terbawa-bawa sampai ke dunia sebenar kebengisannya.
+Selain ketoksikan komen, toksik dalam konteks pertanyaan pun ada. Pernah tak lihat orang tanya soalan, lepas tu dijawab dengan sindiran? Ya begitulah komuniti internet zaman sekarang. Beza sungguh dengan zaman dulu. Tanya je soalan bodoh sekalipun, dijawab dengan beradab, sopan santun dan harmoni. Netizen sekarang semua benda nak bengis (tak semua). Itu yang terbawa-bawa sampai ke dunia sebenar kebengisannya.
 
-```
-Tiada soalan bodoh,
-hanya jawapan yang bodoh.
-```
+> *Tiada soalan bodoh,*  
+> *hanya jawapan yang bodoh.*
 
-Isu-isu atas ni sebenarnya senang je nak kawal: jangan libatkan diri langsung je. Aku je lah kot yang mengada nak terlibat sama, itu yang sama jadi bengis dalam post ni lmao.
+Isu-isu atas ni sebenarnya senang je nak kawal: jangan libatkan diri langsung. Aku je lah kot yang mengada nak terlibat sama, itu yang sama jadi bengis dalam post ni lmao.
 
 ### Strategi kawal penggunaan sosmed
 
-Sebelum ni aku ada buat [eksperimen][1] ni dan aku berjaya hapuskan terus akaun Instagram aku. Hidup tenang aman damai waktu tu. Setelah beberapa tahun, aku mula berkecimpung semula dalam sosmed ni, terutamanya Instagram. 
+Sebelum ni aku ada buat [eksperimen][1] ni dan aku berjaya hapuskan terus akaun Instagram aku. Hidup tenang aman damai waktu tu. Setelah beberapa tahun berlalu, aku mula berkecimpung semula dalam sosmed ni, terutamanya Instagram.
 
-Masa ni naratif personal privasi masih kuat dalam diri aku. Itu yang aku duk sembang pasal data peribadi bagai. Dah lari dari objektif asal lol. Waktu ni juga aku pertama kali belajar tentang fitur Shorts, Reels dan Story. Waktu ni aku polos lagi tentang fitur-fitur baru Instagram. Kalau dulu tak ada pun Story dan Reels ni, cuma post gambar aje. Istilah "doom scroll" pun belum wujud lagi.
+Masa ni naratif personal privasi masih kuat dalam diri aku. Itu yang aku duk sembang pasal data peribadi bagai. Dah lari dari objektif asal lol. Waktu ni juga aku pertama kali belajar tentang fitur Shorts, Reels dan Story. Waktu ni aku polos lagi tentang fitur-fitur baru Instagram. Kalau dulu tak ada pun Story dan Reels ni, cuma post gambar aje. Istilah "*doom scroll*" pun belum wujud lagi.
 
 Jadi, untuk mengatasi masalah ketagihan penggunaan sosal media, sini aku tunjuk beberapa teknik nak atasinya:
 
@@ -43,14 +45,18 @@ Jadi, untuk mengatasi masalah ketagihan penggunaan sosal media, sini aku tunjuk 
 
 3. **Lepas pakai, logout**
 
-    Lepas habis pakai, logout. Lepas tu uninstall. Kalau deactivate ni macam takde makna pun. Ada kalanya kita nak login balik atas sebab tertentu, bosan ke, nak check DM ke. Tapi kalau deactivate memang DM tak masuk, orang pun takleh view profile kita. Aku prefer logout dan uninstall je untuk short term detox. Ada orang memang taknak di stalk waktu menyendiri, jadi deactivation lebih berfungsi untuk itu. 
+    Lepas habis pakai, logout. Lepas tu uninstall. Kalau deactivate ni macam langsung tiada makna. Ada kalanya kita nak login balik atas sebab tertentu, bosan ke, nak check DM ke. Tapi kalau deactivate memang DM tak masuk, orang pun takleh view profile kita. Aku prefer logout dan uninstall je untuk short term detox. Ada orang memang taknak di stalk waktu menyendiri, jadi deactivation lebih berfungsi untuk itu. 
 
-4. **Guna web dari mobile app**
+4. **Pakai versi web**
 
-    Aku sarankan pakai web app untuk Instagram dan Twitter. Sebab functionality dalam web agak terhad. Kau takleh post story, takleh nak laju laju komen, semua benda jadi slow. Bila benda jadi slow, kau pun akan rasa terhad nak doom scroll. Bila aktiviti dalam tu terhad, maka kau pun jadi malas, bila malas, terus tutup. Ini teknik paling efektif untuk aku dan sampai sekarang aku pakai.
+    Aku sarankan pakai web app untuk Instagram dan Twitter, atau mana-mana sosial media. Sebab functionality dalam web agak terhad. Kau takleh post story, takleh nak laju laju komen, semua benda jadi slow. Bila benda jadi slow, kau pun akan rasa terhad nak doom scroll. Bila aktiviti dalam tu terhad, maka kau pun jadi malas, bila malas, terus tutup. Ini teknik paling efektif untuk aku dan sampai sekarang aku pakai.
 
-5. **Perlahan ajar diri**
+5. **Pakai versi CLI**
 
-    Nak melakukan perubahan semestinya sesuatu mengambil masa. Lebih lebih lagi nak buang sesuatu yang dah lama terpaut dalam diri. Kalau sedar diri tu dah terlalu ketagih dan rasa komited untuk kurangkan nya, lakukan lah secara perlahan. 1 hari, 5 hari, seminggu, sebulan, setahun, selamanya. Teknik ni bukan saja untuk hindari ketagihan sosial media malah untuk aspek lain dalam hidup juga.
+    Cara ni untuk yang tech literate je. CLI atau command-line interface adalah cara untuk interact dengan komputer dengan hanya menggunakan teks. Tiada imej, tiada video, tiada bunyi. Hanya teks. Bahasa mudah nya, versi *telanjang bulat* untuk aplikasi internet. Masih kah anda ingat tentang mIRC? Ya, CLI tu macam IRC lah, cuma lebih minimal. Dengan cara ini, kita terhad untuk melakukan aktiviti yang text-based sahaja seperti borak-borak dalam DM. Kadang-kadang kita buka IG untuk balas mesej je, jadi penggunaan CLI ni amat sesuai. Contoh: [Instagram CLI](https://github.com/supreme-gg-gg/instagram-cli), [Tinder CLI](https://github.com/meister245/tinder-cli), [Telegram CLI](https://github.com/vysheng/tg).
+
+### Perlahan mengajar diri
+
+Melakukan perubahan semestinya sesuatu yang memakan masa. Lebih-lebih lagi nak buang sesuatu yang dah lama terpaut dalam diri ini. Kalau sedar diri tu dah terlalu ketagih dan rasa komited untuk kurangkan nya, lakukan lah secara perlahan. 1 hari, 5 hari, seminggu, sebulan, setahun, selamanya. Teknik ni bukan saja untuk hindari ketagihan sosial media malah untuk aspek lain dalam hidup juga.
 
 [1]: https://luangdiri.github.io/2016/06/03/detox-sosial-media.html
