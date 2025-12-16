@@ -25,6 +25,10 @@ rss: rss
 
 show_excerpts: false
 
+header_pages:
+  - about.md
+  - arkib.html
+
 kramdown:
   syntax_highlighter_opts:
     disable: true
