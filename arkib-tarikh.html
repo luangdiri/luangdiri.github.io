@@ -12,7 +12,7 @@ title: Arkib
 {%- for year in postsByYear %}
 <h2>{{ year.name }}</h2>
 
-{%- assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%m %B'" | sort: "name" %}
+{%- assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%m %B'" | sort: "name" | reverse %}
 
 {%- for month in postsByMonth %}
 {%- assign monthName = month.name | split: " " | last %}
