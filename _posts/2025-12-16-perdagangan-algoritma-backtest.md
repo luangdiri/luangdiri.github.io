@@ -1,7 +1,7 @@
 ---
 title: 'Perdagangan Algoritma - Bhg II: Back Test & Alert'
-date: 2025-12-16 22:41:50
-updated_at: 2025-12-16 22:41:54
+date: 2025-12-15 22:41:50
+updated_at: 2025-12-15 22:41:54
 tags:
 - tutorial
 - trading
