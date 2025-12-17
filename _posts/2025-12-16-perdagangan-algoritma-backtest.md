@@ -9,6 +9,8 @@ tags:
 
 <img alt="backtesting.py" src="https://i.imgur.com/gvFn4Wn.png">
 
+Pergi ke [Bahagian I][2]
+
 Dari dulu lagi bercita-cita nak kasi trading strategy aku di automasi kan. Kali ni dengan bantuan LLM, akhirnya aku berjaya bina stack aku sendiri. Stack yang aku bina ni takde lah advanced sangat kalau nak dibandingkan dengan stack teknologi yang quant dari firm besar pakai, tapi bagi aku dah cukup untuk permulaan seorang trader yang baru nak berkecimpung dalam dunia algo trade.
 
 Kalau dulu aku buat dari scratch, memang berterabur code aku. Tak ada standard, kalau nak ubah parameter kena ubah semua file. Sekarang bila dah tahu konsep sebenar, baru boleh atur dengan jelas. 
@@ -24,14 +26,23 @@ Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kit
   - [Tech stack](#tech-stack)
 - [Pembinaan: Tapak](#pembinaan-tapak)
   - [Struktur projek](#struktur-projek)
-  - [Strategi: Simple MA cross](#strategi-simple-ma-cross)
+  - [Risk management config](#risk-management-config)
+  - [Indicator: Simple MA](#indicator-simple-ma)
+  - [Strategy: Simple MA cross](#strategy-simple-ma-cross)
   - [Data from Binance](#data-from-binance)
 - [Pembinaan: Backtesting](#pembinaan-backtesting)
   - [Backtesting](#backtesting)
+  - [Bagaimana ia berfungsi](#bagaimana-ia-berfungsi)
+  - [Backtesting results](#backtesting-results)
+  - [Optimization](#optimization)
 - [Pembinaan: Live Alerts](#pembinaan-live-alerts)
   - [Live Alerts](#live-alerts)
+- [Pembinaan: CLI Arguments](#pembinaan-cli-arguments)
+  - [Backtesting](#backtesting-1)
+  - [Live alerts](#live-alerts-1)
 - [Pembinaan: Deployment](#pembinaan-deployment)
   - [Deployment on Raspberry Pi](#deployment-on-raspberry-pi)
+  - [Common Linux commands](#common-linux-commands)
 - [Penutup](#penutup)
 
 ---
@@ -61,37 +72,47 @@ Biasa nya prosedur yang biasa aku buat bila dah dapat sesuatu strategi adalah:
 2. Convert Pine Script ke Python -- guna LLM
 3. Integrate ke dalam backtesting.py -- backtest framework
 
-Kenapa TradingView? Mungkin lain orang, lain cara nya. Tapi sebagai seorang yang cheapskate macam aku, aku akan mulakan dengan benda yang free dulu. TradingView ada juga feature untuk backtest strategi menggunakan Pine Script (scripting language untuk TradingView). Cuma historical price data untuk free tier ni terhad kepada 5000 candles sahaja untuk intraday timeframe. Jadi tak syok la tak dapat guna semua data yang ada. Macam aku cakap tadi, lagi banyak data kita ada, lagi bagus result backtest.
+Kenapa TradingView?
+
+Mungkin lain orang ada cara nya tersendiri. Tapi sebagai seorang yang cheapskate macam aku, aku akan mulakan dengan benda yang free dulu. TradingView ada juga feature untuk backtest strategi menggunakan Pine Script (scripting language untuk TradingView). Cuma historical price data untuk free tier nya terhad kepada 5,000 bars sahaja (intraday timeframe). Jadi tak syok la tak dapat guna semua data yang ada. Macam aku cakap tadi, lagi banyak data kita ada, lagi bagus result backtest.
 
 > ⚠⚠ Iklan ⚠⚠  
-> Register akaun TradingView menggunakan ref link ini: https://www.tradingview.com/pricing/?share_your_love=natebroke  
+> Register akaun TradingView menggunakan ref link ini:  
+> [https://www.tradingview.com/pricing/?share_your_love=natebroke][3]  
 > Kita kan kawan :)
 
 ### Tech stack
 
-Tech yang digunakan dalam perjalanan backtesting ni adalah:
+Tech yang digunakan sepanjang perjalanan backtesting ni adalah:
 
-|  |  |
+|||
 |---|---|
-| Language | Python, Pine Script |
-| Framework | [backtesting.py][1] |
-| Alert | Telegram |
-| LLM | Grok, ChatGPT |
-| Server | Raspberry Pi 3 Model B Rev 1.2, 1GB |
-| Server OS | Debian 12 (bookworm) |
+| **Language** | Python, Pine Script |
+| **Backtest framework** | [backtesting.py][1] |
+| **Alert** | Telegram |
+| **LLM** | Grok, ChatGPT |
+| **Server** | Raspberry Pi 3 Model B Rev 1.2, 1GB |
+| **Server OS** | Debian 12 (bookworm) |
 
-Tak ada Raspberry Pi pun takpe, itu untuk kita jalankan alert 24/7. Guna laptop pun boleh, cuma kena biarkan on je lah.
+Tak ada Raspberry Pi pun takpe, benda tu untuk kita jalankan alert bot selama 24/7. Guna laptop pun boleh, cuma kena biarkan on je lah.
+
+Untuk engine backtest, aku gunakan [backtesting.py][1] framework. Ini adalah framework untuk backtest strategy trading yang ditulis dalam Python.
+
+Aku pilih framework ini sebab aku tengok dia *macam* lightweight, sebab feature nya tak sebanyak framework backtest lain. Mula-mula aku nak guna [Hummingbot][4], tapi learning curve dia agak curam ya. Walaupun guna LLM, aku tetap jadi bodoh dalam mengintegrasikan Hummingbot dalam sistem aku. Mungkin sebab sasaran objektif aku cuma sikit je kot; nak dapatkan backtest result. Bila dah ada banyak feature yang bloated dalam sesebuah framework tu kan otak kita jadi overwhelm.
+
+Jadi backtesting.py ni engine nya hanya fokus kepada kerja nak backtest saja. Tak ada pun feature untuk live trade mahupun native Telegram alert. Ya, untuk alert tu aku custom sendiri. Bahagian Alert nanti aku ada cerita.
 
 ## Pembinaan: Tapak
 ### Struktur projek
 
 I like things tidy. Here's how I set it up:
 
-```
+```bash
 ma-cross-bot/
 ├── config/
 │   ├── exchange.py      # symbol, interval
 │   └── strategy.py      # MA lengths
+│   └── trading.py       # risk management
 ├── core/
 │   └── ma_cross.py      # the Strategy class
 ├── utils/
@@ -106,20 +127,43 @@ ma-cross-bot/
 
 Configs separate, strategy isolated, utils reusable.
 
-### Strategi: Simple MA cross
+### Risk management config
 
-<img width="70%" alt="strategy-funnel" src="https://i.imgur.com/eJJutvf.jpeg">
+### Indicator: Simple MA
 
-Nothing fancy. Fast moving average crosses above slow for long, below for short. That's it. Boleh juga tambah indicator lain
+TODO config
 
-The core looks like this:
+### Strategy: Simple MA cross
 
-Pine Script:
+<img alt="ma-cross-tv" src="https://i.imgur.com/JKj6MET.png">
 
+Script di bawah adalah strategy untuk MA crossing. Dimana kondisi untuk melakukan entry dan exit adalah seperti berikut:
+
+1. `fast_ma` cross atas `slow_ma`: signal beli 🟢
+2. `fast_ma` cross bawah `slow_ma`: signal jual 🔴
+
+Simple je, demi contoh.
+
+**Pine Script:**
+
+```javascript
+fast_ma = sma(price, fast_length)
+slow_ma = sma(price, slow_length)
+
+longCondition = crossover(fast_ma, slow_ma)
+if (longCondition)
+    strategy.entry("Long", strategy.long)
+
+shortCondition = crossunder(fast_ma, slow_ma)
+if (shortCondition)
+    strategy.entry("Short", strategy.short)
 ```
-```
 
-Python:
+Nak baca Pine Script ni straightforward je. Tetapkan nilai `fast_length` dan `slow_length`, lepas tu compute untuk `crossover` atau `crossunder`.
+
+Kalau di terjemahkan ke dalam Python, bentuk nya seperti berikut:
+
+**Python:**
 
 ```python
 class MaCross(Strategy):
@@ -127,35 +171,105 @@ class MaCross(Strategy):
     slow_length = SLOW_LENGTH
 
     def init(self):
-        self.fast = self.I(SMA, self.data.Close, self.fast_length)
-        self.slow = self.I(SMA, self.data.Close, self.slow_length)
+        self.fast_ma = self.I(SMA, self.data.Close, self.fast_length)
+        self.slow_ma = self.I(SMA, self.data.Close, self.slow_length)
 
     def next(self):
-        if crossover(self.fast, self.slow):
+        if crossover(self.fast_ma, self.slow_ma):
             self.buy()
-        elif crossover(self.slow, self.fast):
+        elif crossover(self.slow_ma, self.fast_ma):
             self.sell()
 ```
 
+Notice di sini `class MaCross(Strategy)`: kita extend class `MaCross()` dengan `Strategy` base class dari package backtesting.py, untuk menyatakan yang class ini bersedia untuk di consume sebagai strategy. Kita juga perlu override `init()` dan `next()` methods untuk kita define strategy kita.
+
+`def init()`:
+
+Letak segala initialization seperti settings untuk indicator ke dalam function ini.
+
+`self.I()`:
+
+Function ini untuk kita declare indicator seperti SMA, RSI, MACD dan lain-lain. Dalam contoh ini, kita menggunakan SMA; ia memerlukan dua parameter iaitu *source* dan *length*. Jadi kita perlu pass kan parameter itu menggunakan function `I()` ini. Class untuk indicator SMA nanti kita akan buat.
+
+`def next()`:
+
+Bahagian ini untuk compute keputusan strategi, samada perlu buy atau sell. Logic seperti `crossover` atau `crossunder` diletakkan disini. Sama seperti Pine Script tadi, signal buy atau sell akan berlaku jika kondisi berlaku seperti apa yang kita nak. Di dalam function ini juga info tentang position dah enter atau dah close boleh dimainkan. Info penuh tentang candlestick (OHLCV) juga dikeluarkan di dalam function ini. Jadi kalau nak modify apa-apa pasal position (`is_long`, `is_short`, etc.), boleh buat dalam ni.
+
 ### Data from Binance
 
-Data comes from Binance. The downloader checks cache first, appends only new candles. No full redownload every time.
+TODO code
 
-First run takes a while, but after that it's quick.
+Untuk historical price data, dalam projek ni aku cuma ambil dari Binance spot market. Tak pasti boleh tarik dari perpetual market ke tak, pasal belum cuba. Jadi aku ada script untuk bot ni auto download price data untuk mana-mana pair dalam Binance, dari berbagai timeframe yang ada.
+
+Script ni basically akan check cache folder dulu, kalau dah ada data yang pernah di download sebelum ni, cuma perlu append yang candle yang baru je lah. Aku juga ada buat option untuk *force download* data historical ni, biar clean sikit kerja. So, first run akan jadi perlahan, bila semua data dah di download dan disimpan, run kedua akan jadi laju.
+
+<img alt="data-download-binance" src="https://i.imgur.com/80yLt6R.png">
 
 ## Pembinaan: Backtesting
 ### Backtesting
 
-The backtest script loads config, fetches data, runs the backtest, shows plot. Add --optimize for parameter search.
+### Bagaimana ia berfungsi
+
+Jadi kita ada `core/strategy.py`, class ini inherit object `Strategy` yang akan di consume oleh framework.
+
+`config.py` dicantumkan dengan `strategy.py` dan ia disalurkan ke backtest atau alert runner.
+
+The backtest script loads config, fetches data, runs the backtest, shows plot. Add `--optimize` for parameter search.
 
 Simple.
 
+### Backtesting results
+
+> Symbol: BTCUSDT  
+> Exchange: Binance  
+> Timeframe: 4H
+
+Strategy settings:
+
+> MA Type: SMA  
+> MA Source: Close  
+> Fast MA: 14  
+> Slow MA: 114
+
+Hasil backtest dari TradingView:
+
+<img alt="sma cross btcusdt:binance 4h" src="https://i.imgur.com/GvyxPrF.png">
+
+*Nota: Historical data terhad sebab akaun aku free tier :^)*
+
+Hasil backtest dari backtesting.py:
+
+TODO
+
+### Optimization
+
 ## Pembinaan: Live Alerts
+
+Pasal alert ni aku nak cerita sedikit tentang sejarah. Dulu aku pernah beli TradingView premium. Yang akaun premium ni biasa lah macam-macam feature extra kita dapat. Yang paling aku pakai waktu tu adalah *webhook alert* bila signal dikeluarkan oleh strategy. Benda ni senang gila nak pakai. Lepas kita settle dan puas hati dengan result backtest, kita boleh terus hook alert ni ke mana-mana API.
+
+Waktu tu aku pakai platform [Wunderbit Trading][5]. Tempat ni kita boleh automate kan trading, kira macam algo trade la juga cuma tak perlu pun tulis code bagai dan tak perlu deposit duit. Cukup ada TradingView + webhook alert, lepas tu connect dengan account CEX dan connect dengan Wunderbit ni, terus dia boleh auto-trade mengikut signal strategy dari TradingView tadi.
+
+Sekarang aku dah tak pakai benda tu sebab free trial dah habis. Maka nya di sini lah aku, berjalan keseorangan di atas gurun sahara membina sendiri trading stack dari scratch.
+
 ### Live Alerts
 
 For live, the script runs the same backtest on every new closed candle, checks if a trade would enter on the last bar, sends Telegram if yes.
 
 I run it with systemd timer—every 5 minutes for 5m chart. Survives reboots, network drops.
+
+## Pembinaan: CLI Arguments
+
+### Backtesting
+
+```bash
+python backtest_ma.py --symbol BTCUSDT --interval 1h --start 2025-05-01 --fractional --no-plot
+```
+
+### Live alerts
+
+```bash
+python alert_ma.py --symbol BTCUSDT --interval 1h --test-alert
+```
 
 ## Pembinaan: Deployment
 ### Deployment on Raspberry Pi
@@ -170,6 +284,10 @@ Enable it.
 
 Done. Runs quietly, logs to file, alerts on phone.
 
+### Common Linux commands
+
+Ini macam SOP aku lah, bila mana aku nak mulakan alert untuk strategy lain atau nak create timer systemd baru sehinggalah untuk lihat log report.
+
 ## Penutup
 
 backtesting.py made this possible without much hassle. The code stays the same for backtest and live. No drift.
@@ -179,3 +297,7 @@ It's basic, but reliable. When I want to add filters or more strategies, the str
 That's how I got a simple MA cross strategy from idea to running on a Pi. Clean, organized, and useful.
 
 [1]: https://kernc.github.io/backtesting.py/
+[2]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
+[3]: https://www.tradingview.com/pricing/?share_your_love=natebroke
+[4]: https://hummingbot.org/
+[5]: https://wundertrading.com/en/register?ref=wbtdf816e60
