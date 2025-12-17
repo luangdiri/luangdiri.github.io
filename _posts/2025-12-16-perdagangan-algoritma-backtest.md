@@ -1,5 +1,5 @@
 ---
-title: 'Perdagangan Algoritma - Bhg II: Back Test & Alert'
+title: 'Perdagangan Algoritma - Bhg II: Backtest & Alert'
 date: 2025-12-15 22:41:50
 updated_at: 2025-12-15 22:41:54
 tags:
@@ -7,41 +7,83 @@ tags:
 - trading
 ---
 
-*Draft written by Grok*
+<img alt="backtesting.py" src="https://i.imgur.com/gvFn4Wn.png">
 
-Finally, I managed to get a clean setup for testing and alerting on a basic moving average crossover strategy. Before this, everything was scattered—quick tests in notebooks, alerts hacked together in random scripts. It worked, but it was messy. Too many places to change parameters, data all over the place.
+Dari dulu lagi bercita-cita nak kasi trading strategy aku di automasi kan. Kali ni dengan bantuan LLM, akhirnya aku berjaya bina stack aku sendiri. Stack yang aku bina ni takde lah advanced sangat kalau nak dibandingkan dengan stack teknologi yang quant dari firm besar pakai, tapi bagi aku dah cukup untuk permulaan seorang trader yang baru nak berkecimpung dalam dunia algo trade.
 
-I remember when I first started with backtesting.py. It was straightforward—no heavy setup, just a class and a DataFrame. But over time, as I added more features like RSI filters and higher-timeframe checks, things got complicated. I needed something organized.
+Kalau dulu aku buat dari scratch, memang berterabur code aku. Tak ada standard, kalau nak ubah parameter kena ubah semua file. Sekarang bila dah tahu konsep sebenar, baru boleh atur dengan jelas. 
 
-In the end, I settled on a modular structure. All configs in one place, core strategy separate, utils for shared stuff. And for live alerts, a simple script that runs the same backtest on fresh data.
+Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kita cipta atau jumpa di internet. Dalam post ni pun aku akan cerita pasal strategy MA crossover biar senang nak cerita. Aku juga ada buat alert untuk di hantar ke Telegram channel. Aku tak host dekat mana-mana cloud server pun, cuma guna Raspberry Pi untuk run script alert ni.
 
-This is the journey of putting it all together, from folder setup to running on a Raspberry Pi.
+---
+**Kandungan:**
 
-## The Strategy: Simple MA Cross
+- [Permulaan](#permulaan)
+  - [Apa itu backtest?](#apa-itu-backtest)
+  - [Prosedur operasi](#prosedur-operasi)
+  - [Tech stack](#tech-stack)
+- [Pembinaan: Tapak](#pembinaan-tapak)
+  - [Struktur projek](#struktur-projek)
+  - [Strategi: Simple MA cross](#strategi-simple-ma-cross)
+  - [Data from Binance](#data-from-binance)
+- [Pembinaan: Backtesting](#pembinaan-backtesting)
+  - [Backtesting](#backtesting)
+- [Pembinaan: Live Alerts](#pembinaan-live-alerts)
+  - [Live Alerts](#live-alerts)
+- [Pembinaan: Deployment](#pembinaan-deployment)
+  - [Deployment on Raspberry Pi](#deployment-on-raspberry-pi)
+- [Penutup](#penutup)
 
-Nothing fancy. Fast moving average crosses above slow for long, below for short. That's it. No filters this time—just to keep things simple and fast.
+---
 
-The core looks like this:
+## Permulaan
+### Apa itu backtest?
 
-```python
-class MaCross(Strategy):
-    fast_length = FAST_LENGTH
-    slow_length = SLOW_LENGTH
+Berbalik kepada cerita asal, backtesting adalah satu fasa dalam sistematik trading iaitu menguji strategi dengan menggunakan data harga di masa lampau. Kita nak uji strategi tersebut berkesan atau tidak bergantung kepada keadaan market. Market price ada beberapa fasa juga iaitu, uptrend, sideway dan downtrend. Ada juga orang sebut fasa ini sebagai accumulation, expansion dan distribution. Ikut la mana suka, konteks nya tetap sama.
 
-    def init(self):
-        self.fast = self.I(SMA, self.data.Close, self.fast_length)
-        self.slow = self.I(SMA, self.data.Close, self.slow_length)
+Bila kita uji strategi kita tu, kita cuma melihat performance nya dengan waktu yang dah berlalu. Bererti ujian tu mungkin boleh atau tak boleh diterapkan untuk perjalanan harga di masa depan. Kata lain, past performance tak menjamin future performance. Itu sebab kita kena backtest strategi tersebut dengan data sample yang banyak.
 
-    def next(self):
-        if crossover(self.fast, self.slow):
-            self.buy()
-        elif crossover(self.slow, self.fast):
-            self.sell()
-```
+Data sample dalam hal ini merujuk kepada data sejarah harga dari awal sesebuah pair itu hidup di market sehingga lah sekarang. Lagi banyak data sample yang kita dapat, lebih bermutu final result yang di keluarkan dari ujian backtest.
 
-Easy to read, easy to change.
+### Prosedur operasi
 
-## Project Structure
+Untuk permulaan, kita perlu ada strategi untuk melaksanakan proses sistematik trading ni.
+
+1. Idea strategy
+2. Convert strategy jadi code
+3. Integrate code dalam framework
+4. Lakukan backtest
+5. Run alert bot (optional)
+
+Biasa nya prosedur yang biasa aku buat bila dah dapat sesuatu strategi adalah:
+
+1. Backtest dulu dalam TradingView -- guna Pine Script
+2. Convert Pine Script ke Python -- guna LLM
+3. Integrate ke dalam backtesting.py -- backtest framework
+
+Kenapa TradingView? Mungkin lain orang, lain cara nya. Tapi sebagai seorang yang cheapskate macam aku, aku akan mulakan dengan benda yang free dulu. TradingView ada juga feature untuk backtest strategi menggunakan Pine Script (scripting language untuk TradingView). Cuma historical price data untuk free tier ni terhad kepada 5000 candles sahaja untuk intraday timeframe. Jadi tak syok la tak dapat guna semua data yang ada. Macam aku cakap tadi, lagi banyak data kita ada, lagi bagus result backtest.
+
+> ⚠⚠ Iklan ⚠⚠  
+> Register akaun TradingView menggunakan ref link ini: https://www.tradingview.com/pricing/?share_your_love=natebroke  
+> Kita kan kawan :)
+
+### Tech stack
+
+Tech yang digunakan dalam perjalanan backtesting ni adalah:
+
+|  |  |
+|---|---|
+| Language | Python, Pine Script |
+| Framework | [backtesting.py][1] |
+| Alert | Telegram |
+| LLM | Grok, ChatGPT |
+| Server | Raspberry Pi 3 Model B Rev 1.2, 1GB |
+| Server OS | Debian 12 (bookworm) |
+
+Tak ada Raspberry Pi pun takpe, itu untuk kita jalankan alert 24/7. Guna laptop pun boleh, cuma kena biarkan on je lah.
+
+## Pembinaan: Tapak
+### Struktur projek
 
 I like things tidy. Here's how I set it up:
 
@@ -64,25 +106,59 @@ ma-cross-bot/
 
 Configs separate, strategy isolated, utils reusable.
 
-## Data from Binance
+### Strategi: Simple MA cross
+
+<img width="70%" alt="strategy-funnel" src="https://i.imgur.com/eJJutvf.jpeg">
+
+Nothing fancy. Fast moving average crosses above slow for long, below for short. That's it. Boleh juga tambah indicator lain
+
+The core looks like this:
+
+Pine Script:
+
+```
+```
+
+Python:
+
+```python
+class MaCross(Strategy):
+    fast_length = FAST_LENGTH
+    slow_length = SLOW_LENGTH
+
+    def init(self):
+        self.fast = self.I(SMA, self.data.Close, self.fast_length)
+        self.slow = self.I(SMA, self.data.Close, self.slow_length)
+
+    def next(self):
+        if crossover(self.fast, self.slow):
+            self.buy()
+        elif crossover(self.slow, self.fast):
+            self.sell()
+```
+
+### Data from Binance
 
 Data comes from Binance. The downloader checks cache first, appends only new candles. No full redownload every time.
 
 First run takes a while, but after that it's quick.
 
-## Backtesting
+## Pembinaan: Backtesting
+### Backtesting
 
 The backtest script loads config, fetches data, runs the backtest, shows plot. Add --optimize for parameter search.
 
 Simple.
 
-## Live Alerts
+## Pembinaan: Live Alerts
+### Live Alerts
 
 For live, the script runs the same backtest on every new closed candle, checks if a trade would enter on the last bar, sends Telegram if yes.
 
 I run it with systemd timer—every 5 minutes for 5m chart. Survives reboots, network drops.
 
-## Deployment on Raspberry Pi
+## Pembinaan: Deployment
+### Deployment on Raspberry Pi
 
 Copy the folder over, set up venv, install requirements.
 
@@ -94,10 +170,12 @@ Enable it.
 
 Done. Runs quietly, logs to file, alerts on phone.
 
-## Final Thoughts
+## Penutup
 
 backtesting.py made this possible without much hassle. The code stays the same for backtest and live. No drift.
 
 It's basic, but reliable. When I want to add filters or more strategies, the structure is ready.
 
 That's how I got a simple MA cross strategy from idea to running on a Pi. Clean, organized, and useful.
+
+[1]: https://kernc.github.io/backtesting.py/
