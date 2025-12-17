@@ -12,6 +12,6 @@ Luang Diri: Di sini tempat aku mencatat hal yang aku lihat, baca dan dengar.
 
 <img alt="boat" src="https://i.imgur.com/2RPemGZ.jpeg">
 
-<i><p>Nikmatilah pemandangan bot-bot ini.</p></i>
+<small><i>Nikmatilah pemandangan bot-bot ini.</i></small>
 
 ⛵
