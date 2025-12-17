@@ -6,8 +6,12 @@ permalink: /tentang/
 
 Selamat datang ke <i>Luang Diri</i>.
 
-Blog ini dibina sebagai arkib kehidupan untuk dokumentasi segala perkara yang dipelajari dalam hidup, sama ada teknikal mahupun cara hidup. Idea, eksperimen, pelajaran, dan refleksi ditulis bukan sekadar untuk berkongsi, tetapi juga untuk mengingati semula (ya, aku ada amnesia, tapi tak teruk pun). Ia berfungsi sebagai personal knowledge base, tempat untuk menyegarkan semula ingatan, menjejak perkembangan diri, dan meluangkan masa dengan diri sendiri. Muzik selalunya menjadi peneman; dari death metal ke drum and bass hinggalah ke galau putus cinta negeri nusantara (ikut mood).
+Blog ini di wujudkan sebagai arkib kehidupan untuk pendokumentasian segala perkara yang dipelajari, sama ada teknikal mahupun non-teknikal. Idea, eksperimen, pelajaran, dan refleksi ditulis bukan sekadar untuk berkongsi, juga untuk mengingati semula (ya, aku ada amnesia, tapi tak teruk pun). Ia berfungsi sebagai pangkalan ilmu personal, jejakan perkembangan diri, dan sebagai tempat meluangkan masa dengan diri sendiri.
 
 Luang Diri: Di sini tempat aku mencatat hal yang aku lihat, baca dan dengar.
+
+<img alt="boat" src="https://i.imgur.com/2RPemGZ.jpeg">
+
+<i><p>Nikmatilah pemandangan bot-bot ini.</p></i>
 
 ⛵
