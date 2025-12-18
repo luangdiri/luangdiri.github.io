@@ -1,8 +1,11 @@
 <script>
     // This function modifies the DOM element in place
-    linkifyHtml(document.getElementById('post-content'), {
-        target: '_blank'
-    });
+    window.onload = function() {
+      linkifyHtml(document.getElementById('post-content'), {
+          target: '_blank',
+          className: 'linkified'
+      });
+    }
 </script>
 
 <footer class="site-footer h-card">
