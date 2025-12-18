@@ -7,6 +7,27 @@ tags:
 - trading
 ---
 
+*Work In Progress*
+
+TODO
+
+```
+Tips finding strategy
+- yg tak repaint
+
+Add full code link
+
+Python package
+
+Source code zip
+
+Boilerplate code utk risk mgt, long short buy sell close stop trailing. Extra like pyramiding partial buy sell
+
+Explain backtest result. Sharpe ratio etc
+
+Bullet point add: logging
+```
+
 <img alt="backtesting.py" src="https://i.imgur.com/gvFn4Wn.png">
 
 Pergi ke [Bahagian I][2]
@@ -26,19 +47,19 @@ Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kit
   - [Tech stack](#tech-stack)
 - [Pembinaan Tapak](#pembinaan-tapak)
   - [Struktur projek](#struktur-projek)
-  - [Risk management](#risk-management)
-  - [Indicator: Simple Moving Average (SMA)](#indicator-simple-moving-average-sma)
+  - [Indicator: Simple MA (SMA)](#indicator-simple-ma-sma)
   - [Strategy: Simple MA cross](#strategy-simple-ma-cross)
   - [Historical price data](#historical-price-data)
 - [Backtesting](#backtesting)
   - [Bagaimana ia berfungsi](#bagaimana-ia-berfungsi)
   - [Backtesting results](#backtesting-results)
-  - [Optimization](#optimization)
+  - [Parameter optimization](#parameter-optimization)
 - [Alert Bot](#alert-bot)
   - [Live Alerts](#live-alerts)
 - [Control From CLI](#control-from-cli)
-  - [Backtesting](#backtesting-1)
-  - [Alert bot](#alert-bot-1)
+  - [Backtesting Mode](#backtesting-mode)
+  - [Live Alert Mode](#live-alert-mode)
+  - [Usage Examples](#usage-examples)
 - [Deployment Ke Raspberry Pi](#deployment-ke-raspberry-pi)
   - [Common Linux commands](#common-linux-commands)
 - [Trade-Offs](#trade-offs)
@@ -109,9 +130,8 @@ I like things tidy. Here's how I set it up:
 ```bash
 ma-cross-bot/
 ├── config/
-│   ├── exchange.py      # symbol, interval
-│   └── strategy.py      # MA lengths
-│   └── trading.py       # risk management
+│   ├── ma_cross.py      # strategy settings
+│   └── risk.py       # risk management
 │── indicators/
 │   └── ma.py            # indicator code
 ├── core/
@@ -123,20 +143,19 @@ ma-cross-bot/
 │   └── backtest_runner.py # common backtest code
 ├── data/cache/          # saved CSVs
 ├── logs/                # log files
-├── backtest.py          # run backtests
-└── live_alert.py        # live signal check
+├── backtest_ma_cross.py          # run backtests
+└── alert_ma_cross.py        # live signal check
 ```
 
 Configs separate, strategy isolated, utils reusable.
 
-### Risk management
+### Indicator: Simple MA (SMA)
 
-TODO trading.py, sl, tp, trailing
 
-### Indicator: Simple Moving Average (SMA)
-
-TODO config.py
-TODO sma.py
+```python
+def sma(series: pd.Series, length: int) -> pd.Series:
+    return series.rolling(window=length).mean()
+```
 
 ### Strategy: Simple MA cross
 
@@ -164,6 +183,8 @@ if (shortCondition)
     strategy.entry("Short", strategy.short)
 ```
 
+*Full code: https://gist.github.com/luangdiri/efb937e67f88e3a9ab738c5bd82535f4*
+
 Nak baca Pine Script ni straightforward je. Tetapkan nilai `fast_length` dan `slow_length`, lepas tu compute untuk `crossover` atau `crossunder`.
 
 Berikut adalah code yang di terjemahkan ke dalam Python:
@@ -173,18 +194,18 @@ Berikut adalah code yang di terjemahkan ke dalam Python:
 **Python:**
 
 ```python
-class MaCross(Strategy):
-    fast_length = FAST_LENGTH
-    slow_length = SLOW_LENGTH
-
+class MACrossStrategy(Strategy):
     def init(self):
-        self.fast_ma = self.I(SMA, self.data.Close, self.fast_length)
-        self.slow_ma = self.I(SMA, self.data.Close, self.slow_length)
+        close = pd.Series(self.data.Close)
+        self.fast_ma = self.I(sma, close, FAST_MA_LENGTH)
+        self.slow_ma = self.I(sma, close, SLOW_MA_LENGTH)
 
     def next(self):
         if crossover(self.fast_ma, self.slow_ma):
+            self.position.close()
             self.buy()
         elif crossover(self.slow_ma, self.fast_ma):
+            self.position.close()
             self.sell()
 ```
 
@@ -202,7 +223,18 @@ Function ini untuk kita declare indicator seperti SMA, RSI, MACD dan lain-lain. 
 
 `def next()`:
 
-Bahagian ini untuk compute keputusan strategi, samada perlu buy atau sell. Logic seperti `crossover` atau `crossunder` diletakkan disini. Sama seperti Pine Script tadi, signal buy atau sell akan berlaku jika kondisi berlaku seperti apa yang kita nak. Di dalam function ini juga info tentang position dah enter atau dah close boleh dimainkan. Info penuh tentang candlestick (OHLCV) juga dikeluarkan di dalam function ini. Jadi kalau nak modify apa-apa pasal position (`is_long`, `is_short`, etc.), boleh buat dalam ni.
+Bahagian ini untuk compute keputusan strategi, samada perlu buy atau sell. Logic seperti `crossover` atau `crossunder` diletakkan disini. Sama seperti Pine Script tadi, signal buy atau sell akan berlaku jika kondisi berlaku seperti apa yang kita nak. Di dalam function ini juga info tentang position dah enter atau dah close boleh dimainkan. Info penuh tentang candlestick (OHLCV) juga dikeluarkan di dalam function ini. Jadi kalau nak modify apa-apa pasal position (`is_long`, `is_short`, etc.), boleh buat dalam ni. Baca [documentation][7] nya kalau nak tahu lebih lanjut.
+
+**Config:**
+
+```python
+STRATEGY_NAME = "MA Cross Strategy"
+SHORT_NAME = "ma_cross"
+FAST_MA_LENGTH = 25
+FAST_MA_TYPE = "SMA"
+SLOW_MA_LENGTH = 50
+SLOW_MA_TYPE = "SMA"
+```
 
 ### Historical price data
 
@@ -243,17 +275,42 @@ Strategy settings:
 > Fast MA: 14  
 > Slow MA: 114
 
-Hasil backtest dari TradingView:
+**TradingView:**
 
-<img alt="sma cross btcusdt:binance 4h" src="https://i.imgur.com/GvyxPrF.png">
+<img alt="sma_cross_btcusdt_4h" src="https://i.imgur.com/GvyxPrF.png">
 
 *Nota: Historical data terhad sebab akaun aku free tier :^)*
 
-Hasil backtest dari backtesting.py:
+Nampak cantik kan hasil backtest nya? Masalah free tier ni data backtest nya terhad. Cuba tengok yang dari backtesting.py di bawah.
 
-TODO
+**backtesting.py:**
 
-### Optimization
+<img alt="sma_cross_btcusdt_4h_backtesting.py" src="https://i.imgur.com/rhqtB4C.png">
+
+*[Besarkan][6]*
+
+Setelah backtest dijalankan, info statistik berkenaan strategi yang kita backtest tadi akan dikeluarkan dalam terminal:
+
+<img alt="backtesting_result" src="https://i.imgur.com/CNKJRLF.png">
+
+Disini kita boleh tengok performance strategy. Contoh di atas aku backtest dari Januari 2021 sehingga ke 18/12/2025 (waktu aku menulis ni). Hampir 5 tahun punya data. Nak dibandingkan dengan TradingView tadi, jauh beza walau nampak. Banyak info yang dapat ni, aku cuma tengok 1 benda je biasanya: **Sharpe ratio**. Nilai sharpe ratio ni kalau > 1 kira dah power lah. Lain tu aku jarang tengok, tapi berguna juga. Contoh macam nak tahu tempoh drawdown berapa lama, drawdown paling teruk dan equity final.
+
+### Parameter optimization
+
+Bila kita run backtest dalam mode biasa, kita cuma pakai setting indicator dari config file je. Dalam mode optimization, backtest engine akan run multiple setting yang kita set. 
+
+```python
+class MACrossStrategy(Strategy):
+    fast_length = FAST_MA_LENGTH
+    slow_length = SLOW_MA_LENGTH
+```
+
+```python
+optimize_params = dict(
+    fast_ma_length=range(20, 50, 10),
+    slow_ma_length=range(50, 200, 20),
+)
+```
 
 ## Alert Bot
 
@@ -265,33 +322,110 @@ Sekarang aku dah tak pakai benda tu sebab free trial dah habis. Maka nya di sini
 
 ### Live Alerts
 
-TODO masih gunakan backtest runner untuk berfungsi
+Untuk alert bot, ia masih menggunakan `backtest_runner.py`. Basically kita intercept data result dari `bt.run()` untuk kenalpasti signal baru, kalau ada signal, baru hantar ke Telegram (token dan channel ID di set dalam `.env`).
 
-Basically kita intercept data result dari bt.run() untuk kenalpasti signal baru, lepas tu baru hantar ke telegram.
+```python
+    stats = bt.run()
+    latest_trade = stats._trades.iloc[-1] # check latest trade
 
-Set env telegram channel token dan id.
+    # signal entry long atau short berlaku di bawah
+    if latest_trade.EntryBar == last_signal_bar_index:
+        return
+    if latest_trade.EntryBar != len(df) - 1:
+        return
 
-For live, the script runs the same backtest on every new closed candle, checks if a trade would enter on the last bar, sends Telegram if yes.
+    last_signal_bar_index = latest_trade.EntryBar
+    msg = format_signal_alert(latest_trade, msg_details)
+    send_telegram(msg)
+```
 
-I run it with systemd timer—every 5 minutes for 5m chart. Survives reboots, network drops.
+Berikut adalah flow chart proses alert bot:
 
 <img alt="alert-bot-flow" src="https://i.imgur.com/7dVnkUV.png">
+
+Script ini dijalankan sekali sahaja. Untuk buat dia run secara berkala (mengikut timeframe pilihan), guna cronjob atau systemd timer. Aku ada cerita di bawah.
 
 ## Control From CLI
 
 Refer to `utils/args.py`
 
-### Backtesting
+### Backtesting Mode
 
-```bash
-python backtest_ma.py --symbol BTCUSDT --interval 1h --start 2025-05-01 --fractional --no-plot
-```
+Command: `python backtest_ma_cross.py [options]` (or equivalent entry point)
 
-### Alert bot
+**Arguments:**
 
-```bash
-python alert_ma.py --symbol BTCUSDT --interval 1h --test-alert
-```
+`--symbol` (required)  
+Trading pair symbol, e.g., BTCUSDT
+
+`--interval` (required)  
+Candle interval, e.g., 5m, 30m, 1h, 4h, 1d
+
+`--start`  
+Start date for historical data (format: YYYY-MM-DD).  
+Default: 2022-01-01
+
+`--end`  
+End date for historical data (format: YYYY-MM-DD).  
+Default: today (current date)
+
+`-f, --force-download`  
+Force re-download of data even if cached data exists
+
+`--no-plot`  
+Disable plotting of backtest results
+
+`-d, --debug`  
+Enable debug mode with verbose logging
+
+`--plot-resample`  
+Resample data before plotting to reduce file size and improve performance
+
+`--fractional`  
+Enable fractional position sizing in trading simulation
+
+`-o, --optimize`  
+Run parameter optimization instead of single backtest
+
+### Live Alert Mode
+
+Command: `python alert_ma_cross.py [options]` (or equivalent entry point)
+
+**Arguments:**
+
+`--symbol (required)`  
+Trading pair symbol, e.g., BTCUSDT
+
+`--interval (required)`  
+Candle interval, e.g., 5m, 30m, 1h, 4h, 1d
+
+`--test-alert`  
+Send a test Telegram alert message on startup
+
+`-v, --verbose`  
+Enable verbose logging output
+
+### Usage Examples
+
+Backtesting:  
+
+`python run_backtest.py --symbol BTCUSDT --interval 1d --start 2020-01-01 --end 2025-12-18 --fractional --debug`
+
+With optimization:  
+
+`python run_backtest.py --symbol ETHUSDT --interval 4h -o`
+
+Force download and no plot:  
+
+`python run_backtest.py --symbol BTCUSDT --interval 1h -f --no-plot`
+
+Live Alerts:  
+
+`python run_alert.py --symbol BTCUSDT --interval 30m --test-alert --verbose`
+
+Simple alert mode:  
+
+`python run_alert.py --symbol SOLUSDT --interval 1h`
 
 ## Deployment Ke Raspberry Pi
 
@@ -300,6 +434,7 @@ Copy the folder over, set up venv, install requirements.
 Set Telegram env vars.
 
 Create systemd service and timer.
+I run it with systemd timer—every 5 minutes for 5m chart. Survives reboots, network drops.
 
 Enable it.
 
@@ -328,3 +463,5 @@ That's how I got a simple MA cross strategy from idea to running on a Pi. Clean,
 [3]: https://www.tradingview.com/pricing/?share_your_love=natebroke
 [4]: https://hummingbot.org/
 [5]: https://wundertrading.com/en/register?ref=wbtdf816e60
+[6]: https://i.imgur.com/rhqtB4C.png
+[7]: https://kernc.github.io/backtesting.py/doc/backtesting/
