@@ -137,8 +137,8 @@ if (shortCondition)
 
 Bila dah selesa dengan Pine Script dan hasil backtest dalam TradingView, baru lah kita convert ke dalam python:
 
-*Nota:*  
-Nak senang, guna LLM seperti Grok atau ChatGPT untuk convert Pine Script ke Python. Kalau ada bug tu pandai-pandai lah betulkan*
+> *Nota:*  
+> Nak senang, guna LLM seperti Grok atau ChatGPT untuk convert Pine Script ke Python. Kalau ada bug tu pandai-pandai lah betulkan*
 
 ```python
 fast_ma = ta.trend.SMAIndicator(close, 14).sma_indicator()
