@@ -35,8 +35,8 @@ Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kit
   - [Statistik](#statistik)
   - [Plotting](#plotting)
 - [Deployment Ke Raspberry Pi](#deployment-ke-raspberry-pi)
-  - [`scp`](#scp)
-  - [`venv`](#venv)
+  - [scp](#scp)
+  - [venv](#venv)
   - [cronjob](#cronjob)
   - [systemd service dan timer](#systemd-service-dan-timer)
   - [Routine check](#routine-check)
@@ -309,7 +309,7 @@ Yang penting, result strategi kita tu masuk akal dan bukan jenis *too good to be
 
 Selain data raw dan statistik, VectorBT boleh plot position entry dan exit dengan menggunakan function `pf.plot().show()`:
 
-TODO result image irsimax_1h-2025-01-01.png
+![irsimax_1h-2025-01-01.png](https://i.imgur.com/0h5wToL.png)
 
 Plot ni dia tunjuk tiga chart, 1) Orders, 2) Trade PnL dan 3) Cumulative Returns. Dalam chart Orders, kita boleh lihat di mana position buy (long) atau sell (short). Dalam Orders ni dia tak tunjuk exit dekat mana, kita kena rujuk pada chart Trade PnL. Dimana ada bulat merah tu adalah *closed order* yang loss, bulat hijau adalah *closed order* yang profit. Bulat kuning menunjukkan yang position terakhir tu masih terbuka. Saiz bulat tu pun menunjukkan berapa percent return dari position yang closed tu. Untuk cumulative returns, kita boleh lihat performance PnL strategi dan dibandingkan dengan pergerakan harga asset tersebut. 
 
@@ -330,7 +330,7 @@ Ada dua cara nak copy:
 
 Cara pakai git paling senang, aku cuma kena push projek tu dalam Github dan terus `git clone` dari Raspberry Pi. Jadi tak perlu dokumentasi kot. 
 
-### `scp`
+### scp
 
 Sebelum tu kena enable SSH akses dulu baru boleh guna command ni. `scp` command ni fungsi dia untuk transfer file dari network lain ke network lain. Jadi setiap kali ada buat code changes, aku kena buat command ni untuk transfer file baru. Rumit. Pakai git lagi senang.
 
@@ -349,7 +349,7 @@ Kalau taknak zip, terus je copy folder projek masuk ke Raspberry Pi guna command
 scp -r /path/to/vectorbt raspi@hostname_or_ip:/home/raspi/vectorbt
 ```
 
-### `venv`
+### venv
 
 Dah settle tu, akses Raspberry Pi dan masuk ke direktori `/vectorbt` dan set up `venv` -- sebuah virtual environment untuk projek python.
 
