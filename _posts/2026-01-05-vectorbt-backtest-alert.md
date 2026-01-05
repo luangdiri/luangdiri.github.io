@@ -1,17 +1,15 @@
 ---
 title: 'VectorBT Backtest & Telegram Alert'
 date: 2026-01-04 14:39:47
-updated_at: 2026-01-04 14:39:47
+updated_at: 2026-01-04 22:52:12
 tags:
 - tutorial
 - trading
 ---
 
-*Work In Progress*
+<img alt="backtesting logo" src="https://i.imgur.com/gvFn4Wn.png">
 
-<img alt="VectorBT" src="https://i.imgur.com/gvFn4Wn.png">
-
-Pergi ke [Bahagian I][2]
+*Pergi ke [Bahagian I][2]*
 
 Dari dulu lagi bercita-cita nak kasi trading strategy aku di automasi kan. Kali ni dengan bantuan LLM, akhirnya aku berjaya bina stack aku sendiri. Basically 90% vibe coded je projek ni. Stack yang aku bina ni takde lah advanced sangat kalau nak dibandingkan dengan stack yang pro quant pakai, tapi bagi aku dah cukup untuk permulaan seorang trader yang baru nak berkecimpung dalam dunia algo trade.
 
@@ -32,9 +30,16 @@ Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kit
   - [Backtest](#backtest)
   - [Telegram alert](#telegram-alert)
   - [Punca signal](#punca-signal)
-  - [Backtest result](#backtest-result)
+- [Backtest result](#backtest-result)
+  - [Raw data](#raw-data)
+  - [Statistik](#statistik)
+  - [Plotting](#plotting)
 - [Deployment Ke Raspberry Pi](#deployment-ke-raspberry-pi)
-  - [Common Linux commands](#common-linux-commands)
+  - [`scp`](#scp)
+  - [`venv`](#venv)
+  - [cronjob](#cronjob)
+  - [systemd service dan timer](#systemd-service-dan-timer)
+  - [Routine check](#routine-check)
 - [Penutup](#penutup)
 
 
@@ -86,7 +91,7 @@ Tech yang digunakan sepanjang perjalanan backtesting ni adalah:
 |---|---|
 | **Language** | Python, Pine Script |
 | **Backtest framework** | [VectorBT][1] |
-| **Alert** | python-telegram-bot |
+| **Alert** | Telegram |
 | **LLM** | Grok, ChatGPT |
 | **Server** | Raspberry Pi 3 Model B Rev 1.2, 1GB |
 | **Server OS** | Debian 12 (bookworm) |
@@ -103,12 +108,10 @@ Jadi VectorBT ni engine nya hanya fokus kepada kerja nak backtest dan buat anali
 
 ### Moving Average Cross (MA Cross)
 
-Untuk post ni aku demo untuk strategi MA cross je la. Aku ada strategi lain, gabungan RSI dengan MA tapi macam kompleks sikit.
+Untuk post ni aku demo untuk strategi MA cross. Basically MA cross ni dia detect signal bila ada crossing antara dua MA, sama ada cross atas atau bawah. Untuk memudahkan cerita, kondisi untuk beli atau jual adalah seperti berikut:
 
-So basically MA cross ni dia detect signal bila ada crossing antara dua MA, sama ada cross atas atau bawah. Untuk memudahkan cerita, kondisi untuk beli atau jual adalah seperti berikut:
-
-1. MA 14 cross atas MA 20: signal beli 🟢
-2. MA 14 cross bawah MA 20: signal jual 🔴
+1. **MA 14** cross atas **MA 20**: signal beli
+2. **MA 14** cross bawah **MA 20**: signal jual
 
 Simple je, demi contoh. Bila di convertkan ke Pine Script bentuk nya jadi macam ni:
 
@@ -138,18 +141,18 @@ Bila dah selesa dengan Pine Script dan hasil backtest dalam TradingView, baru la
 Nak senang, guna LLM seperti Grok atau ChatGPT untuk convert Pine Script ke Python. Kalau ada bug tu pandai-pandai lah betulkan*
 
 ```python
-    fast_ma = ta.trend.SMAIndicator(close, 14).sma_indicator()
-    slow_ma = ta.trend.SMAIndicator(close, 20).sma_indicator()
+fast_ma = ta.trend.SMAIndicator(close, 14).sma_indicator()
+slow_ma = ta.trend.SMAIndicator(close, 20).sma_indicator()
 
-    # condition
-    ma_bull = fast_ma > slow_ma
-    ma_bear = slow_ma > fast_ma
+# condition
+ma_bull = fast_ma > slow_ma
+ma_bear = slow_ma > fast_ma
 
-    # define entry dan exit
-    long_entries = ma_bull
-    short_entries = ma_bear
-    long_exits = ma_bear
-    short_exits = ma_bull
+# define entry dan exit
+long_entries = ma_bull
+short_entries = ma_bear
+long_exits = ma_bear
+short_exits = ma_bull
 ```
 
 ### Historical price data
@@ -171,8 +174,6 @@ download_kwargs = {
 data = vbt.CCXTData.download(**download_kwargs)
 ```
 
-<img alt="data-download-binance" src="https://i.imgur.com/80yLt6R.png">
-
 ### Backtest
 
 Untuk menyenangkan aku run script backtest, aku cuma perlu run satu line saja dari CLI:
@@ -193,11 +194,11 @@ Sama la macam backtest, cuma run satu command line je:
 python .\run_alert.py --strategy irsimax_1h --ticker BTC/USDT --timeframe 1h
 ```
 
-Kedua-dua script `run_backtest.py` dan `run_alert.py` ni aku pakai file yang berbeza sebab kerja dia lain-lain, maka nya dalam command alert ni tak ada argument `--start`.
+Kedua-dua script `run_backtest.py` dan `run_alert.py` ni aku pakai file yang berbeza sebab kerja dia lain-lain, maka nya dalam command alert ni tak ada argument `--start`. Argument `--strategy` juga aku guna untuk senang switch antara strategi lain.
 
 ### Punca signal
 
-Kedua-dua command di atas sebenarnya menggunakan satu punca signal yang sama. Bila kita buat backtest, sudah tentu dia bagi signal entry dan exit. Maka nya aku guna result backtest tersebut untuk aku send alert ke Telegram. Bijak bukan?
+Kedua-dua command di atas sebenarnya menggunakan satu punca signal yang sama. Bila kita buat backtest, sudah tentu dia bagi signal entry dan exit. Maka nya aku guna result backtest tersebut untuk aku send alert ke Telegram.
 
 Code snippet di bawah menunjukkan function dari VectorBT iaitu `.from_signals()`. Function ni menerima parameter seperti condition untuk long entry, short entry dan exit nya. Kita juga boleh tetapkan condition untuk *stop loss* dan *take profit*. Kalau tengok full parameter dia pun memang banyak. Kita boleh tetapkan ciri-ciri pyramiding, trailing stop, partial entry/exit, etc. Cuma sekarang aku pakai yang basic je.
 
@@ -217,7 +218,9 @@ pf = vbt.Portfolio.from_signals(
 return pf
 ```
 
-### Backtest result
+## Backtest result
+
+### Raw data
 
 Bila kita dah supply segalanya ke dalam function tadi, VectorBT akan jalankan tugas dia sebagai engine backtest dan mengeluarkan data signal dari kondisi strategi kita tadi. Kita juga boleh plot dalam chart di mana signal itu beli atau jual. Statistik performance juga boleh dihasilkan.
 
@@ -239,26 +242,28 @@ Exit Trade Id  Column      Size           Entry Timestamp  Avg Entry Price  Entr
 
 Banyak info yang boleh kita dapat dari table ni seperti waktu entry, waktu exit, PnL, direction (long atau short) dan juga status position tersebut (masih open atau sudah closed). Dari table ni la kita ambil info-info untuk kita send ke Telegram. Yang paling penting adalah last row tu, kita perlu tahu position yang baru untuk kita alert ke Telegram sebab status nya masih *Open*.
 
-Penting nya last row tu sebab bila menulis logic, kita perlukan status *Open* tersebut. Aku pernah pakai framework **backtesting.py**. Penat-penat belajar framework tu last-last dapat tahu yang dia tak keluarkan info ni. Tu aku cakap, kalau takde LLM memang sampai kesudah aku tak dapat realisasikan projek ni. Dengan LLM je aku laju buat lol. Kalau bina sendiri dari scratch apatah lagi.
+Penting nya last row tu sebab bila menulis logic, kita perlukan status *Open* tersebut. Aku pernah pakai framework **backtesting.py**. Penat-penat belajar framework tu last-last dapat tahu yang dia tak keluarkan info ni. Langsung cari framework lain maka terjumpa lah VectorBT.
 
-Ringkasan logic send alert ke Telegram menggunakan info dari `pf.trades`:
+Berikut adalah ringkasan logic untuk send alert ke Telegram menggunakan info dari `pf.trades`:
 
 ```python
-    if latest_trade.Direction == "Long":
-        if latest_trade.Status == "Open":
-            message = (f"🟢 LONG ENTRY")
-        elif latest_trade.Status == "Closed":
-            message = (f"🔴 LONG EXIT")
+if latest_trade.Direction == "Long":
+    if latest_trade.Status == "Open":
+        message = "LONG ENTRY"
+    elif latest_trade.Status == "Closed":
+        message = "LONG EXIT"
 
-    elif latest_trade.Direction == "Short":
-        if latest_trade.Status == "Open":
-            message = (f"🟢 SHORT ENTRY")
-        elif latest_trade.Status == "Closed":
-            message = (f"🔴 SHORT EXIT")
+elif latest_trade.Direction == "Short":
+    if latest_trade.Status == "Open":
+        message = "SHORT ENTRY"
+    elif latest_trade.Status == "Closed":
+        message = "SHORT EXIT"
 
-    if message:
-        send_message(message)
+if message:
+    send_message(message)
 ```
+
+### Statistik
 
 Tadi tu adalah data raw yang dari engine framework. VectorBT juga ada mengeluarkan statistik strategi yang di backtest. 
 
@@ -296,7 +301,11 @@ Sortino Ratio                                  1.426686
 dtype: object
 ```
 
-Statistik ni untuk kita tahu performance strategi. Sebagai contoh, kita nak tahu *Max Drawdown* dan tempoh drawdown tersebut, ada ditunjukkan dalam statistik. Ratio-ratio yang common dalam statistik trading macam Sharpe ratio, Calmar ratio, Sortino juga ada. Jadi mudah lah nak menilai performance strategi. Kalau tak power, cari strategi lain, atau ubah config strategi. Yang penting, result strategi kita tu masuk akal dan bukan jenis *too good to be true*. Sebab kadang tu aku nampak orang share result backtest dengan win rate lebih 90%. Dalam realiti, memang susah betul dan agak mustahil nak dapat 90% win rate. Lain lah kalau Total Trades yang dia masuk tu cuma tiga, dan dua je yang profit. Memang lah dekat 100% win.
+Statistik ni untuk kita tahu performance strategi. Sebagai contoh, kita nak tahu *Max Drawdown* dan tempoh drawdown tersebut, ada ditunjukkan dalam statistik. Ratio-ratio yang common dalam statistik trading macam Sharpe ratio, Calmar ratio, Sortino juga ada. Jadi mudah lah nak menilai performance strategi. Kalau tak power, cari strategi lain, atau ubah config strategi.
+
+Yang penting, result strategi kita tu masuk akal dan bukan jenis *too good to be true*. Sebab kadang tu aku nampak orang share result backtest dengan win rate lebih 90%. Dalam proses pembinaan strategi kita kena tahu isu macam repainting. Repainting ni terjadi bila kita pakai lebih dari 1 timeframe dalam strategi tersebut. Sebagai contoh kita guna timeframe daily untuk tentukan direction market untuk kita entry guna timeframe 1h. Cara macam ni prone untuk dapat isu seperti repainting. Ia akan buat result backtest tu tak mengikut closing bar yang betul.
+
+### Plotting
 
 Selain data raw dan statistik, VectorBT boleh plot position entry dan exit dengan menggunakan function `pf.plot().show()`:
 
@@ -308,29 +317,201 @@ Plot ni dia tunjuk tiga chart, 1) Orders, 2) Trade PnL dan 3) Cumulative Returns
 
 ## Deployment Ke Raspberry Pi
 
-Copy the folder over, set up venv, install requirements.
+Bahagian ni kita hanya menggunakan fungsi alert saja. Script untuk [backtest](#backtest) tadi tak diperlukan lagi. Backtest hanya berlaku dalam environment yang ada GUI sebab kita memerlukan ciri plotting. Manakala untuk [alert](#telegram-alert) kita tak perlukan GUI sebab kerja nya hanya untuk scan signal dan send alert ke Telegram. Jadi kalau nak pakai Raspberry Pi, disarankan untuk set OS tu menjadi *"headless"*.
 
-Set Telegram env vars.
+Sebelum aku deploy ke Raspberry Pi, aku akan pastikan Raspberry Pi aku tu dah enable akses SSH supaya senang nak akses dari tempat lain. Aku tak open port apa-apa, cuma akses guna local network je. Dengan cara ni aku hanya boleh akses dalam wifi network yang sama. Bila dekat luar tak boleh masuk. Boleh je nak buka port router tu untuk masuk network tapi aku takut kalau ada lubang sekuriti kang orang lain boleh ceroboh masuk pula internet rumah aku.
 
-Create systemd service and timer.
-I run it with systemd timer—every 5 minutes for 5m chart. Survives reboots, network drops.
+Bila dah enable SSH tu, baru lah boleh copy projek VectorBT ni masuk dalam Raspberry Pi. Sebelum buat kerja meng-copy ni, kena lah backtest secara mendalam strategi dalam laptop. Lepas dah puas hati dengan hasil backtest, baru lah pindah masuk ke dalam Raspberry Pi tersebut.
 
-Enable it.
+Ada dua cara nak copy:
 
-Done. Runs quietly, logs to file, alerts on phone.
+1. Pakai git
+2. Pakai command `scp`
 
-### Common Linux commands
+Cara pakai git paling senang, aku cuma kena push projek tu dalam Github dan terus `git clone` dari Raspberry Pi. Jadi tak perlu dokumentasi kot. 
 
-Ini SOP aku, bila mana aku nak mulakan alert untuk strategy lain atau nak create timer systemd baru sehinggalah untuk lihat log report untuk strategy yang dijalankan.
+### `scp`
 
+Sebelum tu kena enable SSH akses dulu baru boleh guna command ni. `scp` command ni fungsi dia untuk transfer file dari network lain ke network lain. Jadi setiap kali ada buat code changes, aku kena buat command ni untuk transfer file baru. Rumit. Pakai git lagi senang.
+
+Caranya transfer dari laptop ke Raspberry Pi (SSH):
+
+1. zip kan projek folder VectorBT
+2. Lakukan command ini:
+
+```bash
+scp vectorbt.zip raspi@hostname_or_ip:/home/raspi/vectorbt
+```
+
+Kalau taknak zip, terus je copy folder projek masuk ke Raspberry Pi guna command ni:
+
+```bash
+scp -r /path/to/vectorbt raspi@hostname_or_ip:/home/raspi/vectorbt
+```
+
+### `venv`
+
+Dah settle tu, akses Raspberry Pi dan masuk ke direktori `/vectorbt` dan set up `venv` -- sebuah virtual environment untuk projek python.
+
+Bila kita pakai venv ni, segala package python yang kita download hanya wujud dalam direktori projek saja. Jadi Raspberry Pi kita tu takde lah bloated dengan python package yang merepek-repek. Kalau kita hapus folder projek tu, python package yang dah di download tu semua akan terhapus juga. Ia juga memang disarankan kalau pakai komputer skala kecil ni sebab storage tak besar, memory pun tak banyak.
+
+Cara untuk initialize dan activate `venv`:
+
+```bash
+python -m venv venv               # venv init in folder
+source venv/bin/activate          # activate venv in folder
+# already inside venv session                      
+```
+
+Bila dah activate, kita akan masuk ke dalam environment venv direktori projek. Dekat command tu akan dimulakan dengan `(venv)`. Dalam environment venv ni kita install package yang diperlukan oleh projek VectorBT:
+
+```bash
+pip install --upgrade pip  # optional
+pip install -r requirements.txt
+# exit venv
+deactivate
+```
+
+Sebelum deactivate venv environment tu, test dulu script alert jalan ke tak. Sebab package tadi hanya wujud dalam environment ni. Kalau kita keluar (deactivate) dari venv, python tak boleh jumpa package tersebut dan akan keluar error "module not found".
+
+Bila dah selesai download package dan script berjalan dengan sempurna, baru lah kita set script alert supaya dia run secara berkala.
+
+Enter cron dan systemd timer.
+
+### cronjob
+
+Aku dulu memang pakai cronjob je untuk semua script yang ada dalam cloud server, sebab paling senang nak set. Tapi bila tahu ada service yang lebih sempurna dan fleksibel macam systemd timer, aku pakai itu je. Mungkin kalau projek kecil dan tak perlukan convenience macam logging, boleh la pakai cronjob. Tapi aku akan tetap buat nota sini.
+
+Akses cronjob file dengan menggunakan command `crontab -e` dan masukkan line ini untuk run alert script kita:
+
+```bash
+*/5 * * * * /home/raspi/vectorbt/venv/bin/python /home/raspi/vectorbt/run_alert.py --strategy macross --ticker BTC/USDT --timeframe 5m 2>&1
+```
+
+Lepas tu save file crontab ni dengan menekan `ctrl+X` dan `Y` untuk save.
+
+Command cron ini akan menjalankan script secara berkala setiap 5 minit (`*/5 * * * *`) sebab strategi kita memerlukan timeframe 5m. Jadi setiap 5 minit cron akan run script, download candle baru dan jalan kan backtest. Kalau ada signal, send alert ke Telegram.
+
+Dari command tu, kita menggunakan python yang ada dalam `venv` dan bukan dari system OS. Ini kerana library projek tu wujud dalam folder venv tu dan hanya dalam environment venv saja dia boleh detect.
+
+### systemd service dan timer
+
+Cara ni aku guna sekarang untuk projek VectorBT ni. Nak setup dia agak rumit tapi bila dah tahu proses nya, jadi senang je.
+
+Pertama sekali, kita kena setup service untuk run alert script tadi. Cipta satu file baru dalam `/etc/systemd/system/`:
+
+```bash
+sudo nano /etc/systemd/system/backtest-macross.service
+```
+
+`backtest-macross.service` adalah nama file service. Di dalam file ni kita akan letak command untuk run alert script macam dalam cron tadi. Kita juga akan set Telegram token dan Telegram channel ID untuk send ke Telegram tu berfungsi dengan baik.
+
+Dalam file service ini, masukkan script ini:
+
+```bash
+[Unit]
+Description=Telegram Alert MA Cross
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/raspi/vectorbt/venv/bin/python /home/raspi/vectorbt/run_alert.py --strategy macross --ticker BTC/USDT --timeframe 5m
+WorkingDirectory=/home/raspi/vectorbt/
+Environment=TELEGRAM_TOKEN=12345677:ABCD-cUasknKksdfIasdmO938d
+Environment=TELEGRAM_CHAT_ID=-100288400284
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Kalau nak tahu lebih lanjut fungsi-fungsi systemd service ni, Google je lah. Yang aku tahu `Environment` tu akan dipakai oleh systemd untuk replace segala benda yang menggunakan `os.getenv()`. Lepas tu `Restart` dan`RestartSec` tu untuk bagitau yang service ni kena tunggu 10 saat kalau system reboot atau masalah network (`on-failure`). Entah lah, ikut suka aku je.
+
+Setelah dah buat file service, cipta pula file `.timer` dalam direktori dan nama yang sama. Cuma tukar `.service` jadi `.timer` je.
+
+```bash
+sudo nano /etc/systemd/system/backtest-macross.timer
+```
+
+Dalam file ni, masukkan script ini:
+
+```bash
+[Unit]
+Description=Telegram Alert MA Cross Timer
+
+[Timer]
+OnCalendar=*:0/5
+Persistent=true
+Unit=backtest-macross.service
+
+[Install]
+WantedBy=timers.target
+```
+
+File ini lah yang akan menjalankan script alert tu secara berkala. Kita specify timing dekat line ini `OnCalendar=*:0/5` iaitu run setiap 5 minit. Sama je macam cron tu tadi. Cuma bila pakai systemd ni, kita kena enable dan start timer tersebut menggunakan command.
+
+```bash
+# Enable and start timer
+sudo systemctl enable backtest-macross.timer
+sudo systemctl start backtest-macross.timer
+```
+
+Kita tak perlu enable `.service` file sebab file timer ini yang akan gunakan service file itu nanti.
+
+Kalau nak edit file `.timer` atau `.service` tu, aku biasa akan stop dan disable dulu timer. Command nya adalah:
+
+```bash
+# To stop and disable
+sudo systemctl stop backtest-macross.timer
+sudo systemctl disable backtest-macross.timer
+```
+
+Boleh je kalau nak directly edit file tu, tapi lepas dah edit tu kena reload balik:
+
+```bash
+# Reload daemon after editing
+sudo systemctl daemon-reload
+```
+
+Jadi kalau ada apa-apa hal macam nak ubah code strategi ke, stop dan disable dulu timer. Lepas tu guna command untuk enable dan start balik timer tersebut.
+
+Misal kata nak hapus segala `.timer` dan `.service` file, guna command:
+
+```bash
+# To delete service and timer files from the system:
+sudo systemctl stop backtest-macross.service backtest-macross.timer
+sudo systemctl disable backtest-macross.timer
+sudo rm /etc/systemd/system/backtest-macross.*
+sudo systemctl daemon-reload
+```
+
+Untuk nak lihat status dan check log script ni jalan ke tak, guna command:
+
+```bash
+# To check status of a timer:
+systemctl status backtest-macross.timer
+systemctl list-timers --all
+
+# To check logs for a service:
+journalctl -u backtest-macross.service -f  # follow live
+journalctl -u backtest-macross.service     # all logs
+journalctl -p err -xb                      # Check for system-wide error
+```
+
+### Routine check
+
+Untuk rutin, command `systemctl status` dan `journalctl` ni aku selalu guna bila masuk SSH ke Raspberry Pi sebab nak tengok samada timer dan script berjalan lancar atau tak. Kadang tu rumah blackout. Bila dah ada letrik Raspberry Pi pun reboot. Jadi kena la tengok balik service nya dapat restart dengan baik ke tak.
+
+Aku juga ada buat custom logging untuk alert ni. Disimpan dalam folder `/logs` dalam direktori projek tadi. Setiap kali masuk SSH, aku akan buat command tadi dan check log folder ni. Lepas tu delete alert log yang lama-lama kasi storage ringan. Gitu je lah.
 
 ## Penutup
 
-VectorBT made this possible without much hassle. The code stays the same for backtest and live. No drift.
+Jadi kerja aku lepas ni hanyalah study strategi baru, terapkan dalam VectorBT, uji dengan backtest dan jalankan alert. Simple, mudah dan boleh dipercayai, impian terealisasi.
 
-It's basic, but reliable. When I want to add filters or more strategies, the structure is ready.
+Langkah seterusnya, mungkin boleh integrasi kan live trading pula? Library CCXT memang dah ada fungsi untuk live trading dan projek ni pula memang ada guna library tu. Mungkin Bahagian III boleh aku telusuri bidang itu. Sekain.
 
-That's how I got a simple MA cross strategy from idea to running on a Pi. Clean, organized, and useful.
+TODO full ma cross vectorbt source code.
 
 [1]: https://vectorbt.dev/
 [2]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
