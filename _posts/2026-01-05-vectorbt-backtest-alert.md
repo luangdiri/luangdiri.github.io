@@ -303,7 +303,9 @@ dtype: object
 
 Statistik ni untuk kita tahu performance strategi. Sebagai contoh, kita nak tahu *Max Drawdown* dan tempoh drawdown tersebut, ada ditunjukkan dalam statistik. Ratio-ratio yang common dalam statistik trading macam Sharpe ratio, Calmar ratio, Sortino juga ada. Jadi mudah lah nak menilai performance strategi. Kalau tak power, cari strategi lain, atau ubah config strategi.
 
-Yang penting, result strategi kita tu masuk akal dan bukan jenis *too good to be true*. Sebab kadang tu aku nampak orang share result backtest dengan win rate lebih 90%. Dalam proses pembinaan strategi kita kena tahu isu macam repainting. Repainting ni terjadi bila kita pakai lebih dari 1 timeframe dalam strategi tersebut. Sebagai contoh kita guna timeframe daily untuk tentukan direction market untuk kita entry guna timeframe 1h. Cara macam ni prone untuk dapat isu seperti repainting. Ia akan buat result backtest tu tak mengikut closing bar yang betul.
+Yang penting, result strategi kita tu masuk akal dan bukan jenis *too good to be true*. Sebab kadang tu aku nampak orang share result backtest dengan win rate lebih 90%. Dalam proses pembinaan strategi kita kena tahu isu kritikal macam *repainting*.
+
+> **Repainting** in backtesting is when a trading indicator or strategy changes its past historical signals or data points as new market data comes in. This creates a misleading, artificially perfect historical performance that would have been impossible to replicate in live trading. 
 
 ### Plotting
 
