@@ -1,7 +1,7 @@
 ---
 title: 'VectorBT Backtest & Telegram Alert'
 date: 2026-01-04 14:39:47
-updated_at: 2026-01-04 22:52:12
+updated_at: 2026-01-06 22:34:26
 tags:
 - tutorial
 - trading
@@ -16,6 +16,8 @@ Dari dulu lagi bercita-cita nak kasi trading strategy aku di automasi kan. Kali 
 Kalau dulu aku buat dari scratch, memang berterabur code aku. Tak ada standard, kalau nak ubah parameter kena ubah semua file. Sekarang bila dah tahu konsep sebenar, baru boleh atur dengan jelas. 
 
 Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kita cipta atau jumpa di internet. Dalam post ni pun aku akan cerita pasal strategy MA crossover biar senang nak cerita. Aku juga ada buat alert untuk signal tu di hantar ke Telegram. Untuk run 24/7, aku host script ni dalam Raspberry Pi.
+
+> Source code penuh di bawah
 
 ---
 **Kandungan:**
@@ -513,7 +515,7 @@ Jadi kerja aku lepas ni hanyalah study strategi baru, terapkan dalam VectorBT, u
 
 Langkah seterusnya, mungkin boleh integrasi kan live trading pula? Library CCXT memang dah ada fungsi untuk live trading dan projek ni pula memang ada guna library tu. Mungkin Bahagian III boleh aku telusuri bidang itu. Sekain.
 
-TODO full ma cross vectorbt source code.
+Source code untuk [MA Cross Strategy VectorBT](https://github.com/luangdiri/vectorbt-demo).
 
 [1]: https://vectorbt.dev/
 [2]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
