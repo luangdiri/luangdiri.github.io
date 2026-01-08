@@ -1,7 +1,7 @@
 ---
 title: 'VectorBT Backtest & Telegram Alert'
 date: 2026-01-04 14:39:47
-updated_at: 2026-01-06 22:34:26
+updated_at: 2026-01-09 01:21:08
 tags:
 - tutorial
 - trading
@@ -17,7 +17,7 @@ Kalau dulu aku buat dari scratch, memang berterabur code aku. Tak ada standard, 
 
 Basically nak bina stack backtest ni, langkah pertama kena ada strategy yang kita cipta atau jumpa di internet. Dalam post ni pun aku akan cerita pasal strategy MA crossover biar senang nak cerita. Aku juga ada buat alert untuk signal tu di hantar ke Telegram. Untuk run 24/7, aku host script ni dalam Raspberry Pi.
 
-> Source code penuh di bawah
+*Source code penuh di bawah.*
 
 ---
 **Kandungan:**
@@ -321,9 +321,9 @@ Plot ni dia tunjuk tiga chart, 1) Orders, 2) Trade PnL dan 3) Cumulative Returns
 
 ## Deployment Ke Raspberry Pi
 
-Bahagian ni kita hanya menggunakan fungsi alert saja. Script untuk [backtest](#backtest) tadi tak diperlukan lagi. Backtest hanya berlaku dalam environment yang ada GUI sebab kita memerlukan ciri plotting. Manakala untuk [alert](#telegram-alert) kita tak perlukan GUI sebab kerja nya hanya untuk scan signal dan send alert ke Telegram. Jadi kalau nak pakai Raspberry Pi, disarankan untuk set OS tu menjadi *"headless"*.
+Bahagian ni kita hanya menggunakan fungsi alert saja. Script untuk [backtest](#backtest) tadi tak diperlukan lagi. Backtest hanya berlaku dalam environment yang ada GUI sebab kita memerlukan ciri plotting. Manakala untuk [alert](#telegram-alert) kita tak perlukan GUI sebab kerja nya hanya untuk scan signal dan send alert ke Telegram. Jadi kalau nak pakai Raspberry Pi, disarankan untuk set OS tu menjadi *"[headless][8]"*.
 
-Sebelum aku deploy ke Raspberry Pi, aku akan pastikan Raspberry Pi aku tu dah enable akses SSH supaya senang nak akses dari tempat lain. Aku tak open port apa-apa, cuma akses guna local network je. Dengan cara ni aku hanya boleh akses dalam wifi network yang sama. Bila dekat luar tak boleh masuk. Boleh je nak buka port router tu untuk masuk network tapi aku takut kalau ada lubang sekuriti kang orang lain boleh ceroboh masuk pula internet rumah aku.
+Sebelum aku deploy ke Raspberry Pi, aku akan pastikan Raspberry Pi aku tu dah auto-connect dengan wifi dan aktifkan SSH supaya senang nak akses dari tempat lain. Aku tak open port apa-apa, cuma akses guna local network je. Dengan cara ni aku hanya boleh akses dalam wifi network yang sama. Bila dekat luar tak boleh masuk. Boleh je nak buka port router tu untuk masuk network tapi aku takut kalau ada lubang sekuriti kang orang lain boleh ceroboh masuk pula internet rumah aku.
 
 Bila dah enable SSH tu, baru lah boleh copy projek VectorBT ni masuk dalam Raspberry Pi. Sebelum buat kerja meng-copy ni, kena lah backtest secara mendalam strategi dalam laptop. Lepas dah puas hati dengan hasil backtest, baru lah pindah masuk ke dalam Raspberry Pi tersebut.
 
@@ -507,7 +507,9 @@ journalctl -p err -xb                      # Check for system-wide error
 
 Untuk rutin, command `systemctl status` dan `journalctl` ni aku selalu guna bila masuk SSH ke Raspberry Pi sebab nak tengok samada timer dan script berjalan lancar atau tak. Kadang tu rumah blackout. Bila dah ada letrik Raspberry Pi pun reboot. Jadi kena la tengok balik service nya dapat restart dengan baik ke tak.
 
-Aku juga ada buat custom logging untuk alert ni. Disimpan dalam folder `/logs` dalam direktori projek tadi. Setiap kali masuk SSH, aku akan buat command tadi dan check log folder ni. Lepas tu delete alert log yang lama-lama kasi storage ringan. Gitu je lah.
+Aku juga ada buat custom logging untuk alert ni. Disimpan dalam folder `/logs` dalam direktori projek tadi. Setiap kali masuk SSH juga aku akan check log folder ni. Lepas tu delete alert log yang lama-lama kasi storage ringan. Gitu je lah.
+
+Untuk version control, aku pakai git. Bila ada code changes, cuma kena `git push` dan `git pull`. 
 
 ## Penutup
 
@@ -524,3 +526,4 @@ Source code untuk [MA Cross Strategy VectorBT](https://github.com/luangdiri/vect
 [5]: https://wundertrading.com/en/register?ref=wbtdf816e60
 [6]: https://i.imgur.com/rhqtB4C.png
 [7]: https://vectorbt.dev/
+[8]: https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
