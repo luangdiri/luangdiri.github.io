@@ -1,5 +1,5 @@
 ---
-title: 'VectorBT Backtest & Telegram Alert'
+title: 'Vectorbt Backtest & Telegram Alert'
 date: 2026-01-04 14:39:47
 updated_at: 2026-01-09 01:21:08
 tags:
@@ -72,7 +72,7 @@ Biasa nya prosedur yang biasa aku buat bila dah dapat sesuatu strategi adalah:
 
 1. Backtest dulu dalam TradingView -- guna Pine Script
 2. Convert Pine Script ke Python -- suruh LLM buatkan
-3. Integrate ke dalam python backtest framework -- dalam hal ini, aku guna **VectorBT**
+3. Integrate ke dalam python backtest framework -- dalam hal ini, aku guna **Vectorbt**
 
 **Kenapa TradingView?**
 
@@ -92,7 +92,7 @@ Tech yang digunakan sepanjang perjalanan backtesting ni adalah:
 |||
 |---|---|
 | **Language** | Python, Pine Script |
-| **Backtest framework** | [VectorBT][1] |
+| **Backtest framework** | [Vectorbt][1] |
 | **Alert** | Telegram |
 | **LLM** | Grok, ChatGPT |
 | **Server** | Raspberry Pi 3 Model B Rev 1.2, 1GB |
@@ -100,11 +100,11 @@ Tech yang digunakan sepanjang perjalanan backtesting ni adalah:
 
 Tak ada Raspberry Pi pun takpe, benda tu untuk kita jalankan alert bot selama 24/7. Guna laptop pun boleh, cuma kena biarkan on je lah. Option lain mungkin kena sewa mana-mana cloud hosting macam DigitalOcean atau Linode.
 
-Untuk engine backtest, aku gunakan [VectorBT][1] framework. Ini adalah framework untuk backtest strategy trading yang menggunakan python.
+Untuk engine backtest, aku gunakan [Vectorbt][1] framework. Ini adalah framework untuk backtest strategy trading yang menggunakan python.
 
 Aku pilih framework ini sebab aku tengok dia *macam* lightweight, sebab feature nya tak sebanyak framework backtest lain. Mula-mula aku nak guna [Hummingbot][4], tapi learning curve dia agak curam ya. Walaupun guna LLM, aku tetap jadi bodoh dalam mengintegrasikan Hummingbot dalam sistem aku. Mungkin sebab sasaran objektif aku cuma sikit je kot iaitu nak dapatkan backtest result je. Bila dah ada banyak feature yang bloated dalam sesebuah framework tu rasa berat kepala otak.
 
-Jadi VectorBT ni engine nya hanya fokus kepada kerja nak backtest dan buat analisis saja, live trading dan alert kena custom sendiri.
+Jadi Vectorbt ni engine nya hanya fokus kepada kerja nak backtest dan buat analisis saja, live trading dan alert kena custom sendiri.
 
 ## Strategi
 
@@ -135,7 +135,7 @@ if (shortCondition)
     strategy.entry("Short", strategy.short)
 ```
 
-*Full code: https://gist.github.com/luangdiri/efb937e67f88e3a9ab738c5bd82535f4*
+*Full code: [macross-pine][9]*
 
 Bila dah selesa dengan Pine Script dan hasil backtest dalam TradingView, baru lah kita convert ke dalam python:
 
@@ -163,7 +163,7 @@ Untuk historical price data, dalam projek ni aku cuma ambil dari Binance spot ma
 
 Script ni basically akan check cache folder dulu, kalau dah ada data yang pernah di download sebelum ni, cuma perlu append yang candle yang baru je. Aku juga ada buat option untuk *force download* data historical ni. So, run pertama script ni akan jadi perlahan sebab dia nak kena download price data dulu apa semua, bila semua di download dan disimpan, run seterusnya cuma cek kalau ada candle baru je. Laju sikit la.
 
-Yang neat nya pakai VectorBT ni, dia dah ada integrate sekali library CCXT. Jadi nak pilih crypto exchange selain Binance pun boleh.
+Yang neat nya pakai Vectorbt ni, dia dah ada integrate sekali library CCXT. Jadi nak pilih crypto exchange selain Binance pun boleh.
 
 ```python
 download_kwargs = {
@@ -202,7 +202,7 @@ Kedua-dua script `run_backtest.py` dan `run_alert.py` ni aku pakai file yang ber
 
 Kedua-dua command di atas sebenarnya menggunakan satu punca signal yang sama. Bila kita buat backtest, sudah tentu dia bagi signal entry dan exit. Maka nya aku guna result backtest tersebut untuk aku send alert ke Telegram.
 
-Code snippet di bawah menunjukkan function dari VectorBT iaitu `.from_signals()`. Function ni menerima parameter seperti condition untuk long entry, short entry dan exit nya. Kita juga boleh tetapkan condition untuk *stop loss* dan *take profit*. Kalau tengok full parameter dia pun memang banyak. Kita boleh tetapkan ciri-ciri pyramiding, trailing stop, partial entry/exit, etc. Cuma sekarang aku pakai yang basic je.
+Code snippet di bawah menunjukkan function dari Vectorbt iaitu `.from_signals()`. Function ni menerima parameter seperti condition untuk long entry, short entry dan exit nya. Kita juga boleh tetapkan condition untuk *stop loss* dan *take profit*. Kalau tengok full parameter dia pun memang banyak. Kita boleh tetapkan ciri-ciri pyramiding, trailing stop, partial entry/exit, etc. Cuma sekarang aku pakai yang basic je.
 
 ```python
 pf = vbt.Portfolio.from_signals(
@@ -224,7 +224,7 @@ return pf
 
 ### Raw data
 
-Bila kita dah supply segalanya ke dalam function tadi, VectorBT akan jalankan tugas dia sebagai engine backtest dan mengeluarkan data signal dari kondisi strategi kita tadi. Kita juga boleh plot dalam chart di mana signal itu beli atau jual. Statistik performance juga boleh dihasilkan.
+Bila kita dah supply segalanya ke dalam function tadi, Vectorbt akan jalankan tugas dia sebagai engine backtest dan mengeluarkan data signal dari kondisi strategi kita tadi. Kita juga boleh plot dalam chart di mana signal itu beli atau jual. Statistik performance juga boleh dihasilkan.
 
 Untuk melihat rekod signal dari awal sampai akhir dalam bentuk table, kita perlu menggunakan `pf.trades.records_readable`. Outputnya adalah seperti berikut:
 
@@ -244,7 +244,7 @@ Exit Trade Id  Column      Size           Entry Timestamp  Avg Entry Price  Entr
 
 Banyak info yang boleh kita dapat dari table ni seperti waktu entry, waktu exit, PnL, direction (long atau short) dan juga status position tersebut (masih open atau sudah closed). Dari table ni la kita ambil info-info untuk kita send ke Telegram. Yang paling penting adalah last row tu, kita perlu tahu position yang baru untuk kita alert ke Telegram sebab status nya masih *Open*.
 
-Penting nya last row tu sebab bila menulis logic, kita perlukan status *Open* tersebut. Aku pernah pakai framework **backtesting.py**. Penat-penat belajar framework tu last-last dapat tahu yang dia tak keluarkan info ni. Langsung cari framework lain maka terjumpa lah VectorBT.
+Penting nya last row tu sebab bila menulis logic, kita perlukan status *Open* tersebut. Aku pernah pakai framework **backtesting.py**. Penat-penat belajar framework tu last-last dapat tahu yang dia tak keluarkan info ni. Langsung cari framework lain maka terjumpa lah Vectorbt.
 
 Berikut adalah ringkasan logic untuk send alert ke Telegram menggunakan info dari `pf.trades`:
 
@@ -267,7 +267,7 @@ if message:
 
 ### Statistik
 
-Tadi tu adalah data raw yang dari engine framework. VectorBT juga ada mengeluarkan statistik strategi yang di backtest. 
+Tadi tu adalah data raw yang dari engine framework. Vectorbt juga ada mengeluarkan statistik strategi yang di backtest. 
 
 Guna function `pf.stats()` akan keluar statistik seperti berikut:
 
@@ -311,7 +311,7 @@ Yang penting, result strategi kita tu masuk akal dan bukan jenis *too good to be
 
 ### Plotting
 
-Selain data raw dan statistik, VectorBT boleh plot position entry dan exit dengan menggunakan function `pf.plot().show()`:
+Selain data raw dan statistik, Vectorbt boleh plot position entry dan exit dengan menggunakan function `pf.plot().show()`:
 
 ![irsimax_1h-2025-01-01.png](https://i.imgur.com/0h5wToL.png)
 
@@ -325,7 +325,7 @@ Bahagian ni kita hanya menggunakan fungsi alert saja. Script untuk [backtest](#b
 
 Sebelum aku deploy ke Raspberry Pi, aku akan pastikan Raspberry Pi aku tu dah auto-connect dengan wifi dan aktifkan SSH supaya senang nak akses dari tempat lain. Aku tak open port apa-apa, cuma akses guna local network je. Dengan cara ni aku hanya boleh akses dalam wifi network yang sama. Bila dekat luar tak boleh masuk. Boleh je nak buka port router tu untuk masuk network tapi aku takut kalau ada lubang sekuriti kang orang lain boleh ceroboh masuk pula internet rumah aku.
 
-Bila dah enable SSH tu, baru lah boleh copy projek VectorBT ni masuk dalam Raspberry Pi. Sebelum buat kerja meng-copy ni, kena lah backtest secara mendalam strategi dalam laptop. Lepas dah puas hati dengan hasil backtest, baru lah pindah masuk ke dalam Raspberry Pi tersebut.
+Bila dah enable SSH tu, baru lah boleh copy projek Vectorbt ni masuk dalam Raspberry Pi. Sebelum buat kerja meng-copy ni, kena lah backtest secara mendalam strategi dalam laptop. Lepas dah puas hati dengan hasil backtest, baru lah pindah masuk ke dalam Raspberry Pi tersebut.
 
 Ada dua cara nak copy:
 
@@ -340,7 +340,7 @@ Sebelum tu kena enable SSH akses dulu baru boleh guna command ni. `scp` command 
 
 Caranya transfer dari laptop ke Raspberry Pi (SSH):
 
-1. zip kan projek folder VectorBT
+1. zip kan projek folder Vectorbt
 2. Lakukan command ini:
 
 ```bash
@@ -367,7 +367,7 @@ source venv/bin/activate          # activate venv in folder
 # already inside venv session                      
 ```
 
-Bila dah activate, kita akan masuk ke dalam environment venv direktori projek. Dekat command tu akan dimulakan dengan `(venv)`. Dalam environment venv ni kita install package yang diperlukan oleh projek VectorBT:
+Bila dah activate, kita akan masuk ke dalam environment venv direktori projek. Dekat command tu akan dimulakan dengan `(venv)`. Dalam environment venv ni kita install package yang diperlukan oleh projek Vectorbt:
 
 ```bash
 pip install --upgrade pip  # optional
@@ -400,7 +400,7 @@ Dari command tu, kita menggunakan python yang ada dalam `venv` dan bukan dari sy
 
 ### systemd service dan timer
 
-Cara ni aku guna sekarang untuk projek VectorBT ni. Nak setup dia agak rumit tapi bila dah tahu proses nya, jadi senang je.
+Cara ni aku guna sekarang untuk projek Vectorbt ni. Nak setup dia agak rumit tapi bila dah tahu proses nya, jadi senang je.
 
 Pertama sekali, kita kena setup service untuk run alert script tadi. Cipta satu file baru dalam `/etc/systemd/system/`:
 
@@ -507,17 +507,17 @@ journalctl -p err -xb                      # Check for system-wide error
 
 Untuk rutin, command `systemctl status` dan `journalctl` ni aku selalu guna bila masuk SSH ke Raspberry Pi sebab nak tengok samada timer dan script berjalan lancar atau tak. Kadang tu rumah blackout. Bila dah ada letrik Raspberry Pi pun reboot. Jadi kena la tengok balik service nya dapat restart dengan baik ke tak.
 
-Aku juga ada buat custom logging untuk alert ni. Disimpan dalam folder `/logs` dalam direktori projek tadi. Setiap kali masuk SSH juga aku akan check log folder ni. Lepas tu delete alert log yang lama-lama kasi storage ringan. Gitu je lah.
+Aku juga ada buat custom logging untuk alert ni. Disimpan dalam folder `/logs` dalam direktori projek tadi. Setiap kali masuk SSH juga aku akan check log folder ni. Lepas tu delete alert log yang lama-l kasi storage ringan. Gitu je lah.
 
 Untuk version control, aku pakai git. Bila ada code changes, cuma kena `git push` dan `git pull`. 
 
 ## Penutup
 
-Jadi kerja aku lepas ni hanyalah study strategi baru, terapkan dalam VectorBT, uji dengan backtest dan jalankan alert. Simple, mudah dan boleh dipercayai, impian terealisasi.
+Jadi kerja aku lepas ni hanyalah study strategi baru, terapkan dalam Vectorbt, uji dengan backtest dan jalankan alert. Simple, mudah dan boleh dipercayai, impian terealisasi.
 
 Langkah seterusnya, mungkin boleh integrasi kan live trading pula? Library CCXT memang dah ada fungsi untuk live trading dan projek ni pula memang ada guna library tu. Mungkin Bahagian III boleh aku telusuri bidang itu. Sekain.
 
-Source code untuk [MA Cross Strategy VectorBT](https://github.com/luangdiri/vectorbt-demo).
+Source code untuk [MA Cross Strategy Vectorbt](https://github.com/luangdiri/vectorbt-demo).
 
 [1]: https://vectorbt.dev/
 [2]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
@@ -527,3 +527,4 @@ Source code untuk [MA Cross Strategy VectorBT](https://github.com/luangdiri/vect
 [6]: https://i.imgur.com/rhqtB4C.png
 [7]: https://vectorbt.dev/
 [8]: https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
+[9]: https://gist.github.com/luangdiri/efb937e67f88e3a9ab738c5bd82535f4
