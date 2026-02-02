@@ -530,6 +530,5 @@ Source code untuk [MA Cross Strategy Vectorbt](https://github.com/luangdiri/vect
 [4]: https://hummingbot.org/
 [5]: https://wundertrading.com/en/register?ref=wbtdf816e60
 [6]: https://i.imgur.com/rhqtB4C.png
-[7]: https://vectorbt.dev/
 [8]: https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
 [9]: https://gist.github.com/luangdiri/efb937e67f88e3a9ab738c5bd82535f4
