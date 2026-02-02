@@ -323,7 +323,7 @@ Plot ni dia tunjuk tiga chart, 1) Orders, 2) Trade PnL dan 3) Cumulative Returns
 
 Bahagian ni kita hanya menggunakan fungsi alert saja. Script untuk [backtest](#backtest) tadi tak diperlukan lagi. Backtest hanya berlaku dalam environment yang ada GUI sebab kita memerlukan ciri plotting. Manakala untuk [alert](#telegram-alert) kita tak perlukan GUI sebab kerja nya hanya untuk scan signal dan send alert ke Telegram. Jadi kalau nak pakai Raspberry Pi, disarankan untuk set OS tu menjadi *"[headless][8]"*.
 
-![my little quant](https://i.imgur.com/qrZPjyx.png)  
+![my little quant](https://i.imgur.com/01kTPZS.png)  
 <small><i>Quant kecilku</i></small>
 
 Sebelum aku deploy ke Raspberry Pi, aku akan pastikan Raspberry Pi aku tu dah auto-connect dengan wifi dan aktifkan SSH supaya senang nak akses dari tempat lain. Aku tak open port apa-apa, cuma akses guna local network je. Dengan cara ni aku hanya boleh akses dalam wifi network yang sama. Bila dekat luar tak boleh masuk. Boleh je nak buka port router tu untuk masuk network tapi aku takut kalau ada lubang sekuriti kang orang lain boleh ceroboh masuk pula internet rumah aku.
