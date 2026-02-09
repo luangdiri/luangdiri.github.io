@@ -6,10 +6,7 @@ tags:
 - tutorial
 ---
 
-Menulis ini sebagai nota takut hilang ilmu lanun yang berharga ni.
-
----
-
+**Kandungan:**  
 - [Audio MP3 highest quality](#audio-mp3-highest-quality)
   - [Single](#single)
   - [Batch download](#batch-download)
@@ -19,6 +16,8 @@ Menulis ini sebagai nota takut hilang ilmu lanun yang berharga ni.
 - [Cut video](#cut-video)
 
 ---
+
+Menulis ini sebagai nota takut hilang ilmu lanun yang berharga ni.
 
 Download *yt-dlp* executable from [Github](https://github.com/yt-dlp/yt-dlp/releases).
 

@@ -24,8 +24,6 @@ Perdagangan algoritma atau **algorithm trading** adalah kaedah berdagang menggun
 
 ## 1. Cari Strategi
 
-<img width="50%" alt="strategy-funnel" src="https://i.imgur.com/eJJutvf.jpeg">
-
 Langkah pertama sebelum fikir pasal coding, automasi, dan backtesting adalah mencari **strategi** yang berkesan. Strategi boleh jadi sesuatu yang mudah seperti **Moving Average crossover** atau RSI oversold/overbought, atau yang lebih kompleks seperti gabungan beberapa indikator teknikal, pattern price action, atau sentimen data.
 
 Sebagai contoh, gabungan MA crossover dan RSI mungkin kelihatan seperti berikut:
