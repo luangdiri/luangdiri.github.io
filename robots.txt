@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.yourdomain.com
+Sitemap: https://luangdiri.github.io/
