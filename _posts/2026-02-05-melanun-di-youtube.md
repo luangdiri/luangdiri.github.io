@@ -25,19 +25,19 @@ Download *yt-dlp* executable from [Github](https://github.com/yt-dlp/yt-dlp/rele
 
 ##### Single
 
-```shell
+```bash
 ./yt-dlp.exe --extract-audio --output "%(title)s.%(ext)s" --audio-format mp3 --audio-quality 0 INSERT_URL
 ```
 
 ##### Batch download
 
-```shell
+```bash
 ./yt-dlp.exe --extract-audio --output "%(title)s.%(ext)s" --audio-format mp3 --audio-quality 0 -ci --batch-file=batch.txt
 ```
 
 #### Cut duration
 
-```shell
+```bash
 ./yt-dlp.exe --extract-audio --output "%(title)s.%(ext)s" --audio-format mp3 --audio-quality 0 INSERT_URL --downloader ffmpeg --downloader-args "ffmpeg_i:-ss 00:10:07"
 ```
 
@@ -47,19 +47,19 @@ Use `ffmpeg_i:-ss 00:00:10.00 -t 00:00:30.00` to download only a specific durati
 
 #### Video highest quality
 
-```shell
+```bash
 ./yt-dlp.exe -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 INSERT_URL
 ```
 
 #### Download a playlist
 
-```shell
+```bash
 ./yt-dlp.exe -i -f mp4 --yes-playlist PLAYLIST_URL
 ```
 
 #### Cut video
 
-```shell
+```bash
 ./ffmpeg.exe -ss 262.2 -t 56.3 -i VIDEO_FILE.EXT -y -c copy OUTPUT_VIDEO.mp4
 ```
 
