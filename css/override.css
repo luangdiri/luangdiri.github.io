@@ -59,3 +59,7 @@ hr {
 .p-small {
   font-size: 0.8em;
 }
+
+.post-content {
+  margin-top: 20px;
+}
