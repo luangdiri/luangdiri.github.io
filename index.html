@@ -23,68 +23,19 @@ layout: page
 
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
-
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Sebelum</a>
       {% else %}
         <span>&laquo; Sebelum</span>
       {% endif %}
 
-      {% assign total = paginator.total_pages %}
-      {% assign current = paginator.page %}
-      {% assign show = site.pagination.show_pages_around | default: 4 %}
-      {% assign edge = site.pagination.edge_pages | default: 2 %}
-
-      {% comment %} === First group === {% endcomment %}
-      {% for page in (1..total) %}
-        {% if page <= edge %}
-          {% if page == current %}
-            <em>{{ page }}</em>
-          {% elsif page == 1 %}
-            <a href="{{ '/' | relative_url }}">{{ page }}</a>
-          {% else %}
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% comment %} Ellipsis after first group {% endcomment %}
-      {% assign first_end = edge %}
-      {% assign middle_start = current | minus: show %}
-      {% if middle_start > first_end + 1 %}
-        <span>...</span>
-      {% endif %}
-
-      {% comment %} === Middle group (around current) === {% endcomment %}
-      {% for page in (1..total) %}
-        {% assign lower = current | minus: show %}
-        {% assign upper = current | plus: show %}
-        {% if page >= lower and page <= upper %}
-          {% unless page <= edge or page >= total | minus: edge %}
-            {% if page == current %}
-              <em>{{ page }}</em>
-            {% else %}
-              <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-
-      {% comment %} Ellipsis before last group {% endcomment %}
-      {% assign last_start = total | minus: edge | plus: 1 %}
-      {% assign middle_end = current | plus: show %}
-      {% if middle_end < last_start - 1 %}
-        <span>...</span>
-      {% endif %}
-
-      {% comment %} === Last group === {% endcomment %}
-      {% for page in (1..total) %}
-        {% if page >= last_start %}
-          {% if page == current %}
-            <em>{{ page }}</em>
-          {% else %}
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          {% endif %}
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em>{{ page }}</em>
+        {% elsif page == 1 %}
+          <a href="{{ '/' | relative_url }}">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
         {% endif %}
       {% endfor %}
 
@@ -93,7 +44,6 @@ layout: page
       {% else %}
         <span>Lanjut &raquo;</span>
       {% endif %}
-
     </div>
     {% endif %}
 
