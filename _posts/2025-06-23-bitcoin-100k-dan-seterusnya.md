@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin - $100k Dan Seterusnya"
 date: 2025-06-23 16:38:43
-updated: 2025-07-02 16:38:43
+updated_at: 2026-02-10 00:08:21
 tags:
 - blockchain
 ---
@@ -81,23 +81,31 @@ Spot Bitcoin ETF menyuntik modal baru dari dunia kewangan tradisional. Kini, boo
 
 1. **Presidensi Kedua Donald Trump**
 
-Trump telah menang pilihan raya AS pada November 2024. Polisi baru beliau merangkumi banyak pendirian yang pro-crypto. Segala undang-undang yang ketat untuk crypto zaman Biden dulu dia dah buang dan reverse balik, sebagai contoh, cukai crypto bakal dihapuskan di AS, membuat negara AS sebagai negara yang memimpin Bitcoin mining dan beliau juga telah membebaskan semula Ross Ulbricht, founder SilkRoad. Ini sekaligus membuatkan Trump di sahut tinggi oleh komuniti anti-CBDC, pro-kebebasan dan libertarian. Selain itu, beliau juga telah meluluskan Crypto Strategic Reserve iaitu negara AS boleh mempertimbang untuk memegang aset crypto di dalam rizab negara. Dalam masa yang sama mencetuskan kebimbangan dalam kalangan Bitcoin maxi tentang kedaulatan dan prinsip sebenar Bitcoin -- financial freedom.
+   Trump telah menang pilihan raya AS pada November 2024. Polisi baru beliau merangkumi banyak pendirian yang pro-crypto. Segala undang-undang yang ketat untuk crypto zaman Biden dulu dia dah buang dan reverse balik, sebagai contoh, cukai crypto bakal dihapuskan di AS, membuat negara AS sebagai negara yang memimpin Bitcoin mining dan beliau juga telah membebaskan semula Ross Ulbricht, founder Silk Road.
+   
+   Ini sekaligus membuatkan Trump di sahut tinggi oleh komuniti anti-CBDC, pro-kebebasan dan libertarian. Selain itu, beliau juga telah meluluskan Crypto Strategic Reserve iaitu negara AS boleh mempertimbang untuk memegang aset crypto di dalam rizab negara. Dalam masa yang sama mencetuskan kebimbangan dalam kalangan Bitcoin maxi tentang kedaulatan dan prinsip sebenar Bitcoin -- financial freedom.
 
 2. **Penamatan Tuntutan Mahkamah Berkenaan Crypto**
 
-Hampir kesemua hukuman undang-undang yang dikenakan kepada syarikat crypto di AS dalam pemerintahan Biden sudah pun tamat, menyebabkan sentimen pasaran menjadi semakin rancak terutamanya XRP. Mahkamah AS telah pun membuat keputusan untuk menolak beberapa kes SEC yang berprofil tinggi seperti Coinbase dan Binance. Manakala untuk kes saman Ripple pula masih dalam kes yang aktif, tetapi ada ura-ura yang kes ini bakal ditamatkan. Dalam kelonggaran undang-undang, ada juga undang-undang yang ketat yang diperkenalkan di luar AS seperti EU MiCA, AS legislation dan KYC diperketatkan. Pengetatan undang-undang ini adalah bertujuan untuk melindung pengguna dan mengawal penggunaan crypto di dalam blockchain daripada di salahguna.
+   Hampir kesemua hukuman undang-undang yang dikenakan kepada syarikat crypto di AS dalam pemerintahan Biden sudah pun tamat, menyebabkan sentimen pasaran menjadi semakin rancak terutamanya XRP. Mahkamah AS telah pun membuat keputusan untuk menolak beberapa kes SEC yang berprofil tinggi seperti Coinbase dan Binance.
+   
+   Manakala untuk kes saman Ripple pula masih dalam kes yang aktif, tetapi ada ura-ura yang kes ini bakal ditamatkan. Dalam kelonggaran undang-undang, ada juga undang-undang yang ketat yang diperkenalkan di luar AS seperti EU MiCA, AS legislation dan KYC diperketatkan. Pengetatan undang-undang ini adalah bertujuan untuk melindung pengguna dan mengawal penggunaan crypto di dalam blockchain daripada di salahguna.
 
 3. **Kebangkitan Stablecoin**
 
-Stablecoins telah wujud lama dalam dunia crypto. Peranan stablecoin dalam pasaran crypto amat penting bagi melicinkan perdagangan dalam infrastruktur crypto. Tether merupakan pengeluar stablecoin pertama iaitu USD Tether (USDT). Tanpa stablecoin mungkin kita tak boleh nak berinteraksi di dalam blockchain seperti decentralized exchange. Proses on-ramping pengguna baru juga mungkin lebih sukar jika stablecoin tidak dicipta. USDC juga adalah sebuah stablecoin yang bersaing dominasi bersama USDT. Kelebihan USDC adalah ia dikawal selia oleh kerajaan AS, manakal USDT hidup diluar selia kerajaan. Ini membuatkan USDT kian hilang dominasi dalam pasaran dan penggunaan USDC dalam infrastruktur crypto makin meningkat. Ripple juga telah melancarkan stablecoin nya sendiri yang dinamakan RLUSD. Ia adalah stablecoin yang disandarkan oleh AS dollar sepenuhnya bertujuan untuk penggunaan enterprise dan institusi. Dengan wujud nya bermacam pilihan stablecoin ini membuatkan ia menjadi satu kunci utama dalam sistem pembayaran, DeFi dan kiriman wang rentas sempadan, sekali gus menyambung dunia crypto dan kewangan tradisional. Dari segi undang-undang pula, Akta Genius (rang undang-undang AS yang menyokong rangka kerja stablecoin terkawal) baru-baru ini diluluskan, memberikan kejelasan undang-undang untuk pengeluar-pengeluar stablecoin.
+   Stablecoins telah wujud lama dalam dunia crypto. Peranan stablecoin dalam pasaran crypto amat penting bagi melicinkan perdagangan dalam infrastruktur crypto. Tether merupakan pengeluar stablecoin pertama iaitu USD Tether (USDT). Tanpa stablecoin mungkin kita tak boleh nak berinteraksi di dalam blockchain seperti decentralized exchange.
+   
+   Proses on-ramping pengguna baru juga mungkin lebih sukar jika stablecoin tidak dicipta. USDC juga adalah sebuah stablecoin yang bersaing dominasi bersama USDT. Kelebihan USDC adalah ia dikawal selia oleh kerajaan AS, manakal USDT hidup diluar selia kerajaan. Ini membuatkan USDT kian hilang dominasi dalam pasaran dan penggunaan USDC dalam infrastruktur crypto makin meningkat.
+   
+   Ripple juga telah melancarkan stablecoin nya sendiri yang dinamakan RLUSD. Ia adalah stablecoin yang disandarkan oleh AS dollar sepenuhnya bertujuan untuk penggunaan enterprise dan institusi. Dengan wujud nya bermacam pilihan stablecoin ini membuatkan ia menjadi satu kunci utama dalam sistem pembayaran, DeFi dan kiriman wang rentas sempadan, sekali gus menyambung dunia crypto dan kewangan tradisional. Dari segi undang-undang pula, Akta Genius (rang undang-undang AS yang menyokong rangka kerja stablecoin terkawal) baru-baru ini diluluskan, memberikan kejelasan undang-undang untuk pengeluar-pengeluar stablecoin.
 
 ![stablecoin-index](https://i.imgur.com/CK87Eq3.png)
 
-*Rajah: Market cap stablecoin kian meningkat saban tahun.*
+<small><i>Rajah: Market cap stablecoin kian meningkat saban tahun.</i></small>
 
 ![top-10-stable](https://i.imgur.com/4SbIec5.png)
 
-*Rajah: Indeks top 10 stablecoin dalam crypto market.*
+<small><i>Rajah: Indeks top 10 stablecoin dalam crypto market.</i></small>
 
 [DefiLlama Stablecoin Index](https://defillama.com/stablecoins)
 
@@ -109,11 +117,11 @@ Lonjakan konflik ini telah mencetus volatility di dalam pasaran kewangan. Yang p
 
 ![bitcoin-price-ww3](https://i.imgur.com/X6RyY9D.png)
 
-*Rajah: Gerak harga BTC/USD ketika Iran menyerang Israel.*
+<small><i>Rajah: Gerak harga BTC/USD ketika Iran menyerang Israel.</i></small>
 
 ![gold-price-ww3](https://i.imgur.com/f6O1jDw.png)
 
-*Rajah: Gerak harga XAU/USD ketika Iran menyerang Israel.*
+<small><i>Rajah: Gerak harga XAU/USD ketika Iran menyerang Israel.</i></small>
 
 Konflik Iran-Israel, yang ditandai dengan serangan peluru berpandu Iran dan kempen agresif Israel, telah meningkatkan ketidakstabilan serantau, mengganggu pasaran, dan menimbulkan kebimbangan terhadap peningkatan global. Walaupun pasaran kewangan menunjukkan daya tahan yang stabil, potensi konflik yang lebih luas masih menjadi kebimbangan kritikal. Jika AS campur tangan secara langsung atau Iran menyasarkan negara Teluk, konflik itu boleh menarik kuasa global, semakin hampir kepada senario Perang Dunia ke-3.
 
