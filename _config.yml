@@ -51,6 +51,10 @@ google_analytics: G-0Q8KGMYF4G
 paginate: 6
 paginate_path: "/page/:num/"
 
+pagination:
+  show_pages_around: 4    # how many pages to show on each side of current page
+  edge_pages: 2           # how many pages to always show at start/end
+
 defaults:
   - scope:
       path: ""

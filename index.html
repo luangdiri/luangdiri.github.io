@@ -29,15 +29,35 @@ layout: page
         <span>&laquo; Sebelum</span>
       {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <em>{{ page }}</em>
-        {% elsif page == 1 %}
-          <a href="{{ '/' | relative_url }}">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% assign total = paginator.total_pages %}
+      {% assign current = paginator.page %}
+      {% assign show = site.pagination.show_pages_around | default: 4 %}
+      {% assign edge = site.pagination.edge_pages | default: 2 %}
+
+      {% comment %} First page + ellipsis if needed {% endcomment %}
+      {% if current > show + edge + 1 %}
+        <a href="{{ '/' | relative_url }}">1</a>
+        <span>...</span>
+      {% endif %}
+
+      {% comment %} Pages around current page {% endcomment %}
+      {% for page in (1..total) %}
+        {% if page >= current | minus: show and page <= current | plus: show %}
+          {% if page == current %}
+            <em>{{ page }}</em>
+          {% elsif page == 1 %}
+            <a href="{{ '/' | relative_url }}">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
         {% endif %}
       {% endfor %}
+
+      {% comment %} Last page + ellipsis if needed {% endcomment %}
+      {% if current < total | minus: show | minus: edge %}
+        <span>...</span>
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', total }}">{{ total }}</a>
+      {% endif %}
 
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | relative_url }}">Lanjut &raquo;</a>
