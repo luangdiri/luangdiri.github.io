@@ -23,6 +23,7 @@ layout: page
 
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
+
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Sebelum</a>
       {% else %}
@@ -34,15 +35,9 @@ layout: page
       {% assign show = site.pagination.show_pages_around | default: 4 %}
       {% assign edge = site.pagination.edge_pages | default: 2 %}
 
-      {% comment %} First page + ellipsis if needed {% endcomment %}
-      {% if current > show + edge + 1 %}
-        <a href="{{ '/' | relative_url }}">1</a>
-        <span>...</span>
-      {% endif %}
-
-      {% comment %} Pages around current page {% endcomment %}
+      {% comment %} Always show first page(s) {% endcomment %}
       {% for page in (1..total) %}
-        {% if page >= current | minus: show and page <= current | plus: show %}
+        {% if page <= edge %}
           {% if page == current %}
             <em>{{ page }}</em>
           {% elsif page == 1 %}
@@ -53,17 +48,46 @@ layout: page
         {% endif %}
       {% endfor %}
 
-      {% comment %} Last page + ellipsis if needed {% endcomment %}
+      {% comment %} Ellipsis after first pages if gap exists {% endcomment %}
+      {% if current > edge + show + 1 %}
+        <span>...</span>
+      {% endif %}
+
+      {% comment %} Pages around current {% endcomment %}
+      {% for page in (1..total) %}
+        {% assign lower = current | minus: show %}
+        {% assign upper = current | plus: show %}
+        {% if page >= lower and page <= upper and page > edge and page < total | minus: edge | plus: 1 %}
+          {% if page == current %}
+            <em>{{ page }}</em>
+          {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% comment %} Ellipsis before last pages if gap exists {% endcomment %}
       {% if current < total | minus: show | minus: edge %}
         <span>...</span>
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', total }}">{{ total }}</a>
       {% endif %}
+
+      {% comment %} Always show last page(s) {% endcomment %}
+      {% for page in (1..total) %}
+        {% if page > total | minus: edge %}
+          {% if page == current %}
+            <em>{{ page }}</em>
+          {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
 
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | relative_url }}">Lanjut &raquo;</a>
       {% else %}
         <span>Lanjut &raquo;</span>
       {% endif %}
+
     </div>
     {% endif %}
 
