@@ -27,6 +27,9 @@ rss: rss
 
 show_excerpts: false
 
+timezone: Asia/Kuala_Lumpur
+future: false # Prevent future-dated posts from being published
+
 header_pages:
   - about.md
   - arkib.html

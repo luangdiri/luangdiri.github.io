@@ -6,11 +6,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
   {%- seo -%}
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link href="/css/override.css" rel="stylesheet" type="text/css">
+
   {%- feed_meta -%}
+
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
+  {%- include google-analytics.html -%}
   {%- endif -%}
 
   <!-- highlight.js -->
@@ -19,6 +24,7 @@
   <script>hljs.highlightAll();</script>
   <!-- end highlight.js -->
 
+  {% if jekyll.environment == 'production' -%}
   <!-- dark theme using DarkReader -->
   <script src="//unpkg.com/darkreader@4.9.109/darkreader.js"></script>
   <script type="text/javascript">
@@ -27,7 +33,5 @@
     DarkReader.auto( {brightness: 100, contrast: 90, sepia: 10} );
   </script>
   <!-- end DarkReader -->
-
-  <!-- override css style -->
-  <link href="/css/override.css" rel="stylesheet" type="text/css">
+  {%- endif %}
 </head>
