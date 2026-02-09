@@ -35,7 +35,7 @@ layout: page
       {% assign show = site.pagination.show_pages_around | default: 4 %}
       {% assign edge = site.pagination.edge_pages | default: 2 %}
 
-      {% comment %} Always show first page(s) {% endcomment %}
+      {% comment %} === First group === {% endcomment %}
       {% for page in (1..total) %}
         {% if page <= edge %}
           {% if page == current %}
@@ -48,32 +48,38 @@ layout: page
         {% endif %}
       {% endfor %}
 
-      {% comment %} Ellipsis after first pages if gap exists {% endcomment %}
-      {% if current > edge + show + 1 %}
+      {% comment %} Ellipsis after first group {% endcomment %}
+      {% assign first_end = edge %}
+      {% assign middle_start = current | minus: show %}
+      {% if middle_start > first_end + 1 %}
         <span>...</span>
       {% endif %}
 
-      {% comment %} Pages around current {% endcomment %}
+      {% comment %} === Middle group (around current) === {% endcomment %}
       {% for page in (1..total) %}
         {% assign lower = current | minus: show %}
         {% assign upper = current | plus: show %}
-        {% if page >= lower and page <= upper and page > edge and page < total | minus: edge | plus: 1 %}
-          {% if page == current %}
-            <em>{{ page }}</em>
-          {% else %}
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          {% endif %}
+        {% if page >= lower and page <= upper %}
+          {% unless page <= edge or page >= total | minus: edge %}
+            {% if page == current %}
+              <em>{{ page }}</em>
+            {% else %}
+              <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+          {% endunless %}
         {% endif %}
       {% endfor %}
 
-      {% comment %} Ellipsis before last pages if gap exists {% endcomment %}
-      {% if current < total | minus: show | minus: edge %}
+      {% comment %} Ellipsis before last group {% endcomment %}
+      {% assign last_start = total | minus: edge | plus: 1 %}
+      {% assign middle_end = current | plus: show %}
+      {% if middle_end < last_start - 1 %}
         <span>...</span>
       {% endif %}
 
-      {% comment %} Always show last page(s) {% endcomment %}
+      {% comment %} === Last group === {% endcomment %}
       {% for page in (1..total) %}
-        {% if page > total | minus: edge %}
+        {% if page >= last_start %}
           {% if page == current %}
             <em>{{ page }}</em>
           {% else %}
