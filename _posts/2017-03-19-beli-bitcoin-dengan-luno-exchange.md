@@ -76,32 +76,32 @@ Update 12 - 15/1/2024:
 
 **Kandungan:** <!-- omit from toc -->
 
-- [0. About Luno](#0-about-luno)
-- [1. Beware of scammers](#1-beware-of-scammers)
-- [2. Daftar](#2-daftar)
+- [About Luno](#about-luno)
+- [Beware of scammers](#beware-of-scammers)
+- [Daftar](#daftar)
   - [Register account](#register-account)
   - [Confirm melalui email](#confirm-melalui-email)
   - [Verify account](#verify-account)
   - [Verification levels](#verification-levels)
-- [3. Beli Bitcoin](#3-beli-bitcoin)
+- [Beli Bitcoin](#beli-bitcoin)
   - [Fund account](#fund-account)
   - [Buying your first BTC](#buying-your-first-btc)
-- [4. Menggunakan wallet address](#4-menggunakan-wallet-address)
+- [Menggunakan wallet address](#menggunakan-wallet-address)
   - [Receive dari wallet lain](#receive-dari-wallet-lain)
   - [Send ke wallet lain](#send-ke-wallet-lain)
-- [5. Menjual dan withdraw ke bank](#5-menjual-dan-withdraw-ke-bank)
+- [Menjual dan withdraw ke bank](#menjual-dan-withdraw-ke-bank)
   - [Menjual BTC ke MYR](#menjual-btc-ke-myr)
   - [Withdraw ke bank](#withdraw-ke-bank)
-- [6. Trading (Advanced)](#6-trading-advanced)
+- [Trading (Advanced)](#trading-advanced)
     - [Reading resources](#reading-resources)
     - [Trading exchanges](#trading-exchanges)
-- [7. Luno Fees](#7-luno-fees)
-- [8. Securing your Bitcoins](#8-securing-your-bitcoins)
+- [Luno Fees](#luno-fees)
+- [Securing your Bitcoins](#securing-your-bitcoins)
   - [Enable 2-Factor Authentication (2FA)](#enable-2-factor-authentication-2fa)
   - [Simpan BTC dalam non-custodial wallet](#simpan-btc-dalam-non-custodial-wallet)
   - [Backup private keys/phrase](#backup-private-keysphrase)
   - [Hardware wallet](#hardware-wallet)
-- [9. Sertai komuniti](#9-sertai-komuniti)
+- [Sertai komuniti](#sertai-komuniti)
 
 ---
 
@@ -109,7 +109,7 @@ Update 12 - 15/1/2024:
 > Buat due diligence sendiri terlebih dahulu. Tiada istilah YOLO dalam crypto market. Kecuali kau seorang pemain judi paling power di Genting Highlands.<br/>
 > Aku sarankan kau hadam kan list of [Bitcoin Resources][27] ni dulu dan gapai cukup cukup teknologi [Blockchain][33].
 
-## 0. About Luno
+## About Luno
 
 Guna laman sesawang Luno: <a href="https://luno.com" target="_blank">luno.com</a>, atau download Luno apps di [Play Store][11] (Android) dan [App Store][46] (iOS).
 
@@ -131,7 +131,7 @@ Aku bagitahu bukan apa, saje je sebab ada orang tak suka kena trade halt ni, jad
 
 <i><small>Btw, aku bukan wakil penjual nama Luno, dan aku tak bekerja dengan mereka pun.</small></i>
 
-## 1. Beware of scammers
+## Beware of scammers
 
 > **Note:** Aku letak benda ni paling atas pasal nak bagitahu betapa pentingnya untuk kau tahu kewujudan pencuri dalam internet bila main dengan hal duit.
 
@@ -145,7 +145,7 @@ Biasa lah, fiat currency pun ada juga scam orang buat. Tengok forex scam tu semu
 
 Actually, tak kisah lah kau nak invest dekat mana pun. Duit kau, bukan duit aku lol. Tapi elok lah aware dengan benda ni. Apa-apa pun, kau boleh refer dekat sini untuk tengok list scam site yang berkaitan dengan Bitcoin (and other cryptocurrencies): https://www.badbitcoin.org/
 
-## 2. Daftar
+## Daftar
 
 ### Register account
 
@@ -192,7 +192,7 @@ Account verification ni ada beberapa level untuk kau deposit/withdraw duit:
 
 Info lebih lanjut, di sini: [https://www.luno.com/en/countries#levels](https://www.luno.com/en/countries#levels).
 
-## 3. Beli Bitcoin
+## Beli Bitcoin
 
 ### Fund account
 
@@ -262,7 +262,7 @@ Tekan lagi button bulat tu untuk masukkan PIN untuk confirmation.
 
 Done.
 
-## 4. Menggunakan wallet address
+## Menggunakan wallet address
 
 > **Note:** Step ni mungkin untuk orang yang dah tahu macam mana Bitcoin berfungsi (intermediate).
 
@@ -296,7 +296,7 @@ Skrin yang terpapar ialah beberapa details yang kau kena isi. Yang ada * tu adal
 
 Kena ambil note juga, kata nya **large amounts may not be processed instantaneously**. Pasal security reasons, amount yang melebihi 10 BTC akan di proses secara manual oleh pekerja Luno. Boleh tengok dekat [sini][2] untuk schedule penghantaran.
 
-## 5. Menjual dan withdraw ke bank
+## Menjual dan withdraw ke bank
 
 Proses ni adalah untuk kau convert **BTC ke MYR** *sebelum* kau nak withdraw ke bank. Step sebelum ni kita dah cover pembelian *(MYR ke BTC)* dan sekarang ni untuk tukar **BTC ke MYR** pula. Also, aku akan cover cara nak withdraw ke dalam bank.
 
@@ -324,7 +324,7 @@ Withdraw punya page akan keluar. Straightforward lah, malas aku nak cerita dalam
 
 Berapa lama duit tu nak masuk bank, kau tanya? Baca [sini][2], jangan jadi malas.
 
-## 6. Trading (Advanced)
+## Trading (Advanced)
 
 Topik ni agak heavy untuk aku cover dalam satu post. Mungkin in the future aku akan buat post lain, ni sebagai introductory je. Lagipun aku tak expert pun dalam trading ni. Tapi aku share juga lah pengalaman aku main trade dalam Luno app.
 
@@ -358,7 +358,7 @@ Selain Luno, ada juga platform lain untuk main trading. Personally, aku selalu p
 
 Untuk Android app pula, aku pakai [TabTrader][16]. Boleh integrate dengan banyak exchange dan trade straight dari phone di dalam traffic jam. f\*\*\* yeah!
 
-## 7. Luno Fees
+## Luno Fees
 
 tl;dr
 
@@ -391,7 +391,7 @@ Untuk nak buat withdrawal dari Luno BTC wallet ke wallet exchange (Bittrex, Polo
 
 ---
 
-## 8. Securing your Bitcoins
+## Securing your Bitcoins
 
 ### Enable 2-Factor Authentication (2FA)
 
@@ -427,7 +427,7 @@ Ya, nak secure sovereign digital token ni memang susah :)
 
 Nak lagi hardcore physical backup? Guna hardware wallet macam [Ledger][24]. Aku tak pernah pakai benda ni, tapi orang kata senang nak mampus dan secure as f\*\*\*. Ia berfungsi macam pendrive di mana kau cucuk wallet ni dari USB port dan boleh buat transaksi melalui Ledger.
 
-## 9. Sertai komuniti
+## Sertai komuniti
 
 Sini ada beberapa group berkaitan dengan Bitcoin dan legacy market kau boleh join. Either nak bertanya soalan, bertukar pendapat, nak shitpost, etc,
 
