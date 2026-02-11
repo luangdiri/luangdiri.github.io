@@ -63,9 +63,7 @@ Use `ffmpeg_i:-ss 00:00:10.00 -t 00:00:30.00` to download only a specific durati
 ./ffmpeg.exe -ss 262.2 -t 56.3 -i VIDEO_FILE.EXT -y -c copy OUTPUT_VIDEO.mp4
 ```
 
-More info: https://ytcutter.cc/
-
 - `-ss`: set the start time ofkfset
 - `-t`: record or transcode "duration" seconds of audio/video
 
-NOTE: use yt-dlp.exe instead
+NOTE: use *yt-dlp.exe* instead
