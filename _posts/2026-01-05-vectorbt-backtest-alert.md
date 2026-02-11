@@ -1,5 +1,5 @@
 ---
-title: 'Vectorbt Backtest & Telegram Alert'
+title: 'Vectorbt - Backtest & Telegram Alert'
 date: 2026-01-04 14:39:47
 updated_at: 2026-01-09 01:21:08
 tags:
