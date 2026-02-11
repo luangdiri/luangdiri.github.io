@@ -1,6 +1,6 @@
 title: "Luang Diri"
 author: "Aiman"
-description: "Meluang diri dengan melaung disini"
+description: "Meluang diri dengan melaung disini."
 footer_year: "© 2009 - 2026"
 url: https://luangdiri.github.io
 baseurl: ""
@@ -49,7 +49,7 @@ titles_from_headings:
 
 google_analytics: G-0Q8KGMYF4G
 
-paginate: 6
+paginate: 7
 paginate_path: "/page/:num/"
 
 defaults:
