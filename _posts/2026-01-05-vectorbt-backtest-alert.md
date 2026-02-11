@@ -265,6 +265,10 @@ if message:
     send_message(message)
 ```
 
+Contoh Telegram alert yang aku dah format:
+
+![vbt-tg-alert](https://i.imgur.com/zzSDTla.png)
+
 ### Statistik
 
 Tadi tu adalah data raw yang dari engine framework. Vectorbt juga ada mengeluarkan statistik strategi yang di backtest. 

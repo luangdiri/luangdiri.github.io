@@ -24,6 +24,7 @@ Seperti sedia maklum, signal yang terhasil dari Vectorbt boleh digunakan untuk m
 
 - [Ulangkaji](#ulangkaji)
 - [Live trade](#live-trade)
+  - [Asas bina live trade](#asas-bina-live-trade)
 
 ---
 
@@ -33,7 +34,7 @@ Seperti sedia maklum, signal yang terhasil dari Vectorbt boleh digunakan untuk m
 
 ![vbt-no-trade](https://i.imgur.com/cA2j0MM.png)
 
-Rajah di atas menunjukkan carta aliran framework kita.
+Rajah di atas menunjukkan carta aliran framework Vectorbt dengan alert.
 
 Bermula dari *modules*, script backtest atau alert di jalankan melalui CLI:
 
@@ -51,14 +52,36 @@ Bergantung pada script mana yang kita jalankan tadi, kalau kita `run_backtest`, 
 
 ## Live trade
 
-Aku akan menambah satu lagi argument dalam script `run_alert` iaitu `--live-trade`. Flag ini jika di-enabled akan membuat satu extension kepada sistem alert kita tadi iaitu placing order dalam
+Aku akan menambah satu lagi argument dalam script `run_alert` iaitu `--live-trade`. Flag ini jika di-enabled akan membuat satu extension kepada sistem alert yang sedia ada iaitu memanggil API dari Binance untuk membuat buy/sell order menggunakan library [CCXT][ccxt].
 
 ```bash
 # alert dengan live trade
 python .\run_alert.py --strategy macross --ticker BTC/USDT --timeframe 1h --live-trade
 ```
 
-![vbt-full](https://i.imgur.com/MlJilQ0.png)
+Ringkasan pseudocode untuk bahagian live trade ini kelihatan seperti berikuat:
+
+```python
+if long or short:
+    signal_msg = "entry long or short signal"
+    if live_trade:
+        live_msg = execute_live_trade() # market order placing
+    send_message(signal_msg + live_msg)
+```
+
+Kalau sebelum ini, kita cuma ada `signal_msg` saja, sekarang kita inject function `execute_live_trade`. Fungsi function ini adalah untuk membuat order dalam Binance (atau mana-mana exchange yang di integrasikan) dan menghasilkan info seperti *entry price, stop loss price,* dan juga *liquidation price*.
+
+![vbt-tg-alert-trade](https://i.imgur.com/YEQn6QV.png)
+
+<small><i>Contoh alert bersama live trade</i></small>
+
+### Asas bina live trade
+
+![vbt-full](https://i.imgur.com/cZ9fM5e.png)
+
+
+
+[Vectorbt Live Signal](https://t.me/+Uajmc5lMbf3nYiJW) Telegram channel.
 
 [1]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
 [2]: https://luangdiri.github.io/2026/01/04/vectorbt-backtest-alert.html
