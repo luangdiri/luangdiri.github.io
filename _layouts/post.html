@@ -27,3 +27,8 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<script>
+  var element = document.getElementsByClassName('post-content')[0];
+  linkifyElement(element);
+</script>
