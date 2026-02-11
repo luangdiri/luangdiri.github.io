@@ -1,13 +1,13 @@
 ---
 title: "Beli Bitcoin Dengan Luno Exchange"
 date: 2017-03-19T00:00
-lastmod: 2021-03-01 15:36:29
+updated_at: 2026-02-11 16:16:12
 tags:
 - trading
 - tutorial
 ---
 
->**Nota**:
+>**Nota penulis:**
 >
 > Post ini pertama kali diterbitkan pada tahun 2017. Aku repost untuk sekadar legasi penulisan aku. Namun untuk sesiapa yang nak ikuti panduan dalam post ini dibolehkan, tapi harus diingat, Luno sudah menukar banyak perkara dari segi UI/UX di website dan aplikasi mereka. Jadi aku tak gerenti apa yang dilihat sekarang akan sama dengan apa yang ada dalam panduan ini.
 
@@ -72,18 +72,36 @@ Update 12 - 15/1/2024:
 </ul>
 </details>
 
-## Kandungan:
+---
 
-0. [About Luno](#0.-about-luno)
-1. [Beware of scammers](#1.-beware-of-scammers)
-2. [Daftar](#2.-daftar)
-3. [Beli Bitcoin](#3.-beli-bitcoin)
-4. [Menggunakan wallet address](#4.-menggunakan-wallet-address)
-5. [Menjual dan withdraw ke bank](#5.-menjual-dan-withdraw-ke-bank)
-6. [Trading (Advanced)](#6.-trading-(advanced))
-7. [Luno Fees](#7.-luno-fees)
-8. [Securing your Bitcoins](#8.-securing-your-bitcoins)
-9. [Sertai komuniti](#9.-sertai-komuniti)
+**Kandungan:** <!-- omit from toc -->
+
+- [0. About Luno](#0-about-luno)
+- [1. Beware of scammers](#1-beware-of-scammers)
+- [2. Daftar](#2-daftar)
+  - [Register account](#register-account)
+  - [Confirm melalui email](#confirm-melalui-email)
+  - [Verify account](#verify-account)
+  - [Verification levels](#verification-levels)
+- [3. Beli Bitcoin](#3-beli-bitcoin)
+  - [Fund account](#fund-account)
+  - [Buying your first BTC](#buying-your-first-btc)
+- [4. Menggunakan wallet address](#4-menggunakan-wallet-address)
+  - [Receive dari wallet lain](#receive-dari-wallet-lain)
+  - [Send ke wallet lain](#send-ke-wallet-lain)
+- [5. Menjual dan withdraw ke bank](#5-menjual-dan-withdraw-ke-bank)
+  - [Menjual BTC ke MYR](#menjual-btc-ke-myr)
+  - [Withdraw ke bank](#withdraw-ke-bank)
+- [6. Trading (Advanced)](#6-trading-advanced)
+    - [Reading resources](#reading-resources)
+    - [Trading exchanges](#trading-exchanges)
+- [7. Luno Fees](#7-luno-fees)
+- [8. Securing your Bitcoins](#8-securing-your-bitcoins)
+  - [Enable 2-Factor Authentication (2FA)](#enable-2-factor-authentication-2fa)
+  - [Simpan BTC dalam non-custodial wallet](#simpan-btc-dalam-non-custodial-wallet)
+  - [Backup private keys/phrase](#backup-private-keysphrase)
+  - [Hardware wallet](#hardware-wallet)
+- [9. Sertai komuniti](#9-sertai-komuniti)
 
 ---
 
@@ -111,7 +129,7 @@ Basically, circuit breaker akan aktif bila volatility harga tiba-tiba mencanak n
 
 Aku bagitahu bukan apa, saje je sebab ada orang tak suka kena trade halt ni, jadi guna lah atas risiko sendiri. Dan exchange international lain (Binance, BitMEX, Kraken, etc.) pun ada juga terjadi macam ni, cuma ia bukan dipanggil *"circuit breaker"*, tapi ia lebih kepada *"tiba-tiba website down"*. Ya, high price volatility boleh buat sistem down. Cuma Luno ada fail-safe bila benda ni berlaku, jadi aku rasa fund kau lebih safu la kot?
 
-<i><p style="color: red">Btw, aku bukan wakil penjual nama Luno, dan aku tak bekerja dengan mereka pun.</p></i>
+<i><small>Btw, aku bukan wakil penjual nama Luno, dan aku tak bekerja dengan mereka pun.</small></i>
 
 ## 1. Beware of scammers
 
@@ -141,7 +159,7 @@ Kalau dah 2017 tapi masih tak reti nak register account online, taktau lah aku n
 - Tekan **Sign Up**
     
 > **Iklan:**  
-> Sign up guna invite link aku: https://www.luno.com/invite/8VV3D  
+> Sign up guna invite link aku: [https://www.luno.com/invite/8VV3D](https://www.luno.com/invite/8VV3D)  
 > Tak wajib pun, tapi kalau nak tolong kawan tekan je lah hehe ✌ Thanks.
 
 ### Confirm melalui email
@@ -172,7 +190,7 @@ Account verification ni ada beberapa level untuk kau deposit/withdraw duit:
 | 2     | RM 10,000           | Government-issued ID             |
 | 3     | Unlimited           | Proof of residential address             |
 
-Info lebih lanjut, di sini: https://www.luno.com/en/countries#levels.
+Info lebih lanjut, di sini: [https://www.luno.com/en/countries#levels](https://www.luno.com/en/countries#levels).
 
 ## 3. Beli Bitcoin
 
@@ -188,7 +206,7 @@ Langkah pertama adalah masukkan duit dalam account.
 > 3. Tekan **Apply Code**.
 > 4. Thanks 🙏
 > <br/>
-> Jadi, kalau member pakai promo code kau, untuk transaction instant **RM 250** pertama dia, korang berdua akan dapat free **RM 25** (dalam bitcoin). ([Lanjut][promo])
+> Baca terma rewards dengan [lebih lanjut][promo]
 
 <a target="_blank" href="https://i.imgur.com/YXgulJc.png"><img alt="referral_code" src="https://i.imgur.com/YXgulJc.png"/></a>
 
@@ -250,7 +268,7 @@ Done.
 
 Kalau kau dah ada Bitcoin dan ingin buat trading dalam Luno, boleh deposit Bitcoin tu ke dalam wallet Luno kau. Secara default, satu wallet address akan di-generate selepas kau dah create account dalam Luno Exchange. Wallet address ni adalah satu alamat untuk kau deposit Bitcoin dari tempat lain. Contohnya, kalau kau ada Bitcoin dalam wallet lain (Electrum, Xapo, Blockchain Wallet, etc), kau boleh guna wallet address Luno ni untuk terima Bitcoin dari wallet wallet tersebut.
 
-Wallet address ni berbentuk huruf dan nombor yang sangat merapu. Sebagai contoh: **17A16QmavjUfWW11DAApiJxp7ARnxN5pGX_**
+Wallet address ni berbentuk huruf dan nombor yang sangat merapu. Sebagai contoh: `17A16QmavjUfWW11DAApiJxp7ARnxN5pGX_`
 
 ### Receive dari wallet lain
 
@@ -413,6 +431,9 @@ Nak lagi hardcore physical backup? Guna hardware wallet macam [Ledger][24]. Aku 
 
 Sini ada beberapa group berkaitan dengan Bitcoin dan legacy market kau boleh join. Either nak bertanya soalan, bertukar pendapat, nak shitpost, etc,
 
+> **Update 2026-02-11:**  
+> Kebanyakkan group dan channel di bawah dah mati, kalau ada lagi tu bertuah la kalian.
+
 <details>
 <summary>Telegram Trading Community</summary>
 <br/>
@@ -507,9 +528,11 @@ Sini ada beberapa group berkaitan dengan Bitcoin dan legacy market kau boleh joi
 </ul>
 </details>
 
-<br/>
-
 Terima kasih kerana membaca dan support melalui iklan-iklan tadi. Really appreciate it. Apa-apa masalah dengan post ni roger. Dah mengantuk ni.
+
+Juga nak berterima kasih pada yang dah pakai ref code aku. Sumbangan dan jasa kalian amat lah dihargai. Satu hari nanti kita boleh ngopi. Kalau nak contact aku, boleh lanjut ke Telegram [@aemxnbot](https://t.me/aemxnbot), nyatakan yang kau dari blog.
+
+Sekali lagi, terima kasih.
 
 ---
 
@@ -565,7 +588,7 @@ Luno sekarang ada masalah dengan deposit dari bank dan withdrawal ke bank. Baca 
 [24]: https://www.ledger.com/
 [25]: https://t.me/joinchat/AAAAAD8HdXHMCpurSNxoqA
 [27]: https://lopp.net/bitcoin.html
-[28]: https://www.luno.com/en/countries#bitcoin-fees
+[28]: https://guide.luno.com/hc/en-gb/articles/14581451031709-Luno-fees-and-limits-in-Malaysia
 [29]: https://www.itbit.com/fees-maker-taker-model
 [30]: https://support.earn.com/digital-currency/bitcoin-transactions-and-fees/how-do-i-calculate-my-transaction-fee
 [31]: https://bitcoincore.org/en/2016/01/26/segwit-benefits/
@@ -585,7 +608,7 @@ Luno sekarang ada masalah dengan deposit dari bank dan withdrawal ke bank. Baca 
 [45]: https://keys.casa/keymaster/
 [46]: https://apps.apple.com/us/app/luno-bitcoin-cryptocurrency/id927362479
 [1broker]: https://1broker.io/
-[promo]: https://www.luno.com/blog/en/post/earn-free-bitcoin
+[promo]: https://guide.luno.com/hc/en-gb/articles/11035556920349-How-to-level-up-your-Luno-rewards
 [circuit-terms]: https://www.luno.com/en/legal/terms
 
 [ledger-wallet]: https://i.imgur.com/tiuhzER.png
