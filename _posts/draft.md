@@ -1,3 +1,13 @@
+<!-- uncomment this block
+---
+title: 'Title'
+date: 2026-02-05 21:09:05
+updated_at: 2026-02-05 21:09:09
+tags:
+- tutorial
+---
+ -->
+
 ## Blog Post Title From First Header
 
 Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.

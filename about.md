@@ -10,8 +10,6 @@ Blog ini di wujudkan sebagai arkib kehidupan untuk pendokumentasian segala perka
 
 Luang Diri: Di sini tempat aku mencatat hal yang aku lihat, baca dan dengar.
 
-<img alt="boat" src="https://i.imgur.com/2RPemGZ.jpeg">
-
-<small><i>Nikmatilah pemandangan bot-bot ini.</i></small>
+*For English translation, use [Google Translate](https://luangdiri-github-io.translate.goog/?_x_tr_sl=ms&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp).*
 
 ⛵

@@ -238,4 +238,4 @@ Kalau sebelum ni aku pakai [Notable](https://notable.app/). Bagus juga, cuma nak
 
 Untuk sekadar nak view file Markdown, aku pakai [mdview](https://github.com/c3er/mdview/), macam notepad.exe tapi untuk Markdown.
 
-[qownnotes]: https://raw.githubusercontent.com/luangdiri/luangdiri.github.io/main/_media/qownnotes.png
+[qownnotes]: https://i.imgur.com/fxyulZg.png
