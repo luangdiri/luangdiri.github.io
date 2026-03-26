@@ -122,6 +122,8 @@ Beberapa senarai tambahan:
 
 ### Brave "Block Elements"
 
+![block elements](https://i.imgur.com/K25A5Nn.jpg)
+
 Brave mempunyai fungsi **Block Elements** yang membolehkan kita menyembunyikan elemen tertentu dalam sesuatu laman web menggunakan custom filter (CSS selector).
 
 Berbeza dengan DNS atau hosts file yang menyekat seluruh domain, fungsi ini beroperasi pada peringkat halaman. Ia sesuai untuk kes di mana laman web masih diperlukan, tetapi hanya bahagian tertentu sahaja yang ingin ditapis.
