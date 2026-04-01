@@ -1,5 +1,5 @@
 ---
-title: 'Vectorbt - Berdagang Tanpa Emosi'
+title: 'VectorBT - Berdagang Tanpa Emosi'
 date: 2026-02-01 21:09:05
 updated_at: 2026-02-01 21:09:09
 tags:
@@ -10,13 +10,13 @@ tags:
 *WIP*
 
 *[Bahagian I][1] - Perdagangan Algoritma*  
-*[Bahagian II][2] - Vectorbt & Backtest Alert*
+*[Bahagian II][2] - VectorBT & Backtest Alert*
 
-Dalam [post][2] yang terakhir kita sudah terokai bagaimana Vectorbt sebagai backtest engine berfungsi dan menggunakan signal yang terhasil untuk dihantar ke Telegram sebagai alert berkala.
+Dalam [post][2] yang terakhir kita sudah terokai bagaimana VectorBT sebagai backtest engine berfungsi dan menggunakan signal yang terhasil untuk dihantar ke Telegram sebagai alert berkala.
 
 Dalam post kali ini, aku akan membincangkan tentang *live trading* pula yang mengintegrasikan platform seperti Binance dan Hyperliquid untuk melaksanakan sesebuah trade.
 
-Seperti sedia maklum, signal yang terhasil dari Vectorbt boleh digunakan untuk menghantar alert ke Telegram. Dalam masa yang sama, kita juga boleh inject function selepas alert tersebut iaitu memulakan trade di exchange pilihan. Dalam post ini aku akan cerita macam mana nak membuka trade di Binance menggunakan package Python iaitu [CCXT][ccxt].
+Seperti sedia maklum, signal yang terhasil dari VectorBT boleh digunakan untuk menghantar alert ke Telegram. Dalam masa yang sama, kita juga boleh inject function selepas alert tersebut iaitu memulakan trade di exchange pilihan. Dalam post ini aku akan cerita macam mana nak membuka trade di Binance menggunakan package Python iaitu [CCXT][ccxt].
 
 ---
 
@@ -34,7 +34,7 @@ Seperti sedia maklum, signal yang terhasil dari Vectorbt boleh digunakan untuk m
 
 ![vbt-no-trade](https://i.imgur.com/cA2j0MM.png)
 
-Rajah di atas menunjukkan carta aliran framework Vectorbt dengan alert.
+Rajah di atas menunjukkan carta aliran framework VectorBT dengan alert.
 
 Bermula dari *modules*, script backtest atau alert di jalankan melalui CLI:
 
@@ -46,7 +46,7 @@ python .\run_backtest.py --strategy macross --ticker BTC/USDT --timeframe 1h --s
 python .\run_alert.py --strategy macross --ticker BTC/USDT --timeframe 1h
 ```
 
-Dari skrip ini, kita menyatakan argument seperti *strategy, ticker (symbol) dan timeframe*. Argument ini pula disalurkan ke `get_data()` function iaitu, utiliti yang memuat turun data candlestick dari Binance. *StrategyClass* kemudian nya memproses data-data tersebut ke dalam *Vectorbt Engine* untuk menghasilkan statistik backtest.
+Dari skrip ini, kita menyatakan argument seperti *strategy, ticker (symbol) dan timeframe*. Argument ini pula disalurkan ke `get_data()` function iaitu, utiliti yang memuat turun data candlestick dari Binance. *StrategyClass* kemudian nya memproses data-data tersebut ke dalam *VectorBT Engine* untuk menghasilkan statistik backtest.
 
 Bergantung pada script mana yang kita jalankan tadi, kalau kita `run_backtest`, ia akan melakukan proses plotting berserta statistik. Manakala `run_alert` tidak mengeluarkan chart plotting sebaliknya cuma mengambil *signal terakhir* untuk di hantar ke Telegram.
 
@@ -81,7 +81,7 @@ Kalau sebelum ini, kita cuma ada `signal_msg` saja, sekarang kita inject functio
 
 
 
-[Vectorbt Live Signal](https://t.me/+Uajmc5lMbf3nYiJW) Telegram channel.
+[VectorBT Live Signal](https://t.me/+Uajmc5lMbf3nYiJW) Telegram channel.
 
 [1]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
 [2]: https://luangdiri.github.io/2026/01/04/vectorbt-backtest-alert.html
