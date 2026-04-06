@@ -1,7 +1,7 @@
 ---
 title: 'Penapis Internet'
 date: 2026-03-11 00:35:10
-updated_at: 2026-03-27 01:46:16
+updated_at: 2026-04-06 23:45:00
 tags:
 - tutorial
 ---
@@ -22,9 +22,10 @@ Pendekatan yang lebih berkesan ialah menggunakan beberapa lapisan penapisan sere
 ---
 
 **Kandungan:**  
-- [Family DNS](#family-dns)
-  - [Kepentingan IPv6 dalam DNS](#kepentingan-ipv6-dalam-dns)
-  - [Tips konfigurasi](#tips-konfigurasi)
+- [DNS Untuk Keluarga](#dns-untuk-keluarga)
+  - [Setting Untuk PC (Windows)](#setting-untuk-pc-windows)
+  - [Setting untuk Android](#setting-untuk-android)
+  - [Setting untuk iOS](#setting-untuk-ios)
 - [Hosts File](#hosts-file)
   - [Cara edit hosts file (Windows)](#cara-edit-hosts-file-windows)
 - [Guna Brave Browser](#guna-brave-browser)
@@ -39,9 +40,32 @@ Pendekatan yang lebih berkesan ialah menggunakan beberapa lapisan penapisan sere
 - [Gunakan Akaun Tanpa Admin](#gunakan-akaun-tanpa-admin)
 - [Kesimpulan](#kesimpulan)
 
-## Family DNS
+## DNS Untuk Keluarga
+
+### Setting Untuk PC (Windows)
 
 Family DNS ialah servis DNS yang sudah siap dengan penapisan kandungan seperti malware, iklan berbahaya, dan laman dewasa.
+
+Menetapkan DNS secara manual pada PC memastikan peranti sentiasa menggunakan servis penapisan yang dipilih, walaupun tidak bergantung kepada router.
+
+1. Buka **Settings**
+2. Pergi ke **Network & Internet**
+3. Pilih **Advanced network settings**
+4. Klik **More network adapter options**
+5. Klik kanan pada network yang digunakan → **Properties**
+6. Pilih **Internet Protocol Version 4 (IPv4)** → **Properties**
+7. Pilih **Use the following DNS server addresses**
+8. Masukkan DNS pilihan (contoh: `1.1.1.3` dan `1.0.0.3`)
+9. Ulang langkah untuk **Internet Protocol Version 6 (IPv6)** jika perlu
+10. Klik **OK**
+
+**Nota**
+
+* Pastikan set kedua-dua IPv4 dan IPv6 untuk elak bypass
+* Tetapan ini hanya terpakai pada PC tersebut
+* Boleh digunakan sebagai backup jika router tidak dikonfigurasi
+
+![ipv4](https://i.imgur.com/lgVAUxk.png)
 
 | DNS                           | IPv4                                   | IPv6                                             | Description                                               |
 | ----------------------------- | -------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
@@ -51,21 +75,70 @@ Family DNS ialah servis DNS yang sudah siap dengan penapisan kandungan seperti m
 | AdGuard DNS Family Protection | `94.140.14.15`<br>`94.140.15.16`       | `2a10:50c0::bad1:ff`<br>`2a10:50c0::bad2:ff`     | Menyekat iklan, tracker dan kandungan dewasa              |
 
 
-### Kepentingan IPv6 dalam DNS
+**Kepentingan IPv6 dalam DNS:**
 
-**Prevent bypass**  
-Banyak peranti moden menggunakan IPv6 secara default. Jika hanya DNS IPv4 ditetapkan, peranti boleh memintas penapisan melalui IPv6.
+* Prevent bypass: Banyak peranti moden menggunakan IPv6 secara default. Jika hanya DNS IPv4 ditetapkan, peranti boleh memintas penapisan melalui IPv6.
+* Perlindungan menyeluruh: Dengan menggunakan IPv4 dan IPv6 sekali, semua permintaan DNS akan ditapis.
+* Prestasi: IPv6 kadang-kadang memberi routing dan pemprosesan paket yang lebih pantas.
 
-**Perlindungan menyeluruh**  
-Dengan menggunakan IPv4 dan IPv6 sekali, semua permintaan DNS akan ditapis.
-
-**Prestasi**  
-IPv6 kadang-kadang memberi routing dan pemprosesan paket yang lebih pantas.
-
-### Tips konfigurasi
+**Tips konfigurasi**
 
 * Tetapkan kedua-dua IPv4 dan IPv6.
 * Konfigurasi pada router supaya seluruh rangkaian menggunakan DNS yang sama.
+
+### Setting untuk Android
+
+Selain tetapan DNS menggunakan IP (IPv4/IPv6), Android menyokong penggunaan **Private DNS** melalui hostname (DNS over TLS). Ini lebih konsisten kerana semua trafik DNS akan dipaksa melalui endpoint tersebut.
+
+Contoh penggunaan:
+
+* Buka **Settings**
+* Pergi ke **Network & Internet** (atau Connection settings, bergantung pada peranti)
+* Pilih **Private DNS**
+* Pilih **Private DNS provider hostname**
+* Masukkan hostname DNS
+
+**DNS Hostname**
+
+| DNS                           | Hostname                              |
+| ----------------------------- | ------------------------------------- |
+| Cloudflare for Families       | `family.cloudflare-dns.com`           |
+| CleanBrowsing Family Filter   | `family-filter-dns.cleanbrowsing.org` |
+| AdGuard DNS Family Protection | `family.adguard-dns.com`              |
+
+**Nota:**
+
+* OpenDNS FamilyShield tidak menyediakan hostname untuk Private DNS (hanya IP).
+* Tetapan ini hanya terpakai pada peranti tersebut, tidak seperti router-level DNS.
+* Sesuai digunakan jika tiada akses kepada router atau sebagai lapisan tambahan.
+
+### Setting untuk iOS
+
+iOS tidak menyediakan tetapan Private DNS secara langsung seperti Android. Sebaliknya, ia menggunakan **configuration profile** untuk menetapkan DNS over HTTPS (DoH) atau DNS over TLS (DoT).
+
+Kaedah ini tetap mencapai tujuan yang sama: memaksa semua trafik DNS melalui servis penapisan.
+
+**Cara Setup**
+
+1. Muat turun configuration profile dari penyedia DNS
+2. Buka **Settings**
+3. Pergi ke **Profile Downloaded**
+4. Install profile tersebut
+5. Aktifkan DNS melalui profile yang dipasang
+
+**DNS Configuration Profile**
+
+| DNS                           | Setup                                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Cloudflare for Families       | [https://developers.cloudflare.com/1.1.1.1/setup/ios/](https://developers.cloudflare.com/1.1.1.1/setup/ios/) |
+| CleanBrowsing Family Filter   | [https://cleanbrowsing.org/help/docs/ios/](https://cleanbrowsing.org/help/docs/ios/)                         |
+| AdGuard DNS Family Protection | [https://adguard-dns.io/en/public-dns.html](https://adguard-dns.io/en/public-dns.html)                       |
+
+**Nota:**
+
+* Profile ini akan override DNS default sistem.
+* Lebih sukar untuk dipintas berbanding tetapan biasa.
+* Boleh digunakan bersama DNS di router untuk perlindungan tambahan.
 
 
 ## Hosts File
