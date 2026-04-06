@@ -33,11 +33,12 @@ Pendekatan yang lebih berkesan ialah menggunakan beberapa lapisan penapisan sere
   - [Content Filtering](#content-filtering)
   - [Brave "Block Elements"](#brave-block-elements)
 - [Browser Extension](#browser-extension)
-- [SafeSearch Enforcement](#safesearch-enforcement)
-- [Router-Level Blocking](#router-level-blocking)
-- [Block DNS Over HTTPS (DoH)](#block-dns-over-https-doh)
-- [Device-Level Parental Control](#device-level-parental-control)
-- [Gunakan Akaun Tanpa Admin](#gunakan-akaun-tanpa-admin)
+- [Kaedah Lain](#kaedah-lain)
+  - [SafeSearch Enforcement](#safesearch-enforcement)
+  - [Router-Level Blocking](#router-level-blocking)
+  - [Block DNS Over HTTPS (DoH)](#block-dns-over-https-doh)
+  - [Device-Level Parental Control](#device-level-parental-control)
+  - [Gunakan Akaun Tanpa Admin](#gunakan-akaun-tanpa-admin)
 - [Kesimpulan](#kesimpulan)
 
 ## DNS Untuk Keluarga
@@ -176,7 +177,7 @@ Tidak digalakkan.
 
 Jika menggunakan DNS dalam tetapan Brave, penapisan hanya berlaku dalam Brave sahaja. Browser lain masih boleh membuka laman yang tidak ditapis.
 
-Lebih baik tetapkan DNS di peringkat sistem atau router.
+Lebih baik tetapkan DNS di [peringkat sistem](#dns-untuk-keluarga) atau router.
 
 ### Content Filtering
 
@@ -240,7 +241,10 @@ Extension sesuai digunakan untuk:
 * menyekat URL spesifik
 * menyekat profil pengguna tertentu dalam sesuatu laman
 
-## SafeSearch Enforcement
+
+## Kaedah Lain
+
+### SafeSearch Enforcement
 
 Banyak enjin carian mempunyai mod penapisan kandungan dewasa yang dipanggil SafeSearch. Jika tidak dipaksa (enforced), pengguna masih boleh mematikannya.
 
@@ -261,7 +265,7 @@ Kelebihan kaedah ini:
 * berfungsi tanpa perlu memasang apa-apa pada browser
 
 
-## Router-Level Blocking
+### Router-Level Blocking
 
 Router boleh digunakan sebagai lapisan penapisan utama kerana semua peranti dalam rangkaian akan melalui router tersebut.
 
@@ -286,7 +290,7 @@ Jika router menyokong firmware seperti:
 
 Fungsi penapisan boleh menjadi lebih kuat.
 
-## Block DNS Over HTTPS (DoH)
+### Block DNS Over HTTPS (DoH)
 
 Browser moden boleh menggunakan DNS Over HTTPS (DoH). Ini membolehkan browser memintas DNS yang telah ditetapkan pada sistem.
 
@@ -305,7 +309,7 @@ Contoh domain DoH yang biasa digunakan:
 * `mozilla.cloudflare-dns.com`
 
 
-## Device-Level Parental Control
+### Device-Level Parental Control
 
 Sesetengah sistem operasi mempunyai kawalan ibu bapa terbina dalam.
 
@@ -333,7 +337,7 @@ Fungsi yang biasanya tersedia:
 Ini menambah satu lagi lapisan jika pengguna cuba memintas penapisan rangkaian.
 
 
-## Gunakan Akaun Tanpa Admin
+### Gunakan Akaun Tanpa Admin
 
 Jika peranti digunakan oleh kanak-kanak atau pengguna biasa, jangan beri akses admin.
 
@@ -350,10 +354,10 @@ Gunakan akaun standard pada komputer.
 
 Untuk penapisan yang lebih kuat, gunakan beberapa lapisan serentak:
 
-1. DNS filtering (router level)
+1. DNS filtering (OS/router level)
 2. IPv4 + IPv6 configuration
 3. SafeSearch enforcement
-4. hosts file (optional)
+4. hosts file
 5. browser filtering
 6. URL blocker extension
 7. router firewall rules
