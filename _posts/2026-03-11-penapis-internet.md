@@ -1,7 +1,7 @@
 ---
 title: 'Penapis Internet'
 date: 2026-03-11 00:35:10
-updated_at: 2026-04-06 23:45:00
+updated_at: 2026-04-09 22:30:35
 tags:
 - tutorial
 ---
@@ -230,8 +230,7 @@ www.instagram.com##.x1iyjqo2.xdj266r.x11t971q.xat24cr.xvc5jky.x38y82z.x1xnnf8n.x
 
 ## Browser Extension
 
-Website Blocker:
-[https://chromewebstore.google.com/detail/website-blocker/kniediipngcpmbmpeacaoinhoeipfina](https://chromewebstore.google.com/detail/website-blocker/kniediipngcpmbmpeacaoinhoeipfina)
+**Website Blocker:** https://chromewebstore.google.com/detail/website-blocker/kniediipngcpmbmpeacaoinhoeipfina
 
 Terdapat banyak extension yang boleh digunakan. Mana-mana pun boleh selagi ia menyokong fungsi menyekat URL.
 
@@ -241,6 +240,30 @@ Extension sesuai digunakan untuk:
 * menyekat URL spesifik
 * menyekat profil pengguna tertentu dalam sesuatu laman
 
+**Stylus & Tampermonkey (Advanced Filtering)**
+
+Selain fungsi terbina dalam seperti [Brave "Block Elements"](#brave-block-elements), penapisan elemen juga boleh dilakukan menggunakan browser extension seperti **Stylus** dan **Tampermonkey**.
+
+Kedua-dua extension ini memberi kawalan yang lebih mendalam terhadap apa yang dipaparkan dalam sesuatu laman web.
+
+* **[Stylus](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)** digunakan untuk inject custom CSS (sembunyikan elemen tertentu)
+* **[Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)** digunakan untuk inject JavaScript (ubah behavior laman web)
+
+Dalam konteks penapisan kandungan, ia boleh digunakan untuk:
+
+* menyembunyikan elemen tertentu (feed, sidebar, ads)
+* membuang bahagian laman yang mengandungi distraksi
+* ubah susun atur supaya lebih minimal
+* tapis kandungan tertentu secara automatik
+
+**Perbezaan dengan Brave "Block Elements"**
+
+Fungsi adalah sama dari segi konsep, tetapi:
+
+* Brave "Block Elements" → built-in, mudah digunakan, sesuai untuk basic filtering
+* Stylus / Tampermonkey → lebih advanced, fleksibel, dan boleh customize secara mendalam, berfungsi sebagai extension, boleh digunakan di browser lain seperti Chrome dan Firefox (Greasemonkey)
+
+Kaedah ini sesuai jika mahu kawalan granular terhadap kandungan dalam sesuatu laman tanpa perlu menyekat keseluruhan website.
 
 ## Kaedah Lain
 
