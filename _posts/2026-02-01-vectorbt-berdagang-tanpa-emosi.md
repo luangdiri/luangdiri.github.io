@@ -106,7 +106,7 @@ Dalam framework kecil yang aku bina ni, live trade dipecahkan kepada beberapa ko
 
 Secara kasar, aliran dia kelihatan seperti ini:
 
-```text
+```
 Market Data
     ↓
 Strategy Signal
@@ -225,7 +225,7 @@ Disebabkan itu, dalam sistem automated trading, risk management bukan sekadar �
 
 Dalam project ini, risk management layer diletakkan di antara strategy signal dan execution engine.
 
-```text id="hjyl3q"
+```
 Strategy Signal
         ↓
 Risk Management Layer
@@ -264,7 +264,7 @@ Ramai trader terlalu fokus mencari “entry terbaik”, sedangkan saiz position 
 
 Sebagai contoh, dalam sistem ini aku lebih suka menggunakan fixed risk percentage berbanding fixed quantity.
 
-```python id="bnz9q0"
+```python
 risk_per_trade = 0.01
 position_size = balance * risk_per_trade
 ```
@@ -283,7 +283,7 @@ Kalau tidak dikawal, bot mungkin menghantar duplicate order tanpa disedari.
 
 Disebabkan itu, execution layer perlu menyemak sama ada position untuk sesuatu symbol sudah wujud sebelum membuka trade baru.
 
-```python id="nq7j6p"
+```python
 if symbol in active_positions:
     skip_entry()
 ```
@@ -338,7 +338,7 @@ Contohnya:
 
 Contoh mudah:
 
-```python id="mb2ux8"
+```python
 logger.info({
     "symbol": symbol,
     "signal": "long",
@@ -366,7 +366,7 @@ Contohnya:
 
 Sebagai contoh:
 
-```python id="q2o91x"
+```python
 logger.info({
     "order_id": order["id"],
     "status": order["status"],
@@ -402,7 +402,7 @@ Disebabkan itu, error handling dan reconnect logic sangat penting.
 
 Contoh mudah:
 
-```python id="6h4yb9"
+```python
 try:
     ticker = exchange.fetch_ticker(symbol)
 
@@ -421,7 +421,7 @@ Dalam backtest, kita biasanya assume order terus filled sepenuhnya.
 
 Tetapi dalam live market, order mungkin hanya filled sebahagian:
 
-```text id="8r4ghf"
+```
 Order size: 1 BTC
 Filled: 0.4 BTC
 Remaining: 0.6 BTC
@@ -458,7 +458,7 @@ Ini dipanggil slippage.
 
 Contohnya:
 
-```text id="6g5j0q"
+```
 Signal price: 100
 Actual fill price: 101.2
 ```
@@ -506,7 +506,7 @@ Contohnya:
 
 Contoh struktur payload:
 
-```python id="tg1a2b"
+```python
 message = {
     "symbol": symbol,
     "side": "buy",
@@ -533,7 +533,7 @@ Ini termasuk:
 
 Contoh:
 
-```python id="tg9x3c"
+```python
 send_telegram_alert({
     "type": "error",
     "message": str(e),
