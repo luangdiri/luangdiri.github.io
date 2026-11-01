@@ -6,10 +6,10 @@ permalink: /tentang/
 
 Selamat datang ke <i>Luang Diri</i>.
 
-Blog ini di wujudkan sebagai arkib kehidupan untuk pendokumentasian segala perkara yang dipelajari, sama ada teknikal mahupun non-teknikal. Idea, eksperimen, pelajaran, dan refleksi ditulis bukan sekadar untuk berkongsi, juga untuk mengingati semula. Ia berfungsi sebagai pangkalan ilmu personal, jejakan perkembangan diri, dan sebagai tempat meluangkan masa dengan diri sendiri.
+Aku ni pelupa, jadi tempat ni aku buat untuk dump benda supaya aku kurang lupa.
 
 ---
 
-*For English translation, use [Google Translate](https://luangdiri-github-io.translate.goog/?_x_tr_sl=ms&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp).*
+*[English translation](https://luangdiri-github-io.translate.goog/?_x_tr_sl=ms&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp).*
 
 ⛵
