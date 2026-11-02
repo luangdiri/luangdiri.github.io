@@ -1,7 +1,7 @@
 ---
 title: "PS4 Jailbreak (GoldHEN, Homebrew & FPKG)"
-date: 2026-11-02 15:39:50
-lastmod: 2026-11-02 15:39:55
+date: 2026-11-01 15:39:50
+lastmod: 2026-11-01 15:39:55
 tags:
 - tutorial
 ---
