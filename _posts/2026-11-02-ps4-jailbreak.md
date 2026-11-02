@@ -265,7 +265,7 @@ Secara umum, ia memerlukan:
 
 Untuk firmware 13.50, gunakan browser-based chain yang telah disahkan untuk firmware tersebut dan bukannya menganggap PPPwn versi lama boleh digunakan.
 
-<img src="https://i.imgur.com/DgwiaRe.jpg" width="60%">
+<img src="https://i.imgur.com/DgwiaRe.jpg" width="80%">
 
 ## Memasang Homebrew Store
 
@@ -336,6 +336,8 @@ Sebelum memasang game dan update, ada tiga perkara penting yang perlu kita faham
 Title ID ialah kod unik yang diberikan kepada setiap keluaran game PS4. Biasanya ia bermula dengan `CUSA`, `CUSA` diikuti lima digit, atau kod lain seperti `PLAS`.
 
 Contohnya:
+
+<img src="https://i.imgur.com/RwpeD2Y.jpg" width="80%">
 
 `CUSA33778` — Star Wars Jedi: Survivor (PS4)
 
@@ -424,184 +426,45 @@ Kaedah ini lebih mudah apabila saiz package besar dan kita tidak mahu memindahka
 
 ## Aplikasi dan Utility Berguna
 
-Berikut ialah beberapa aplikasi yang menarik untuk dipasang.
+Berikut ialah beberapa aplikasi homebrew yang berguna untuk PS4 jailbreak.
 
 ### 1. Apollo Save Tool
 
-Apollo Save Tool ialah aplikasi homebrew untuk mengurus save game PS4.
+Aplikasi untuk mengurus save game PS4. Menyokong fungsi backup, restore, decrypt, resign dan import save game. Turut menyediakan akses kepada database save game komuniti.
 
-Antara fungsinya:
-
-- Backup save game.
-- Restore save game.
-- Download save game daripada database komuniti.
-- Decrypt dan encrypt save game.
-- Resign save game untuk profil pengguna.
-- Patch save game bagi game yang disokong.
-- Mengurus sesetengah data trophy.
-
-Ini antara aplikasi yang sangat berguna sekiranya kita mahu memindahkan save game antara dua profil atau membuat backup sebelum mencuba cheat.
-
-**Cara menggunakan Apollo Save Tool:**
-
-1. Muat turun Apollo Save Tool melalui Homebrew Store atau repositori rasmi.
-2. Pasang fail `.pkg`.
-3. Buka Apollo Save Tool dari Home Screen.
-4. Pilih HDD Saves untuk melihat save game yang tersimpan dalam konsol.
-5. Pilih game yang ingin diuruskan.
-6. Pilih fungsi yang diperlukan.
-
-Antara fungsi yang biasa digunakan:
-
-- Copy Save Game — Menyalin save game ke USB.
-- Export Decrypted Save Files — Mengeksport save dalam format decrypted.
-- Import Decrypted Save Files — Mengimport save yang telah diedit.
-- Apply Changes and Resign — Mengaplikasikan perubahan dan resign save.
-- View Save Details — Melihat maklumat save game.
-
-Apollo juga mempunyai Online Database yang membolehkan kita mendapatkan save game daripada komuniti.
-
-Satu perkara penting: Save game PS4 mempunyai kaitan dengan User ID dan Account ID. Jangan anggap semua save game boleh terus digunakan pada semua profil.
-
-Sebaiknya buat backup terlebih dahulu sebelum melakukan sebarang perubahan.
-
-Repositori:
-https://github.com/bucanero/apollo-ps4
+GitHub: https://github.com/bucanero/apollo-ps4
 
 ### 2. Homebrew Store
 
-Seperti yang diterangkan sebelum ini, Homebrew Store merupakan pusat pemasangan aplikasi.
+Berfungsi seperti app store khusus untuk PS4 jailbreak. Menyediakan pelbagai aplikasi homebrew, emulator, file manager dan utility yang boleh dimuat turun terus melalui PS4.
 
-Aku cadangkan gunakan aplikasi ini sebagai tempat utama untuk mendapatkan homebrew berbanding memuat turun fail `.pkg` daripada sumber yang tidak diketahui.
-
-Antara aplikasi menarik yang boleh dicari di dalamnya:
-
-- PS4-Xplorer.
-- Itemzflow.
-- RetroArch.
-- Apollo Save Tool.
-- Cheats Manager.
+Website: https://pkg-zone.com/
 
 ### 3. Cheats Manager
 
-Cheats Manager membolehkan kita mendapatkan dan mengurus cheat untuk game PS4.
-
-Contohnya:
-
-- Infinite Health.
-- Infinite Money.
-- Unlimited Ammo.
-- Max Level.
-- Unlock Items.
-- Game Speed Modifier.
-
-Namun begitu, cheat bukan universal. Ia bergantung kepada Title ID, region dan versi update game.
-
-**Cara penggunaan Cheats Manager:**
-
-1. Buka Homebrew Store.
-2. Cari Cheats Manager.
-3. Muat turun dan pasang aplikasi tersebut.
-4. Sediakan database cheat yang disokong oleh aplikasi.
-5. Buka Cheats Manager dan gunakan fungsi Update untuk mengimport database.
-6. Keluar daripada aplikasi.
-7. Buka menu GoldHEN atau HEN yang mempunyai fungsi cheat.
-8. Aktifkan Cheat Menu jika payload tersebut menyokongnya.
-9. Jalankan game yang berkaitan.
-10. Buka Cheat Menu dan pilih cheat yang ingin digunakan.
-
-Untuk pengguna GoldHEN, terdapat juga cheat menu terbina dalam. Walau bagaimanapun, fungsi ini masih dianggap experimental.
-
-Pastikan cheat sepadan dengan versi game yang digunakan. Cheat untuk CUSA00001 tidak semestinya berfungsi dengan PLAS00001 walaupun nama game sama.
+Aplikasi untuk mendapatkan dan mengurus database cheat game PS4 seperti Infinite Health, Infinite Money, Unlimited Ammo dan sebagainya. Keserasian cheat bergantung kepada Title ID dan versi game.
 
 ### 4. PS4-Xplorer
 
-PS4-Xplorer ialah file manager untuk PS4.
-
-Fungsinya hampir sama seperti Windows File Explorer.
-
-Antara perkara yang boleh dilakukan:
-
-- Melihat folder dalam sistem PS4.
-- Menyalin fail.
-- Memadam fail.
-- Memindahkan fail.
-- Mengekstrak ZIP.
-- Mengurus fail pada USB.
-- Mengakses direktori aplikasi dan data.
-
-Aplikasi ini sangat berguna apabila kita perlu mengurus fail secara terus daripada konsol tanpa menggunakan PC.
-
-Namun, jangan padam fail sistem secara sembarangan kerana ia boleh menyebabkan aplikasi atau sistem PS4 gagal berfungsi.
+File manager yang membolehkan kita mengakses, menyalin, memindahkan, memadam dan mengekstrak fail terus daripada sistem PS4.
 
 ### 5. Itemzflow
 
-Itemzflow merupakan game manager untuk PS4.
-
-Antara fungsi yang disediakan:
-
-- Mengurus game yang telah dipasang.
-- Melihat maklumat game.
-- Mengurus game updates.
-- Melancarkan game.
-- Mengurus sesetengah kandungan game.
-- Membantu proses pengurusan game dump.
-
-Ia berguna untuk pengguna yang mempunyai banyak game dalam internal HDD dan external HDD.
+Game manager untuk mengurus koleksi game yang telah dipasang. Menyediakan maklumat game, pengurusan kandungan dan pelbagai fungsi tambahan untuk game library.
 
 ### 6. RetroArch
 
-RetroArch merupakan emulator frontend yang menyokong pelbagai platform klasik.
-
-Antara sistem yang boleh diemulasikan bergantung kepada core yang digunakan:
-
-- Nintendo Entertainment System (NES).
-- Super Nintendo (SNES).
-- Game Boy.
-- Game Boy Advance.
-- Sega Mega Drive.
-- PlayStation 1.
-- Arcade.
-
-RetroArch menggunakan sistem core. Setiap core bertanggungjawab untuk mengemulasikan sistem tertentu.
-
-Kita boleh memuat turun core yang diperlukan melalui menu Online Updater jika build yang digunakan menyokong fungsi tersebut.
+Emulator frontend yang menyokong pelbagai platform retro seperti NES, SNES, Game Boy, Game Boy Advance, Sega Mega Drive dan PlayStation 1 melalui penggunaan emulator cores.
 
 ### 7. Orbis Toolbox
 
-Orbis Toolbox ialah aplikasi utiliti yang menyediakan pelbagai maklumat dan fungsi tambahan untuk PS4.
-
-Antaranya:
-
-- Memantau penggunaan CPU dan RAM.
-- Memaparkan FPS.
-- Mengakses maklumat sistem.
-- Mengurus beberapa fungsi debugging.
-- Menyediakan overlay semasa bermain game.
-
-Aplikasi ini lebih sesuai untuk pengguna yang suka mengubah suai dan memantau prestasi konsol.
-
-Perlu diingat bahawa sesetengah aplikasi seperti Orbis Toolbox, Itemzflow dan Apollo boleh menyebabkan masalah ketika memasuki atau keluar daripada Rest Mode pada konfigurasi tertentu.
+System utility untuk memantau prestasi PS4. Menyediakan maklumat CPU, RAM, FPS counter dan pelbagai overlay tambahan.
 
 ### 8. FTP Server
 
-FTP membolehkan kita memindahkan fail daripada PC ke PS4 melalui rangkaian tempatan.
+Membolehkan pemindahan fail antara PS4 dan PC melalui rangkaian tempatan. Sangat berguna untuk mengurus fail tanpa perlu menggunakan USB.
 
-Jika menggunakan GoldHEN, FTP Server biasanya menggunakan port 2121.
-
-Cara asas:
-
-1. Aktifkan FTP Server dalam menu payload.
-2. Buka Settings > System > System Information untuk melihat IP Address PS4.
-3. Buka FileZilla pada PC.
-4. Masukkan IP Address PS4 sebagai Host.
-5. Masukkan port 2121.
-6. Sambungkan kedua-dua peranti melalui rangkaian yang sama.
-7. Selepas berjaya, kita boleh melihat direktori PS4 melalui FileZilla.
-
-FTP sangat berguna untuk memindahkan fail berukuran besar tanpa perlu mencabut USB berulang kali.
-
-Jangan biarkan FTP Server terbuka pada rangkaian awam.
+Untuk GoldHEN, FTP Server biasanya menggunakan port 2121.
 
 ## Apendiks
 
