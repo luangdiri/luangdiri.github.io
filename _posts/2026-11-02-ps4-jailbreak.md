@@ -6,6 +6,8 @@ tags:
 - tutorial
 ---
 
+<img src="https://i.imgur.com/DLbTNUV.png">
+
 - [Apa itu PS4 Jailbreak?](#apa-itu-ps4-jailbreak)
   - [Apa itu GoldHEN?](#apa-itu-goldhen)
 - [Firmware Compatibility](#firmware-compatibility)
@@ -18,6 +20,11 @@ tags:
   - [Kaedah 2: PPPwn](#kaedah-2-pppwn)
 - [Memasang Homebrew Store](#memasang-homebrew-store)
   - [Cara pemasangan](#cara-pemasangan)
+- [Memasang Game dalam Format PKG / FPKG](#memasang-game-dalam-format-pkg--fpkg)
+  - [Cara memasang package melalui USB](#cara-memasang-package-melalui-usb)
+  - [Susunan pemasangan game](#susunan-pemasangan-game)
+    - [Contoh: Star Wars Jedi: Survivor (CUSA33778)](#contoh-star-wars-jedi-survivor-cusa33778)
+  - [Memasang package melalui rangkaian](#memasang-package-melalui-rangkaian)
 - [Aplikasi dan Utility Berguna](#aplikasi-dan-utility-berguna)
   - [1. Apollo Save Tool](#1-apollo-save-tool)
   - [2. Homebrew Store](#2-homebrew-store)
@@ -27,20 +34,12 @@ tags:
   - [6. RetroArch](#6-retroarch)
   - [7. Orbis Toolbox](#7-orbis-toolbox)
   - [8. FTP Server](#8-ftp-server)
-- [Memasang Game dalam Format PKG / FPKG](#memasang-game-dalam-format-pkg--fpkg)
-  - [Cara memasang package melalui USB](#cara-memasang-package-melalui-usb)
-  - [Susunan pemasangan game](#susunan-pemasangan-game)
-    - [Contoh: Star Wars Jedi: Survivor (CUSA33778)](#contoh-star-wars-jedi-survivor-cusa33778)
-  - [Memasang package melalui rangkaian](#memasang-package-melalui-rangkaian)
-- [Barang-barang dan Aplikasi](#barang-barang-dan-aplikasi)
-  - [Windows / PC](#windows--pc)
-  - [Aplikasi PS4](#aplikasi-ps4)
-  - [Hardware](#hardware)
 - [Apendiks](#apendiks)
   - [Mengelakkan System Update](#mengelakkan-system-update)
   - [Backup Save Game](#backup-save-game)
   - [Kernel Panic dan Restart](#kernel-panic-dan-restart)
   - [Rest Mode](#rest-mode)
+  - [Port Download Game](#port-download-game)
   - [Sumber dan Rujukan](#sumber-dan-rujukan)
 
 
@@ -266,6 +265,8 @@ Secara umum, ia memerlukan:
 
 Untuk firmware 13.50, gunakan browser-based chain yang telah disahkan untuk firmware tersebut dan bukannya menganggap PPPwn versi lama boleh digunakan.
 
+<img src="https://i.imgur.com/DgwiaRe.jpg" width="60%">
+
 ## Memasang Homebrew Store
 
 Homebrew Store ialah antara aplikasi pertama yang aku cadangkan untuk dipasang selepas berjaya jailbreak.
@@ -299,6 +300,127 @@ Antara kandungan yang boleh didapati:
 Pastikan sambungan Internet aktif.
 
 Homebrew Store akan memudahkan kita mencari, memuat turun dan mengemas kini aplikasi tanpa perlu menggunakan PC setiap kali.
+
+## Memasang Game dalam Format PKG / FPKG
+
+PS4 menggunakan format package `.pkg` untuk pemasangan game, update, DLC dan aplikasi.
+
+Terdapat dua jenis package yang biasa dijumpai dalam komuniti:
+
+1. PKG — Package rasmi yang mempunyai sistem pengesahan lesen Sony.
+2. FPKG — Fake PKG, iaitu package yang telah dibina menggunakan proses tertentu supaya boleh dipasang melalui persekitaran debug atau homebrew.
+
+FPKG sering digunakan dalam komuniti untuk memasang homebrew dan backup game yang dibuat daripada salinan permainan milik sendiri.
+
+### Cara memasang package melalui USB
+
+1. Sediakan USB Thumb Drive.
+2. Format USB kepada exFAT.
+3. Salin fail `.pkg` ke dalam root USB.
+4. Sambungkan USB kepada PS4.
+5. Aktifkan jailbreak dan HEN yang serasi.
+6. Buka GoldHEN Debug Settings atau menu Debug Settings yang disediakan oleh HEN.
+7. Pilih Package Installer.
+8. Pastikan Package Source ditetapkan kepada USB.
+9. Pilih fail package yang ingin dipasang.
+10. Tunggu sehingga pemasangan selesai.
+
+Jika package tersebut ialah game, ikon game akan muncul pada Home Screen.
+
+### Susunan pemasangan game
+
+Sebelum memasang game dan update, ada tiga perkara penting yang perlu kita faham, iaitu Title ID, Region dan Game Version.
+
+**1. Title ID**
+
+Title ID ialah kod unik yang diberikan kepada setiap keluaran game PS4. Biasanya ia bermula dengan `CUSA`, `CUSA` diikuti lima digit, atau kod lain seperti `PLAS`.
+
+Contohnya:
+
+`CUSA33778` — Star Wars Jedi: Survivor (PS4)
+
+Title ID ini penting kerana base game, update dan DLC perlu mempunyai Title ID yang sepadan. Update untuk CUSA33778 tidak boleh digunakan pada game yang mempunyai Title ID berlainan.
+
+**2. Region**
+
+Region merujuk kepada kawasan atau pasaran bagi sesuatu keluaran game.
+
+Antara region yang biasa dijumpai:
+
+- USA / US — Amerika Syarikat.
+- EUR — Eropah.
+- ASIA — Asia.
+- JPN — Jepun.
+
+Walaupun nama game sama, keluaran daripada region berlainan mungkin mempunyai Title ID yang berbeza. Oleh itu, pastikan update yang dimuat turun adalah untuk keluaran game yang sama.
+
+**3. Game Version**
+
+Game Version menunjukkan versi game yang sedang digunakan.
+
+Contohnya:
+
+- v1.00 — Versi asal atau Base Game.
+- v1.01 — Update pertama.
+- v1.03 — Update yang mengandungi pembaikan dan penambahbaikan daripada versi sebelumnya.
+
+Pastikan update yang dipasang serasi dengan Title ID base game. Sebaiknya gunakan update terkini yang tersedia untuk keluaran tersebut.
+
+#### Contoh: Star Wars Jedi: Survivor (CUSA33778)
+
+Sebagai contoh, kita gunakan game Star Wars Jedi: Survivor versi PS4.
+
+Maklumat package yang dikenal pasti:
+
+| Komponen | Maklumat |
+|---|---|
+| Game | Star Wars Jedi: Survivor |
+| Title ID | CUSA33778 |
+| Region | USA |
+| Base Game | v1.00 |
+| Game Update terkini | v1.03 |
+| Saiz Base Game | Sekitar 51–54GB |
+| Saiz Update v1.03 | Sekitar 122MB |
+
+Susunan pemasangannya adalah seperti berikut:
+
+1. Base Game — CUSA33778 v1.00.
+2. Update — CUSA33778 v1.03.
+
+Update v1.03 merupakan patch PS4 yang memperbaiki kestabilan permainan dan audio dalam cinematic.
+
+Untuk pengguna firmware lama, terdapat juga package update yang telah dibuat backport:
+
+- v1.03 Backport 5.05.
+- v1.03 Backport 6.72–9.00.
+- v1.03 Optional Fix untuk firmware 11.00.
+
+Perbezaan backport ini ialah keperluan minimum firmware untuk menjalankan package tersebut. Oleh sebab firmware PS4 yang digunakan dalam panduan ini ialah 13.50, package biasa yang memerlukan firmware 11.00 sepatutnya berada dalam lingkungan firmware yang lebih rendah daripada 13.50. Namun, tetap pastikan package tersebut serasi dengan jailbreak dan payload yang digunakan.
+
+Selepas pemasangan, semak Game Information untuk memastikan versi game telah dikemas kini kepada v1.03.
+
+Nota: Jangan keliru antara firmware requirement dengan Game Version. Firmware requirement merujuk kepada versi sistem PS4 minimum yang diperlukan untuk menjalankan package, manakala Game Version merujuk kepada versi kemas kini permainan itu sendiri.
+
+Rujukan:
+- https://serialstation.com/titles/CUSA/33778
+- https://www.ea.com/games/starwars/jedi-survivor/news/patch-notes
+
+### Memasang package melalui rangkaian
+
+Selain USB, kita juga boleh menggunakan Remote Package Installer atau Direct Package Installer.
+
+Kaedah ini membolehkan fail dihantar daripada PC atau telefon ke PS4 melalui rangkaian tempatan.
+
+Secara umum:
+
+1. Aktifkan BinLoader atau fungsi Remote Package Install yang diperlukan.
+2. Pastikan PC dan PS4 berada dalam rangkaian yang sama.
+3. Buka aplikasi package installer yang serasi.
+4. Masukkan IP Address PS4.
+5. Pilih fail `.pkg`.
+6. Mulakan proses pemasangan.
+
+Kaedah ini lebih mudah apabila saiz package besar dan kita tidak mahu memindahkan fail menggunakan USB.
 
 ## Aplikasi dan Utility Berguna
 
@@ -481,161 +603,6 @@ FTP sangat berguna untuk memindahkan fail berukuran besar tanpa perlu mencabut U
 
 Jangan biarkan FTP Server terbuka pada rangkaian awam.
 
-## Memasang Game dalam Format PKG / FPKG
-
-PS4 menggunakan format package `.pkg` untuk pemasangan game, update, DLC dan aplikasi.
-
-Terdapat dua jenis package yang biasa dijumpai dalam komuniti:
-
-1. PKG — Package rasmi yang mempunyai sistem pengesahan lesen Sony.
-2. FPKG — Fake PKG, iaitu package yang telah dibina menggunakan proses tertentu supaya boleh dipasang melalui persekitaran debug atau homebrew.
-
-FPKG sering digunakan dalam komuniti untuk memasang homebrew dan backup game yang dibuat daripada salinan permainan milik sendiri.
-
-Aku tidak akan menyenaraikan laman web cetak rompak atau sumber muat turun game komersial tanpa kebenaran. Untuk backup game sendiri, gunakan salinan daripada cakera fizikal milik sendiri dan patuhi undang-undang yang terpakai.
-
-### Cara memasang package melalui USB
-
-1. Sediakan USB Thumb Drive.
-2. Format USB kepada exFAT.
-3. Salin fail `.pkg` ke dalam root USB.
-4. Sambungkan USB kepada PS4.
-5. Aktifkan jailbreak dan HEN yang serasi.
-6. Buka GoldHEN Debug Settings atau menu Debug Settings yang disediakan oleh HEN.
-7. Pilih Package Installer.
-8. Pastikan Package Source ditetapkan kepada USB.
-9. Pilih fail package yang ingin dipasang.
-10. Tunggu sehingga pemasangan selesai.
-
-Jika package tersebut ialah game, ikon game akan muncul pada Home Screen.
-
-### Susunan pemasangan game
-
-Sebelum memasang game dan update, ada tiga perkara penting yang perlu kita faham, iaitu Title ID, Region dan Game Version.
-
-**1. Title ID**
-
-Title ID ialah kod unik yang diberikan kepada setiap keluaran game PS4. Biasanya ia bermula dengan `CUSA`, `CUSA` diikuti lima digit, atau kod lain seperti `PLAS`.
-
-Contohnya:
-
-`CUSA33778` — Star Wars Jedi: Survivor (PS4)
-
-Title ID ini penting kerana base game, update dan DLC perlu mempunyai Title ID yang sepadan. Update untuk CUSA33778 tidak boleh digunakan pada game yang mempunyai Title ID berlainan.
-
-**2. Region**
-
-Region merujuk kepada kawasan atau pasaran bagi sesuatu keluaran game.
-
-Antara region yang biasa dijumpai:
-
-- USA / US — Amerika Syarikat.
-- EUR — Eropah.
-- ASIA — Asia.
-- JPN — Jepun.
-
-Walaupun nama game sama, keluaran daripada region berlainan mungkin mempunyai Title ID yang berbeza. Oleh itu, pastikan update yang dimuat turun adalah untuk keluaran game yang sama.
-
-**3. Game Version**
-
-Game Version menunjukkan versi game yang sedang digunakan.
-
-Contohnya:
-
-- v1.00 — Versi asal atau Base Game.
-- v1.01 — Update pertama.
-- v1.03 — Update yang mengandungi pembaikan dan penambahbaikan daripada versi sebelumnya.
-
-Pastikan update yang dipasang serasi dengan Title ID base game. Sebaiknya gunakan update terkini yang tersedia untuk keluaran tersebut.
-
-#### Contoh: Star Wars Jedi: Survivor (CUSA33778)
-
-Sebagai contoh, kita gunakan game Star Wars Jedi: Survivor versi PS4.
-
-Maklumat package yang dikenal pasti:
-
-| Komponen | Maklumat |
-|---|---|
-| Game | Star Wars Jedi: Survivor |
-| Title ID | CUSA33778 |
-| Region | USA |
-| Base Game | v1.00 |
-| Game Update terkini | v1.03 |
-| Saiz Base Game | Sekitar 51–54GB |
-| Saiz Update v1.03 | Sekitar 122MB |
-
-Susunan pemasangannya adalah seperti berikut:
-
-1. Base Game — CUSA33778 v1.00.
-2. Update — CUSA33778 v1.03.
-
-Update v1.03 merupakan patch PS4 yang memperbaiki kestabilan permainan dan audio dalam cinematic.
-
-Untuk pengguna firmware lama, terdapat juga package update yang telah dibuat backport:
-
-- v1.03 Backport 5.05.
-- v1.03 Backport 6.72–9.00.
-- v1.03 Optional Fix untuk firmware 11.00.
-
-Perbezaan backport ini ialah keperluan minimum firmware untuk menjalankan package tersebut. Oleh sebab firmware PS4 yang digunakan dalam panduan ini ialah 13.50, package biasa yang memerlukan firmware 11.00 sepatutnya berada dalam lingkungan firmware yang lebih rendah daripada 13.50. Namun, tetap pastikan package tersebut serasi dengan jailbreak dan payload yang digunakan.
-
-Selepas pemasangan, semak Game Information untuk memastikan versi game telah dikemas kini kepada v1.03.
-
-Nota: Jangan keliru antara firmware requirement dengan Game Version. Firmware requirement merujuk kepada versi sistem PS4 minimum yang diperlukan untuk menjalankan package, manakala Game Version merujuk kepada versi kemas kini permainan itu sendiri.
-
-Rujukan:
-- https://serialstation.com/titles/CUSA/33778
-- https://www.ea.com/games/starwars/jedi-survivor/news/patch-notes
-
-### Memasang package melalui rangkaian
-
-Selain USB, kita juga boleh menggunakan Remote Package Installer atau Direct Package Installer.
-
-Kaedah ini membolehkan fail dihantar daripada PC atau telefon ke PS4 melalui rangkaian tempatan.
-
-Secara umum:
-
-1. Aktifkan BinLoader atau fungsi Remote Package Install yang diperlukan.
-2. Pastikan PC dan PS4 berada dalam rangkaian yang sama.
-3. Buka aplikasi package installer yang serasi.
-4. Masukkan IP Address PS4.
-5. Pilih fail `.pkg`.
-6. Mulakan proses pemasangan.
-
-Kaedah ini lebih mudah apabila saiz package besar dan kita tidak mahu memindahkan fail menggunakan USB.
-
-## Barang-barang dan Aplikasi
-
-Berikut ialah senarai ringkas aplikasi dan perkakasan yang disebut dalam artikel ini.
-
-### Windows / PC
-
-1. FileZilla — FTP client untuk memindahkan fail.
-2. DirectPackageInstaller — Menghantar package ke PS4 melalui rangkaian.
-3. Remote Package Sender — Mengurus penghantaran package melalui rangkaian.
-4. pkg-merge — Menggabungkan package yang telah dipecahkan kepada beberapa bahagian.
-5. 7-Zip — Mengekstrak fail arkib.
-
-### Aplikasi PS4
-
-1. GoldHEN / PS4 HEN — Homebrew Enabler.
-2. Homebrew Store — Memuat turun dan memasang homebrew.
-3. Apollo Save Tool — Mengurus save game.
-4. Cheats Manager — Mengurus database cheat.
-5. PS4-Xplorer — File manager.
-6. Itemzflow — Game manager.
-7. RetroArch — Emulator frontend.
-8. Orbis Toolbox — System monitor dan overlay.
-9. FTP Server — Pemindahan fail melalui rangkaian.
-
-### Hardware
-
-1. PlayStation 4.
-2. USB Thumb Drive.
-3. PC atau Laptop.
-4. Kabel Ethernet (jika diperlukan).
-5. External HDD / SSD.
-
 ## Apendiks
 
 ### Mengelakkan System Update
@@ -684,6 +651,17 @@ Sesetengah konfigurasi jailbreak menyokong Rest Mode, tetapi kestabilannya berga
 Jangan terus menganggap jailbreak akan kekal aktif selepas setiap kali konsol memasuki Rest Mode.
 
 Jika berlaku masalah, lakukan cold boot dan jailbreak semula.
+
+### Port Download Game
+
+Jangan heboh sangat dekat orang nanti port port ni hilang.
+
+1. https://archive.org/download/ps4-fpkg-collection-english-s (tukar huruf akhir ke huruf awal game) -- dd
+2. https://dlpsgame.com/ -- external link
+3. https://t.me/blackbox_rush
+4. https://t.me/PSPulse_Discuss -- group chat
+5. https://t.me/PlayStation_Pulse
+6. https://t.me/LinkRush_Bot -- external link
 
 ### Sumber dan Rujukan
 
