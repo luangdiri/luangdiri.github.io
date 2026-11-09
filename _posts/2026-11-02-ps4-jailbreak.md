@@ -1,7 +1,7 @@
 ---
 title: "PS4 Jailbreak (GoldHEN, Homebrew & FPKG)"
-date: 2026-11-01 15:39:50
-lastmod: 2026-11-01 15:39:55
+date: 2026-11-02 15:39:50
+lastmod: 2026-11-09 21:45:53
 tags:
 - tutorial
 ---
@@ -43,11 +43,9 @@ tags:
   - [Sumber dan Rujukan](#sumber-dan-rujukan)
 
 
-Sejak kebelakangan ini aku mula berminat untuk mengubah suai PlayStation 4 supaya boleh menggunakan pelbagai aplikasi homebrew. Kalau zaman PS2 dahulu kita menggunakan Free McBoot (FMCB), untuk PS4 pula komuniti mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN.
+Di sebabkan konsol PS4 aku tak berusik sampai naik habuk, aku rasa lebih baik kalau aku explore macam mana nak jailbreak benda ni. Kalau zaman PS2 dulu kita menggunakan [Free McBoot (FMCB)](https://luangdiri.github.io/2020/05/31/ps2-free-mcboot-fmcb.html), untuk PS4 pula komuniti mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN. 
 
 Jailbreak PS4 ini membuka banyak kemungkinan. Antaranya memasang aplikasi homebrew, menggunakan emulator, mengurus save game, memasang mod dan cheat, menggunakan file manager serta menjalankan pelbagai utiliti yang tidak disediakan oleh Sony.
-
-Dalam panduan ini aku akan menggunakan PS4 dengan firmware 13.50 sebagai rujukan. Aku juga akan senaraikan beberapa aplikasi yang berguna untuk memudahkan penggunaan PS4 yang telah dijailbreak.
 
 ## Apa itu PS4 Jailbreak?
 
@@ -89,7 +87,7 @@ GoldHEN bukan jailbreak exploit itu sendiri. Ia ialah payload yang dijalankan se
 
 ## Firmware Compatibility
 
-Tidak semua firmware PS4 boleh dijailbreak menggunakan kaedah yang sama. Setiap firmware memerlukan exploit dan kernel patch yang sepadan.
+Tidak semua firmware PS4 boleh dijailbreak menggunakan kaedah yang sama. Setiap firmware memerlukan exploit dan kernel patch yang sepadan. Mujur lah version firmware PS4 aku ada support jailbreak.
 
 Berikut ialah status yang dapat disemak pada 2 November 2026:
 
