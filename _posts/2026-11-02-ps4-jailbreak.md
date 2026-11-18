@@ -162,7 +162,7 @@ Aku juga cadangkan supaya *Stay Connected to the Internet* dimatikan di *Setting
 
 Rujukan:
 - https://consolemods.org/wiki/PS4_getting_started
-- https://consolemods.org/wiki/PS4:Blocking_OFW_Updates
+- [https://consolemods.org/wiki/PS4:Block...](https://consolemods.org/wiki/PS4:Blocking_OFW_Updates)
 - https://henjb.com/
 
 ### Kaedah 1: Browser-based Jailbreak

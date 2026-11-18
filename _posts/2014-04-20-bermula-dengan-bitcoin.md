@@ -59,7 +59,7 @@ Bitcoin masih dalam peringkat Experimental tapi sedang aktif dibangunkan oleh pe
 
 ### Kerajaan and Tyrannism
 
-![image1](https://i.imgur.com/LEWkFTB.jpg)
+![image](https://i.imgur.com/LEWkFTB.jpg)
 
 Setakat ni Bitcoin belum jadi matawang rasmi untuk sesebuah negara, bukan dalam Malaysia. Dengan itu, apa apa undang-undang dan peraturan yang berkaitan dengan penggunaan Bitcoin untuk negara tu haruslah dipatuhi. Also, [Bank Negara Malaysia Statement](https://www.bnm.gov.my/index.php?ch=en_announcement&pg=en_announcement_all&ac=275) on Bitcoin.
 
@@ -94,7 +94,7 @@ Sekarang kau dah ada Wallet dan Address untuk guna bitcoin. Sekarang mana mau da
 >
 > P/s: I do assist people on getting their first Bitcoin (for free). Do contact me on [Telegram](https://telegram.me/AimanB) for further discussion.
 
-<img src="https://i.imgur.com/UWFDKRB.jpg" alt="Drawing" style="width: 500px;"/>
+![image](https://i.imgur.com/UWFDKRB.jpg)
 
 1. Daftar satu account dekat [Belibitcoin](https://belibitcoin.com/)
 1. Pergi [Buy BSC](https://cryptomarket.my/apps/bitcoinscratchcard/home/buy) untuk beli Scratch Card. Not sure kalau ada kedai topup yang jual card ni, tapi kalau nak aku ada jual Lol
@@ -120,7 +120,7 @@ Sekarang kau dah ada Wallet dan Address untuk guna bitcoin. Sekarang mana mau da
 
 #### Automated Vending Machine (AVM)
 
-<img src="https://i.imgur.com/Zix8HMA.jpg" style="width: 500px;" />
+![image](https://i.imgur.com/Zix8HMA.jpg)
 
 - Bitcoin pun ada ATM machine kayyy. Kat [Malaysia](https://coinreport.net/numoni-bitcoin-atm-machine-malaysia/) ada dua, satu kat Bangsar Shopping Centre dan satu dekat Penang Gurney Plaza.
 - Aku taktau apa status AVM ni kat sana, sebab aku dengar macam ada benda buruk berlaku. Idk lol.

@@ -5,7 +5,7 @@ tags:
 - blockchain
 ---
 
-<img alt="Blockchain logo" width="700" src="https://i.imgur.com/S5um2JY.png"/>
+![image](https://i.imgur.com/S5um2JY.png)
 
 Beberapa tahun selepas Bitcoin menjadi cryptocurrency yang diguna orang ramai, teknologi blockchain menjadi satu topik yang hangat dikaji oleh para penyelidik. Blockchain terdapat pelbagai kegunaan antara nya pendaftaran nama dan smart contracts. Kaedah konsensus seperti proof-of-work (PoW) dan proof-of-stake (PoS) juga ada diterapkan dalam teknologi ini bagi membantu prinsip decentralization berjalan dengan lancar. Walau advanced macam mana pun, masih lagi terdapat lubang lubang sekuriti yang tidak di kenalpasti pada awal waktu ia dilahirkan.
 
