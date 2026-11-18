@@ -8,7 +8,7 @@ tags:
 
 <img src="https://i.imgur.com/DLbTNUV.png">
 
-Di sebabkan PS4 aku tak berusik sampai naik habuk, lebih baik aku jailbreak je benda ni dari tak buat apa-apa. Kalau zaman PS2 dulu kita menggunakan [Free McBoot (FMCB)](https://luangdiri.github.io/2020/05/31/ps2-free-mcboot-fmcb.html), untuk PS4 pula mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN.
+Di sebabkan PS4 aku tak berusik sampai naik habuk, lebih baik aku jailbreak je benda ni dari tak buat apa-apa. Dapat la juga aku main game-game yang aku ngidam nak main tapi terlalu broke untuk beli. Kalau zaman PS2 dulu kita menggunakan [Free McBoot (FMCB)](https://luangdiri.github.io/2020/05/31/ps2-free-mcboot-fmcb.html), untuk PS4 pula mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN.
 
 Jailbreak PS4 ini membuka banyak kemungkinan. Antaranya memasang aplikasi homebrew, menggunakan emulator, mengurus save game, memasang mod dan cheat, menggunakan file manager serta menjalankan pelbagai utiliti yang tidak disediakan oleh Sony.
 
