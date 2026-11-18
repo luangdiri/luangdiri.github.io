@@ -6,7 +6,7 @@ tags:
 - tutorial
 ---
 
-<img src="https://i.imgur.com/DLbTNUV.png">
+![image](https://i.imgur.com/DLbTNUV.png)
 
 Di sebabkan PS4 aku tak berusik sampai naik habuk, lebih baik aku jailbreak je benda ni dari tak buat apa-apa. Dapat la juga aku main game-game yang aku ngidam nak main tapi terlalu broke untuk beli. Kalau zaman PS2 dulu kita menggunakan [Free McBoot (FMCB)](https://luangdiri.github.io/2020/05/31/ps2-free-mcboot-fmcb.html), untuk PS4 pula mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN.
 
@@ -156,7 +156,7 @@ Untuk perlindungan tambahan, matikan juga **Automatic Downloads**:
 4. Nyahaktifkan **System Software Update Files**.
 5. Nyahaktifkan **Install Automatically** jika pilihan tersebut tersedia.
 
-<img src="https://i.imgur.com/ugTei87.jpg" width="80%">
+![image](https://i.imgur.com/ugTei87.jpg)
 
 Aku juga cadangkan supaya *Stay Connected to the Internet* dimatikan di *Settings > Power Save Settings > Set Functions Available in Rest Mode* sebelum jailbreak diaktifkan.
 
@@ -210,7 +210,7 @@ Secara umum, ia memerlukan:
 
 Cuma sekarang dah ada browser exploit, lebih mudah dan cepat.
 
-<img src="https://i.imgur.com/DgwiaRe.jpg" width="80%">
+![image](https://i.imgur.com/DgwiaRe.jpg)
 
 ## Memasang Homebrew Store
 
@@ -285,7 +285,7 @@ Title ID ialah kod unik yang diberikan kepada setiap keluaran game PS4. Biasanya
 
 Contohnya:
 
-<img src="https://i.imgur.com/RwpeD2Y.jpg" width="80%">
+![image](https://i.imgur.com/RwpeD2Y.jpg)
 
 `CUSA33778` — [Star Wars Jedi: Survivor](https://dlpsgame.com/star-wars-jedi-survivor-ps4-pkg/) (PS4)
 
