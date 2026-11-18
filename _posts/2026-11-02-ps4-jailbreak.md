@@ -8,7 +8,9 @@ tags:
 
 ![image](https://i.imgur.com/DLbTNUV.png)
 
-Di sebabkan PS4 aku tak berusik sampai naik habuk, lebih baik aku jailbreak je benda ni dari tak buat apa-apa. Dapat la juga aku main game-game yang aku ngidam nak main tapi terlalu broke untuk beli. Kalau zaman PS2 dulu kita menggunakan [Free McBoot (FMCB)](https://luangdiri.github.io/2020/05/31/ps2-free-mcboot-fmcb.html), untuk PS4 pula mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN.
+Di sebabkan PS4 aku tak berusik sampai naik habuk, lebih baik aku jailbreak je benda ni dari tak buat apa-apa. Dapat la juga aku main game-game yang aku ngidam nak main tapi terlalu broke untuk beli.
+
+Kalau zaman PS2 dulu kita menggunakan [Free McBoot (FMCB)](https://luangdiri.github.io/2020/05/31/ps2-free-mcboot-fmcb.html), untuk PS4 pula mempunyai beberapa kaedah jailbreak seperti WebKit Exploit, PPPwn dan GoldHEN.
 
 Jailbreak PS4 ini membuka banyak kemungkinan. Antaranya memasang aplikasi homebrew, menggunakan emulator, mengurus save game, memasang mod dan cheat, menggunakan file manager serta menjalankan pelbagai utiliti yang tidak disediakan oleh Sony.
 
@@ -30,7 +32,6 @@ Jailbreak PS4 ini membuka banyak kemungkinan. Antaranya memasang aplikasi homebr
 - [Memasang Game dalam Format PKG / FPKG](#memasang-game-dalam-format-pkg--fpkg)
   - [Cara memasang package melalui USB](#cara-memasang-package-melalui-usb)
   - [Susunan pemasangan game](#susunan-pemasangan-game)
-    - [Contoh: Star Wars Jedi: Survivor (CUSA33778)](#contoh-star-wars-jedi-survivor-cusa33778)
   - [Memasang package melalui rangkaian](#memasang-package-melalui-rangkaian)
 - [Apendiks](#apendiks)
   - [Aplikasi dan Utility Berguna](#aplikasi-dan-utility-berguna)
@@ -316,7 +317,7 @@ Contohnya:
 
 Pastikan update yang dipasang serasi dengan Title ID base game. Sebaiknya gunakan update terkini yang tersedia untuk keluaran tersebut.
 
-#### Contoh: Star Wars Jedi: Survivor (CUSA33778)
+**Contoh: Star Wars Jedi: Survivor (CUSA33778)**
 
 Sebagai contoh, kita gunakan game *[Star Wars Jedi: Survivor](https://dlpsgame.com/star-wars-jedi-survivor-ps4-pkg/)* versi PS4.
 
