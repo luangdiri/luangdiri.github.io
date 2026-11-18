@@ -597,6 +597,6 @@ Akhirnya, live trading bukan tentang membina sistem yang sempurna. Ia tentang me
 
 [VectorBT Live Signal](https://t.me/+Uajmc5lMbf3nYiJW) Telegram channel.
 
-[1]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
+[1]: https://luangdiri.github.io/2021/08/22/perdagangan-algoritma-bhg-1.html
 [2]: https://luangdiri.github.io/2026/01/04/vectorbt-backtest-alert.html
 [ccxt]: https://github.com/ccxt/ccxt
