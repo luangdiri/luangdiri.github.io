@@ -529,7 +529,7 @@ Langkah seterusnya, mungkin boleh integrasi kan live trading pula? Library CCXT 
 Source code untuk [MA Cross Strategy VectorBT](https://github.com/luangdiri/vectorbt-demo).
 
 [1]: https://vectorbt.dev/
-[2]: https://luangdiri.github.io/2021/08/21/perdagangan-algoritma-bhg-1.html
+[2]: https://luangdiri.github.io/2021/08/22/perdagangan-algoritma-bhg-1.html
 [3]: https://www.tradingview.com/pricing/?share_your_love=natebroke
 [4]: https://hummingbot.org/
 [5]: https://wundertrading.com/en/register?ref=wbtdf816e60

@@ -58,7 +58,7 @@ Cuma masukkan gambar yang ingin kita tengok sumber nya, dan tools tersebut akan 
 
 2. Koordinat (dari EXIF)
 
-    ![exif-gps](https://i.imgur.com/8P7SIPn.png)
+    ![exif-gps](https://i.imgur.com/5GV6jue.jpg)
 
     *Rajah: Koordinat GPS dalam EXIF*
 
